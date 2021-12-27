@@ -22,9 +22,11 @@
     "build": "stencil build --docs",
     "lint": "eslint --cache --report-unused-disable-directives \"./**/*.{js,ts,tsx}\"",
     "start": "stencil build --dev --watch --serve",
+    "pretest": "yarn generate-facedata-validator",
     "test": "stencil test --spec --e2e",
     "test.watch": "stencil test --spec --e2e --watchAll",
-    "generate": "stencil generate"
+    "generate": "stencil generate",
+    "generate-facedata-validator": "typescript-json-validator src/facedata.d.ts Facedata"
   },
   "dependencies": {
     "@stencil/core": "^2.11.0"
@@ -42,7 +44,8 @@
     "jest-cli": "^26.6.3",
     "prettier": "^2.5.1",
     "puppeteer": "^10.0.0",
-    "typescript": "^4.5.4"
+    "typescript": "^4.5.4",
+    "typescript-json-validator": "^2.4.2"
   },
   "license": "MIT"
 }

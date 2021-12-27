@@ -1,116 +1,111 @@
-export namespace Grimace {
-  interface Facedata {
-    points: {
-      [pointId: string]: Point
-    }
-
-    splines: {
-      [splineId: string]: Spline
-    }
-
-    muscles: {
-      [muscleId: string]: Muscle
-    }
-
-    muscleGroups: {
-      [muscleGroupId: string]: MuscleGroup
-    }
-
-    features: Feature[]
-
-    emotions: {
-      [emotionId: string]: Emotion
-    }
+export interface Facedata {
+  points: {
+    [pointId: string]: Point
   }
 
-  interface Point {
-    x: number
-    y: number
-    muscleweights?: {
-      [muscleId: string]: number
-    }
+  splines: {
+    [splineId: string]: Spline
   }
 
-  interface Spline {
-    type: 'line' | 'quadraticbezier' | 'cubicbezier'
-    points: string[]
+  muscles: {
+    [muscleId: string]: Muscle
   }
 
-  interface Muscle {
-    group: 'feature'
-    label: string
-    spline: string
+  musclegroups: {
+    [muscleGroupId: string]: MuscleGroup
   }
 
-  interface MuscleGroup {
-    color: string
-    width: number
-    alpha: number
-    zindex: number
+  features: Feature[]
+
+  emotions: {
+    [emotionId: string]: Emotion
   }
+}
 
-  interface Feature {
-    label: string
-    stroked: boolean
-    mirrored: boolean
-    segments: FeatureSegment[]
+export interface Point {
+  x: number
+  y: number
+  muscleweights?: {
+    [muscleId: string]: number
   }
+}
 
-  interface FeatureSegment {
-    id: string
-    spline: string
-    label: string
-    alpha?: number
-    strokestyle: StrokeStyle
+export interface Spline {
+  type: 'line' | 'quadraticbezier' | 'cubicbezier'
+  points: string[]
+}
+
+export interface Muscle {
+  group: 'feature'
+  label: string
+  spline: string
+}
+
+export interface MuscleGroup {
+  color: string
+  width: number
+  alpha: number
+  zindex: number
+}
+
+export interface Feature {
+  label: string
+  stroked: boolean
+  mirrored: boolean
+  segments: FeatureSegment[]
+}
+
+export interface FeatureSegment {
+  id: string
+  spline: string
+  label: string
+  alpha?: number
+  strokestyle: StrokeStyle
+}
+
+type StrokeStyle = BasicStrokeStyle | BrushStrokeStyle
+
+export interface BasicStrokeStyle {
+  type: 'basic'
+  width: number
+  color: string
+}
+
+export interface BrushStrokeStyle {
+  type: 'brush'
+  startwidth: number
+  maxwidth: number
+  endwidth: number
+  alpha: number
+  color: string
+}
+
+export interface Emotion {
+  influences: {
+    [muscleId: string]: EmotionInfluence
   }
+}
 
-  type StrokeStyle = BasicStrokeStyle | BrushStrokeStyle
+export interface EmotionInfluence {
+  priority?: number
+  mapping: Mapping
+}
 
-  interface BasicStrokeStyle {
-    type: 'basic'
-    width: number
-    color: string
-  }
+export interface Mapping {
+  type: 'gauss' | 'polynomial' | 'sine'
 
-  interface BrushStrokeStyle {
-    type: 'brush'
-    startwidth: number
-    maxwidth: number
-    endwidth: number
-    alpha: number
-    color: string
-  }
+  // GaussMapping properties
+  mean?: number
+  variance?: number
+  value?: number
 
-  interface Emotion {
-    influences: {
-      [muscleId: string]: EmotionInfluence
-    }
-  }
+  // PolynomialMapping properties
+  x0?: number
+  exponents?: number[]
 
-  interface EmotionInfluence {
-    priority: number
-    mapping: Mapping
-  }
-
-  type Mapping = GaussMapping | PolynomialMapping | SineMapping
-
-  interface GaussMapping {
-    type: 'gauss'
-    mean: number
-    variance: number
-    value: number
-  }
-
-  interface PolynomialMapping {
-    type: 'polynomial'
-    x0: number
-    exponents: number[]
-  }
-
-  interface SineMapping {
-    x0: number
-    x1: number
-    y0: number
-    y1: number
-  }
+  // SineMapping properties
+  // x0: number
+  x1?: number
+  y0?: number
+  y1?: number
 }

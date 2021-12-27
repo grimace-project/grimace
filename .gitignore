@@ -25,3 +25,4 @@ Thumbs.db
 UserInterfaceState.xcuserstate
 .env
 .eslintcache
+src/facedata.d.validator.ts
