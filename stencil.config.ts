@@ -1,4 +1,4 @@
-import { Config } from '@stencil/core';
+import { Config } from '@stencil/core'
 
 export const config: Config = {
   namespace: 'grimace',
@@ -18,4 +18,4 @@ export const config: Config = {
       serviceWorker: null, // disable service workers
     },
   ],
-};
+}
