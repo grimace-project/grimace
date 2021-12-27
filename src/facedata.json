@@ -1,61 +1,229 @@
 {
   "points": {
-    "m0_s_p0": { "x": 136, "y": 144 },
-    "m0_s_p1": { "x": 140, "y": 52 },
-    "m1_s_p0": { "x": 109, "y": 125 },
-    "m1_s_p1": { "x": 119, "y": 25 },
-    "m2_s_p0": { "x": 73, "y": 127 },
-    "m2_s_p1": { "x": 79, "y": 19 },
-    "m3_s_p0": { "x": 26, "y": 152 },
-    "m3_s_p1": { "x": 27, "y": 30 },
-    "m5_s_p0": { "x": 87, "y": 244 },
-    "m5_s_p1": { "x": 87, "y": 170 },
-    "m6_s_p0": { "x": 36, "y": 345 },
-    "m6_s_p1": { "x": 36, "y": 262 },
-    "m7_s_p0": { "x": 58, "y": 349 },
-    "m7_s_p1": { "x": 92, "y": 269 },
-    "m8_s_p0": { "x": 79, "y": 358 },
-    "m8_s_p1": { "x": 119, "y": 335 },
-    "m8_s_p2": { "x": 147, "y": 303 },
-    "m9_s_p0": { "x": 89, "y": 382 },
-    "m9_s_p1": { "x": 133, "y": 378 },
-    "m9_s_p2": { "x": 155, "y": 331 },
-    "m10_s_p0": { "x": 89, "y": 411 },
-    "m10_s_p1": { "x": 131, "y": 424 },
-    "m11_s_p0": { "x": 75, "y": 425 },
-    "m11_s_p1": { "x": 80, "y": 457 },
-    "m11_s_p2": { "x": 59, "y": 488 },
-    "m12_s_p0": { "x": 25, "y": 447 },
-    "m12_s_p1": { "x": 44, "y": 493 },
-    "m14_s_p0": { "x": 99, "y": 114 },
-    "m14_s_p1": { "x": 70, "y": 137 },
-    "m14_s_p2": { "x": 55, "y": 159 },
-    "m15_s_p0": { "x": 8, "y": 447 },
-    "m15_s_p1": { "x": 8, "y": 502 },
-    "m041_s_p0": { "x": 116, "y": 171 },
-    "m041_s_p1": { "x": 116, "y": 152 },
-    "m042_s_p0": { "x": 98, "y": 171 },
-    "m042_s_p1": { "x": 98, "y": 224 },
-    "m16_s_p0": { "x": 64, "y": 399 },
-    "m16_s_p1": { "x": -10, "y": 399 },
-    "h_meb6_s_p0": { "x": 14, "y": 122 },
-    "h_meb6_s_p1": { "x": 14, "y": 211 },
-    "h_meb7_s_p0": { "x": 42, "y": 122 },
-    "h_meb7_s_p1": { "x": 131, "y": 235 },
-    "h_mey8_s_p0": { "x": 49, "y": 165 },
-    "h_mey8_s_p1": { "x": 123, "y": 269 },
-    "h_mli9_s_p0": { "x": 0, "y": 339 },
-    "h_mli9_s_p1": { "x": 0, "y": 354 },
-    "h_mli10_s_p0": { "x": 43, "y": 446 },
-    "h_mli10_s_p1": { "x": 58, "y": 465 },
-    "h_mli11_s_p0": { "x": -21 ,"y": 449},
-    "h_mli11_s_p1": { "x": -21, "y": 462 },
-    "h_mey12_s_p0": { "x": 32, "y": 215 },
-    "h_mey12_s_p1": { "x": 32, "y": 175 },
-    "h_teethupper_p0": { "x": 196, "y": 399 },
-    "h_teethupper_p1": { "x": 196, "y": 337 },
-    "h_teethlower_p0": { "x": 196, "y": 417 },
-    "h_teethlower_p1": { "x": 196, "y": 462 },
+    "m0_s_p0": {
+      "x": 136,
+      "y": 144
+    },
+    "m0_s_p1": {
+      "x": 140,
+      "y": 52
+    },
+    "m1_s_p0": {
+      "x": 109,
+      "y": 125
+    },
+    "m1_s_p1": {
+      "x": 119,
+      "y": 25
+    },
+    "m2_s_p0": {
+      "x": 73,
+      "y": 127
+    },
+    "m2_s_p1": {
+      "x": 79,
+      "y": 19
+    },
+    "m3_s_p0": {
+      "x": 26,
+      "y": 152
+    },
+    "m3_s_p1": {
+      "x": 27,
+      "y": 30
+    },
+    "m5_s_p0": {
+      "x": 87,
+      "y": 244
+    },
+    "m5_s_p1": {
+      "x": 87,
+      "y": 170
+    },
+    "m6_s_p0": {
+      "x": 36,
+      "y": 345
+    },
+    "m6_s_p1": {
+      "x": 36,
+      "y": 262
+    },
+    "m7_s_p0": {
+      "x": 58,
+      "y": 349
+    },
+    "m7_s_p1": {
+      "x": 92,
+      "y": 269
+    },
+    "m8_s_p0": {
+      "x": 79,
+      "y": 358
+    },
+    "m8_s_p1": {
+      "x": 119,
+      "y": 335
+    },
+    "m8_s_p2": {
+      "x": 147,
+      "y": 303
+    },
+    "m9_s_p0": {
+      "x": 89,
+      "y": 382
+    },
+    "m9_s_p1": {
+      "x": 133,
+      "y": 378
+    },
+    "m9_s_p2": {
+      "x": 155,
+      "y": 331
+    },
+    "m10_s_p0": {
+      "x": 89,
+      "y": 411
+    },
+    "m10_s_p1": {
+      "x": 131,
+      "y": 424
+    },
+    "m11_s_p0": {
+      "x": 75,
+      "y": 425
+    },
+    "m11_s_p1": {
+      "x": 80,
+      "y": 457
+    },
+    "m11_s_p2": {
+      "x": 59,
+      "y": 488
+    },
+    "m12_s_p0": {
+      "x": 25,
+      "y": 447
+    },
+    "m12_s_p1": {
+      "x": 44,
+      "y": 493
+    },
+    "m14_s_p0": {
+      "x": 99,
+      "y": 114
+    },
+    "m14_s_p1": {
+      "x": 70,
+      "y": 137
+    },
+    "m14_s_p2": {
+      "x": 55,
+      "y": 159
+    },
+    "m15_s_p0": {
+      "x": 8,
+      "y": 447
+    },
+    "m15_s_p1": {
+      "x": 8,
+      "y": 502
+    },
+    "m041_s_p0": {
+      "x": 116,
+      "y": 171
+    },
+    "m041_s_p1": {
+      "x": 116,
+      "y": 152
+    },
+    "m042_s_p0": {
+      "x": 98,
+      "y": 171
+    },
+    "m042_s_p1": {
+      "x": 98,
+      "y": 224
+    },
+    "m16_s_p0": {
+      "x": 64,
+      "y": 399
+    },
+    "m16_s_p1": {
+      "x": -10,
+      "y": 399
+    },
+    "h_meb6_s_p0": {
+      "x": 14,
+      "y": 122
+    },
+    "h_meb6_s_p1": {
+      "x": 14,
+      "y": 211
+    },
+    "h_meb7_s_p0": {
+      "x": 42,
+      "y": 122
+    },
+    "h_meb7_s_p1": {
+      "x": 131,
+      "y": 235
+    },
+    "h_mey8_s_p0": {
+      "x": 49,
+      "y": 165
+    },
+    "h_mey8_s_p1": {
+      "x": 123,
+      "y": 269
+    },
+    "h_mli9_s_p0": {
+      "x": 0,
+      "y": 339
+    },
+    "h_mli9_s_p1": {
+      "x": 0,
+      "y": 354
+    },
+    "h_mli10_s_p0": {
+      "x": 43,
+      "y": 446
+    },
+    "h_mli10_s_p1": {
+      "x": 58,
+      "y": 465
+    },
+    "h_mli11_s_p0": {
+      "x": -21,
+      "y": 449
+    },
+    "h_mli11_s_p1": {
+      "x": -21,
+      "y": 462
+    },
+    "h_mey12_s_p0": {
+      "x": 32,
+      "y": 215
+    },
+    "h_mey12_s_p1": {
+      "x": 32,
+      "y": 175
+    },
+    "h_teethupper_p0": {
+      "x": 196,
+      "y": 399
+    },
+    "h_teethupper_p1": {
+      "x": 196,
+      "y": 337
+    },
+    "h_teethlower_p0": {
+      "x": 196,
+      "y": 417
+    },
+    "h_teethlower_p1": {
+      "x": 196,
+      "y": 462
+    },
     "p1": {
       "x": 150,
       "y": 160,
@@ -92,7 +260,10 @@
         "h_meb6": 1
       }
     },
-    "p5": { "x": 125, "y": 210 },
+    "p5": {
+      "x": 125,
+      "y": 210
+    },
     "p6": {
       "x": 105,
       "y": 174,
@@ -117,80 +288,423 @@
         "h_mey12": 1
       }
     },
-    "p11": { "x": 56, "y": 212 },
-    "p10": { "x": 80, "y": 235 },
-    "p21": { "x": -10, "y": 399 },
-    "p20": { "x": 0, "y": 399 },
-    "p16": { "x": 15, "y": 399 },
-    "p15": { "x": 30, "y": 399 },
-    "p14": { "x": 45, "y": 400 },
-    "p13": { "x": 60, "y": 399 },
-    "p17": { "x": 50, "y": 399 },
-    "p18": { "x": 40, "y": 400 },
-    "p19": { "x": 25, "y": 401 },
-    "llj_p1": { "x": 0, "y": 401 },
-    "llj_p0": { "x": -10, "y": 401 }
+    "p11": {
+      "x": 56,
+      "y": 212
+    },
+    "p10": {
+      "x": 80,
+      "y": 235
+    },
+    "p21": {
+      "x": -10,
+      "y": 399
+    },
+    "p20": {
+      "x": 0,
+      "y": 399
+    },
+    "p16": {
+      "x": 15,
+      "y": 399
+    },
+    "p15": {
+      "x": 30,
+      "y": 399
+    },
+    "p14": {
+      "x": 45,
+      "y": 400
+    },
+    "p13": {
+      "x": 60,
+      "y": 399
+    },
+    "p17": {
+      "x": 50,
+      "y": 399
+    },
+    "p18": {
+      "x": 40,
+      "y": 400
+    },
+    "p19": {
+      "x": 25,
+      "y": 401
+    },
+    "llj_p1": {
+      "x": 0,
+      "y": 401
+    },
+    "llj_p0": {
+      "x": -10,
+      "y": 401
+    }
   },
   "splines": {
-    "m0_s": { "type": "line", "points": ["m0_s_p0", "m0_s_p1"] },
-    "m1_s": { "type": "line", "points": ["m1_s_p0", "m1_s_p1"] },
-    "m2_s": { "type": "line", "points": ["m2_s_p0", "m2_s_p1"] },
-    "m3_s": { "type": "line", "points": ["m3_s_p0", "m3_s_p1"] },
-    "m5_s": { "type": "line", "points": ["m5_s_p0", "m5_s_p1"] },
-    "m6_s": { "type": "line", "points": ["m6_s_p0", "m6_s_p1"] },
-    "m7_s": { "type": "line", "points": ["m7_s_p0", "m7_s_p1"] },
-    "m8_s": { "type": "quadraticbezier", "points": ["m8_s_p0", "m8_s_p1", "m8_s_p2"] },
-    "m9_s": { "type": "quadraticbezier", "points": ["m9_s_p0", "m9_s_p1", "m9_s_p2"] },
-    "m10_s": { "type": "line", "points": ["m10_s_p0", "m10_s_p1"] },
-    "m11_s": { "type": "quadraticbezier", "points": ["m11_s_p0", "m11_s_p1", "m11_s_p2"] },
-    "m12_s": { "type": "line", "points": ["m12_s_p0", "m12_s_p1"] },
-    "m14_s": { "type": "quadraticbezier", "points": ["m14_s_p0", "m14_s_p1", "m14_s_p2"] },
-    "m15_s": { "type": "line", "points": ["m15_s_p0", "m15_s_p1"] },
-    "m16_s": { "type": "line", "points": ["m16_s_p0", "m16_s_p1"] },
-    "m041_s": { "type": "line", "points": ["m041_s_p0", "m041_s_p1"] },
-    "m042_s": { "type": "line", "points": ["m042_s_p0", "m042_s_p1"] },
-    "h_meb6_s": { "type": "line", "points": ["h_meb6_s_p0", "h_meb6_s_p1"] },
-    "h_meb7_s": { "type": "line", "points": ["h_meb7_s_p0", "h_meb7_s_p1"] },
-    "h_mey8_s": { "type": "line", "points": ["h_mey8_s_p0", "h_mey8_s_p1"] },
-    "h_mli9_s": { "type": "line", "points": ["h_mli9_s_p0", "h_mli9_s_p1"] },
-    "h_mli10_s": { "type": "line", "points": ["h_mli10_s_p0", "h_mli10_s_p1"] },
-    "h_mli11_s": { "type": "line", "points": ["h_mli11_s_p0", "h_mli11_s_p1"] },
-    "h_mey12_s": { "type": "line", "points": ["h_mey12_s_p0", "h_mey12_s_p1"] },
-    "h_teethupper_s": { "type": "line", "points": ["h_teethupper_s_p0", "h_teethupper_s_p1"] },
-    "h_teethlower_s": { "type": "line", "points": ["h_teethlower_s_p0", "h_teethlower_s_p1"] },
-    "s1": { "type": "cubicbezier", "points": ["p1", "p2", "p3", "p4"] },
-    "s2": { "type": "cubicbezier", "points": ["p5", "p6", "p7", "p8"] },
-    "s3": { "type": "cubicbezier", "points": ["p8", "p11", "p10", "p5"] },
-    "s5": { "type": "cubicbezier", "points": ["p16", "p15", "p14", "p13"] },
-    "s6": { "type": "cubicbezier", "points": ["p13", "p17", "p18", "p19"] }
+    "m0_s": {
+      "type": "line",
+      "points": [
+        "m0_s_p0",
+        "m0_s_p1"
+      ]
+    },
+    "m1_s": {
+      "type": "line",
+      "points": [
+        "m1_s_p0",
+        "m1_s_p1"
+      ]
+    },
+    "m2_s": {
+      "type": "line",
+      "points": [
+        "m2_s_p0",
+        "m2_s_p1"
+      ]
+    },
+    "m3_s": {
+      "type": "line",
+      "points": [
+        "m3_s_p0",
+        "m3_s_p1"
+      ]
+    },
+    "m5_s": {
+      "type": "line",
+      "points": [
+        "m5_s_p0",
+        "m5_s_p1"
+      ]
+    },
+    "m6_s": {
+      "type": "line",
+      "points": [
+        "m6_s_p0",
+        "m6_s_p1"
+      ]
+    },
+    "m7_s": {
+      "type": "line",
+      "points": [
+        "m7_s_p0",
+        "m7_s_p1"
+      ]
+    },
+    "m8_s": {
+      "type": "quadraticbezier",
+      "points": [
+        "m8_s_p0",
+        "m8_s_p1",
+        "m8_s_p2"
+      ]
+    },
+    "m9_s": {
+      "type": "quadraticbezier",
+      "points": [
+        "m9_s_p0",
+        "m9_s_p1",
+        "m9_s_p2"
+      ]
+    },
+    "m10_s": {
+      "type": "line",
+      "points": [
+        "m10_s_p0",
+        "m10_s_p1"
+      ]
+    },
+    "m11_s": {
+      "type": "quadraticbezier",
+      "points": [
+        "m11_s_p0",
+        "m11_s_p1",
+        "m11_s_p2"
+      ]
+    },
+    "m12_s": {
+      "type": "line",
+      "points": [
+        "m12_s_p0",
+        "m12_s_p1"
+      ]
+    },
+    "m14_s": {
+      "type": "quadraticbezier",
+      "points": [
+        "m14_s_p0",
+        "m14_s_p1",
+        "m14_s_p2"
+      ]
+    },
+    "m15_s": {
+      "type": "line",
+      "points": [
+        "m15_s_p0",
+        "m15_s_p1"
+      ]
+    },
+    "m16_s": {
+      "type": "line",
+      "points": [
+        "m16_s_p0",
+        "m16_s_p1"
+      ]
+    },
+    "m041_s": {
+      "type": "line",
+      "points": [
+        "m041_s_p0",
+        "m041_s_p1"
+      ]
+    },
+    "m042_s": {
+      "type": "line",
+      "points": [
+        "m042_s_p0",
+        "m042_s_p1"
+      ]
+    },
+    "h_meb6_s": {
+      "type": "line",
+      "points": [
+        "h_meb6_s_p0",
+        "h_meb6_s_p1"
+      ]
+    },
+    "h_meb7_s": {
+      "type": "line",
+      "points": [
+        "h_meb7_s_p0",
+        "h_meb7_s_p1"
+      ]
+    },
+    "h_mey8_s": {
+      "type": "line",
+      "points": [
+        "h_mey8_s_p0",
+        "h_mey8_s_p1"
+      ]
+    },
+    "h_mli9_s": {
+      "type": "line",
+      "points": [
+        "h_mli9_s_p0",
+        "h_mli9_s_p1"
+      ]
+    },
+    "h_mli10_s": {
+      "type": "line",
+      "points": [
+        "h_mli10_s_p0",
+        "h_mli10_s_p1"
+      ]
+    },
+    "h_mli11_s": {
+      "type": "line",
+      "points": [
+        "h_mli11_s_p0",
+        "h_mli11_s_p1"
+      ]
+    },
+    "h_mey12_s": {
+      "type": "line",
+      "points": [
+        "h_mey12_s_p0",
+        "h_mey12_s_p1"
+      ]
+    },
+    "h_teethupper_s": {
+      "type": "line",
+      "points": [
+        "h_teethupper_s_p0",
+        "h_teethupper_s_p1"
+      ]
+    },
+    "h_teethlower_s": {
+      "type": "line",
+      "points": [
+        "h_teethlower_s_p0",
+        "h_teethlower_s_p1"
+      ]
+    },
+    "s1": {
+      "type": "cubicbezier",
+      "points": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ]
+    },
+    "s2": {
+      "type": "cubicbezier",
+      "points": [
+        "p5",
+        "p6",
+        "p7",
+        "p8"
+      ]
+    },
+    "s3": {
+      "type": "cubicbezier",
+      "points": [
+        "p8",
+        "p11",
+        "p10",
+        "p5"
+      ]
+    },
+    "s5": {
+      "type": "cubicbezier",
+      "points": [
+        "p16",
+        "p15",
+        "p14",
+        "p13"
+      ]
+    },
+    "s6": {
+      "type": "cubicbezier",
+      "points": [
+        "p13",
+        "p17",
+        "p18",
+        "p19"
+      ]
+    }
   },
   "muscles": {
-    "m0": { "group": "feature", "label": "m00", "spline": "m0_s" },
-    "m1": { "group": "feature", "label": "m01", "spline": "m1_s" },
-    "m2": { "group": "feature", "label": "m02", "spline": "m2_s" },
-    "m3": { "group": "feature", "label": "m03", "spline": "m3_s" },
-    "m5": { "group": "feature", "label": "m05", "spline": "m5_s" },
-    "m6": { "group": "feature", "label": "m06", "spline": "m6_s" },
-    "m7": { "group": "feature", "label": "m07", "spline": "m7_s" },
-    "m8": { "group": "feature", "label": "m08", "spline": "m8_s" },
-    "m9": { "group": "feature", "label": "m09", "spline": "m9_s" },
-    "m10": { "group": "feature", "label": "m10", "spline": "m10_s" },
-    "m11": { "group": "feature", "label": "m11", "spline": "m11_s" },
-    "m12": { "group": "feature", "label": "m12", "spline": "m12_s" },
-    "m14": { "group": "feature", "label": "m14", "spline": "m14_s" },
-    "m15": { "group": "feature", "label": "m15", "spline": "m15_s" },
-    "m041": { "group": "feature", "label": "m041", "spline": "m041_s" },
-    "m042": { "group": "feature", "label": "m042", "spline": "m042_s" },
-    "m16": { "group": "feature", "label": "m16", "spline": "m16_s" },
-    "h_meb6": { "group": "feature", "label": "h_meb6", "spline": "h_meb6_s" },
-    "h_meb7": { "group": "feature", "label": "h_meb7", "spline": "h_meb7_s" },
-    "h_mey8": { "group": "feature", "label": "h_mey8", "spline": "h_mey8_s" },
-    "h_mli9": { "group": "feature", "label": "h_mli9", "spline": "h_mli9_s" },
-    "h_mli10": { "group": "feature", "label": "h_mli10", "spline": "h_mli10_s" },
-    "h_mli11": { "group": "feature", "label": "h_mli11", "spline": "h_mli11_s" },
-    "h_mey12": { "group": "feature", "label": "h_mey12", "spline": "h_mey12_s" },
-    "h_teethupper": { "group": "feature", "label": "h_teethupper", "spline": "h_teethupper_s" },
-    "h_teethlower": { "group": "feature", "label": "h_teethlower", "spline": "h_teethlower_s" }
+    "m0": {
+      "group": "feature",
+      "label": "m00",
+      "spline": "m0_s"
+    },
+    "m1": {
+      "group": "feature",
+      "label": "m01",
+      "spline": "m1_s"
+    },
+    "m2": {
+      "group": "feature",
+      "label": "m02",
+      "spline": "m2_s"
+    },
+    "m3": {
+      "group": "feature",
+      "label": "m03",
+      "spline": "m3_s"
+    },
+    "m5": {
+      "group": "feature",
+      "label": "m05",
+      "spline": "m5_s"
+    },
+    "m6": {
+      "group": "feature",
+      "label": "m06",
+      "spline": "m6_s"
+    },
+    "m7": {
+      "group": "feature",
+      "label": "m07",
+      "spline": "m7_s"
+    },
+    "m8": {
+      "group": "feature",
+      "label": "m08",
+      "spline": "m8_s"
+    },
+    "m9": {
+      "group": "feature",
+      "label": "m09",
+      "spline": "m9_s"
+    },
+    "m10": {
+      "group": "feature",
+      "label": "m10",
+      "spline": "m10_s"
+    },
+    "m11": {
+      "group": "feature",
+      "label": "m11",
+      "spline": "m11_s"
+    },
+    "m12": {
+      "group": "feature",
+      "label": "m12",
+      "spline": "m12_s"
+    },
+    "m14": {
+      "group": "feature",
+      "label": "m14",
+      "spline": "m14_s"
+    },
+    "m15": {
+      "group": "feature",
+      "label": "m15",
+      "spline": "m15_s"
+    },
+    "m041": {
+      "group": "feature",
+      "label": "m041",
+      "spline": "m041_s"
+    },
+    "m042": {
+      "group": "feature",
+      "label": "m042",
+      "spline": "m042_s"
+    },
+    "m16": {
+      "group": "feature",
+      "label": "m16",
+      "spline": "m16_s"
+    },
+    "h_meb6": {
+      "group": "feature",
+      "label": "h_meb6",
+      "spline": "h_meb6_s"
+    },
+    "h_meb7": {
+      "group": "feature",
+      "label": "h_meb7",
+      "spline": "h_meb7_s"
+    },
+    "h_mey8": {
+      "group": "feature",
+      "label": "h_mey8",
+      "spline": "h_mey8_s"
+    },
+    "h_mli9": {
+      "group": "feature",
+      "label": "h_mli9",
+      "spline": "h_mli9_s"
+    },
+    "h_mli10": {
+      "group": "feature",
+      "label": "h_mli10",
+      "spline": "h_mli10_s"
+    },
+    "h_mli11": {
+      "group": "feature",
+      "label": "h_mli11",
+      "spline": "h_mli11_s"
+    },
+    "h_mey12": {
+      "group": "feature",
+      "label": "h_mey12",
+      "spline": "h_mey12_s"
+    },
+    "h_teethupper": {
+      "group": "feature",
+      "label": "h_teethupper",
+      "spline": "h_teethupper_s"
+    },
+    "h_teethlower": {
+      "group": "feature",
+      "label": "h_teethlower",
+      "spline": "h_teethlower_s"
+    }
   },
   "musclegroups": {
     "feature": {
@@ -310,295 +824,295 @@
     "joy": {
       "influences": {
         "m042": {
-          "priority": "10",
+          "priority": 10,
           "mapping": {
             "type": "polynomial",
-            "x0": "0",
+            "x0": 0,
             "exponents": [
-              "0",
-              "0.033",
-              "0.309"
+              0,
+              0.033,
+              0.309
             ]
           }
         },
         "m5": {
           "mapping": {
             "type": "polynomial",
-            "x0": "0",
+            "x0": 0,
             "exponents": [
-              "0",
-              "1.299",
-              "-2.686",
-              "2.027"
+              0,
+              1.299,
+              -2.686,
+              2.027
             ]
           }
         },
         "m6": {
-          "priority": "2",
+          "priority": 2,
           "mapping": {
             "type": "polynomial",
-            "x0": "0",
+            "x0": 0,
             "exponents": [
-              "0",
-              "0.056",
-              "-0.126",
-              "0.48"
+              0,
+              0.056,
+              -0.126,
+              0.48
             ]
           }
         },
         "m7": {
-          "priority": "2",
+          "priority": 2,
           "mapping": {
             "type": "sine",
-            "x0": "0.75",
-            "x1": "1.0",
-            "y0": "0",
-            "y1": "0.13"
+            "x0": 0.75,
+            "x1": 1,
+            "y0": 0,
+            "y1": 0.13
           }
         },
         "m9": {
-          "priority": "2",
+          "priority": 2,
           "mapping": {
             "type": "polynomial",
-            "x0": "0",
+            "x0": 0,
             "exponents": [
-              "0",
-              "4.053",
-              "-16.386",
-              "26.346",
-              "-13.013"
+              0,
+              4.053,
+              -16.386,
+              26.346,
+              -13.013
             ]
           }
         },
         "m15": {
-          "priority": "2",
+          "priority": 2,
           "mapping": {
             "type": "sine",
-            "x0": "0.25",
-            "x1": "1",
-            "y0": "0",
-            "y1": "0.55"
+            "x0": 0.25,
+            "x1": 1,
+            "y0": 0,
+            "y1": 0.55
           }
         },
         "m16": {
-          "priority": "2",
+          "priority": 2,
           "mapping": {
             "type": "sine",
-            "x0": "0",
-            "x1": "0.25",
-            "y0": "0",
-            "y1": "0.28"
+            "x0": 0,
+            "x1": 0.25,
+            "y0": 0,
+            "y1": 0.28
           }
         },
         "h_meb6": {
           "mapping": {
             "type": "sine",
-            "x0": "0.1",
-            "x1": "0.75",
-            "y0": "0",
-            "y1": "0.24"
+            "x0": 0.1,
+            "x1": 0.75,
+            "y0": 0,
+            "y1": 0.24
           }
         },
         "h_mli9": {
-          "priority": "2",
+          "priority": 2,
           "mapping": {
             "type": "sine",
-            "x0": "0.5",
-            "x1": "0.85",
-            "y0": "0",
-            "y1": "0.33"
+            "x0": 0.5,
+            "x1": 0.85,
+            "y0": 0,
+            "y1": 0.33
           }
         },
         "h_mli10": {
-          "priority": "2",
+          "priority": 2,
           "mapping": {
             "type": "sine",
-            "x0": "0.5",
-            "x1": "0.75",
-            "y0": "0",
-            "y1": "0.49"
+            "x0": 0.5,
+            "x1": 0.75,
+            "y0": 0,
+            "y1": 0.49
           }
         },
         "h_mey8": {
           "mapping": {
             "type": "sine",
-            "x0": "0.5",
-            "x1": "1",
-            "y0": "0",
-            "y1": "0.26"
+            "x0": 0.5,
+            "x1": 1,
+            "y0": 0,
+            "y1": 0.26
           }
         },
         "m11": {
-          "priority": "2",
+          "priority": 2,
           "mapping": {
             "type": "polynomial",
-            "x0": "0",
+            "x0": 0,
             "exponents": [
-              "0"
+              0
             ]
           }
         },
         "m8": {
-          "priority": "10",
+          "priority": 10,
           "mapping": {
             "type": "polynomial",
-            "x0": "0",
+            "x0": 0,
             "exponents": [
-              "0"
+              0
             ]
           }
         },
         "m10": {
-          "priority": "10",
+          "priority": 10,
           "mapping": {
             "type": "polynomial",
-            "x0": "0",
+            "x0": 0,
             "exponents": [
-              "0"
+              0
             ]
           }
         },
         "m12": {
-          "priority": "10",
+          "priority": 10,
           "mapping": {
             "type": "polynomial",
-            "x0": "0",
+            "x0": 0,
             "exponents": [
-              "0"
+              0
             ]
           }
         },
         "w_mouthside_m1": {
           "mapping": {
             "type": "sine",
-            "x0": "0.45",
-            "x1": "0.93",
-            "y0": "0",
-            "y1": "0.42"
+            "x0": 0.45,
+            "x1": 0.93,
+            "y0": 0,
+            "y1": 0.42
           }
         },
         "w_mouthside_m2": {
           "mapping": {
             "type": "sine",
-            "x0": "0.45",
-            "x1": "0.93",
-            "y0": "0",
-            "y1": "0.37"
+            "x0": 0.45,
+            "x1": 0.93,
+            "y0": 0,
+            "y1": 0.37
           }
         },
         "w_mouthside_m3": {
           "mapping": {
             "type": "gauss",
-            "mean": "0.75",
-            "variance": "0.01",
-            "value": "0.05"
+            "mean": 0.75,
+            "variance": 0.01,
+            "value": 0.05
           }
         },
         "w_mouthside_m4": {
-          "priority": "3",
+          "priority": 3,
           "mapping": {
             "type": "polynomial",
-            "x0": "0",
+            "x0": 0,
             "exponents": [
-              "0"
+              0
             ]
           }
         },
         "w_mouthside_m5": {
-          "priority": "3",
+          "priority": 3,
           "mapping": {
             "type": "sine",
-            "x0": "0.42",
-            "x1": "1",
-            "y0": "0",
-            "y1": "0.34"
+            "x0": 0.42,
+            "x1": 1,
+            "y0": 0,
+            "y1": 0.34
           }
         },
         "w_mouthside_alpha": {
           "mapping": {
             "type": "gauss",
-            "mean": "1",
-            "variance": "0.035",
-            "value": "0.35"
+            "mean": 1,
+            "variance": 0.035,
+            "value": 0.35
           }
         },
         "w_crowfeet_alpha": {
           "mapping": {
             "type": "sine",
-            "x0": "0",
-            "x1": "0.5",
-            "y0": "0",
-            "y1": "1"
+            "x0": 0,
+            "x1": 0.5,
+            "y0": 0,
+            "y1": 1
           }
         },
         "w_crowfeet1_inner": {
           "mapping": {
             "type": "polynomial",
-            "x0": "0",
+            "x0": 0,
             "exponents": [
-              "0",
-              "1.15",
-              "-6.82",
-              "7.78",
-              "6",
-              "-7.2"
+              0,
+              1.15,
+              -6.82,
+              7.78,
+              6,
+              -7.2
             ]
           }
         },
         "w_crowfeet1_outer": {
           "mapping": {
             "type": "polynomial",
-            "x0": "0",
+            "x0": 0,
             "exponents": [
-              "0",
-              "0",
-              "0.5",
-              "0.43"
+              0,
+              0,
+              0.5,
+              0.43
             ]
           }
         },
         "w_crowfeet2_outer": {
           "mapping": {
             "type": "polynomial",
-            "x0": "0",
+            "x0": 0,
             "exponents": [
-              "0",
-              "0.16",
-              "0.11",
-              "0.37"
+              0,
+              0.16,
+              0.11,
+              0.37
             ]
           }
         },
         "w_crowfeet2_inner": {
           "mapping": {
             "type": "polynomial",
-            "x0": "0",
+            "x0": 0,
             "exponents": [
-              "0",
-              "-0.16",
-              "-0.03",
-              "3.15",
-              "-2.03"
+              0,
+              -0.16,
+              -0.03,
+              3.15,
+              -2.03
             ]
           }
         },
         "h_teethupper": {
-          "priority": "5",
+          "priority": 5,
           "mapping": {
             "type": "sine",
-            "x0": "0.75",
-            "x1": "1",
-            "y0": "0",
-            "y1": "0.22"
+            "x0": 0.75,
+            "x1": 1,
+            "y0": 0,
+            "y1": 0.22
           }
         },
         "h_teethlower": {
           "mapping": {
             "type": "sine",
-            "x0": "0.75",
-            "x1": "1",
-            "y0": "0",
-            "y1": "0.43"
+            "x0": 0.75,
+            "x1": 1,
+            "y0": 0,
+            "y1": 0.43
           }
         }
       }
@@ -606,343 +1120,343 @@
     "surprise": {
       "influences": {
         "m0": {
-          "priority": "1",
+          "priority": 1,
           "mapping": {
             "type": "polynomial",
-            "x0": "0",
+            "x0": 0,
             "exponents": [
-              "0"
+              0
             ]
           }
         },
         "m1": {
-          "priority": "3",
+          "priority": 3,
           "mapping": {
             "type": "sine",
-            "x0": "0.25",
-            "x1": "0.5",
-            "y0": "0",
-            "y1": "0.26"
+            "x0": 0.25,
+            "x1": 0.5,
+            "y0": 0,
+            "y1": 0.26
           }
         },
         "m2": {
-          "priority": "3",
+          "priority": 3,
           "mapping": {
             "type": "polynomial",
-            "x0": "0",
+            "x0": 0,
             "exponents": [
-              "0",
-              "-0.101",
-              "2.274",
-              "-1.173"
+              0,
+              -0.101,
+              2.274,
+              -1.173
             ]
           }
         },
         "m3": {
-          "priority": "3",
+          "priority": 3,
           "mapping": {
             "type": "sine",
-            "x0": "0.25",
-            "x1": "0.5",
-            "y0": "0",
-            "y1": "0.19"
+            "x0": 0.25,
+            "x1": 0.5,
+            "y0": 0,
+            "y1": 0.19
           }
         },
         "m041": {
-          "priority": "3",
+          "priority": 3,
           "mapping": {
             "type": "sine",
-            "x0": "0.0",
-            "x1": "0.83",
-            "y0": "0",
-            "y1": "1"
+            "x0": 0,
+            "x1": 0.83,
+            "y0": 0,
+            "y1": 1
           }
         },
         "m042": {
-          "priority": "5",
+          "priority": 5,
           "mapping": {
             "type": "polynomial",
-            "x0": "0",
+            "x0": 0,
             "exponents": [
-              "0"
+              0
             ]
           }
         },
         "m5": {
-          "priority": "6",
+          "priority": 6,
           "mapping": {
             "type": "polynomial",
-            "x0": "0",
+            "x0": 0,
             "exponents": [
-              "0"
+              0
             ]
           }
         },
         "m6": {
           "mapping": {
             "type": "sine",
-            "x0": "0.18",
-            "x1": "0.95",
-            "y0": "0",
-            "y1": "0.41"
+            "x0": 0.18,
+            "x1": 0.95,
+            "y0": 0,
+            "y1": 0.41
           }
         },
         "m7": {
-          "priority": "15",
+          "priority": 15,
           "mapping": {
             "type": "polynomial",
-            "x0": "0",
+            "x0": 0,
             "exponents": [
-              "0"
+              0
             ]
           }
         },
         "m10": {
           "mapping": {
             "type": "sine",
-            "x0": "0.5",
-            "x1": "0.9",
-            "y0": "0",
-            "y1": "0.34"
+            "x0": 0.5,
+            "x1": 0.9,
+            "y0": 0,
+            "y1": 0.34
           }
         },
         "m11": {
           "mapping": {
             "type": "polynomial",
-            "x0": "0",
+            "x0": 0,
             "exponents": [
-              "1.66",
-              "-3.49",
-              "2.4"
+              1.66,
+              -3.49,
+              2.4
             ]
           }
         },
         "m15": {
           "mapping": {
             "type": "sine",
-            "x0": "0.4",
-            "x1": "1.0",
-            "y0": "0",
-            "y1": "0.65"
+            "x0": 0.4,
+            "x1": 1,
+            "y0": 0,
+            "y1": 0.65
           }
         },
         "m16": {
-          "priority": "3",
+          "priority": 3,
           "mapping": {
             "type": "sine",
-            "x0": "0",
-            "x1": "0.25",
-            "y0": "0",
-            "y1": "0.11"
+            "x0": 0,
+            "x1": 0.25,
+            "y0": 0,
+            "y1": 0.11
           }
         },
         "h_meb6": {
-          "priority": "3",
+          "priority": 3,
           "mapping": {
             "type": "polynomial",
-            "x0": "0",
+            "x0": 0,
             "exponents": [
-              "0"
+              0
             ]
           }
         },
         "h_meb7": {
-          "priority": "3",
+          "priority": 3,
           "mapping": {
             "type": "polynomial",
-            "x0": "0",
+            "x0": 0,
             "exponents": [
-              "0"
+              0
             ]
           }
         },
         "h_mey8": {
-          "priority": "2",
+          "priority": 2,
           "mapping": {
             "type": "polynomial",
-            "x0": "0",
+            "x0": 0,
             "exponents": [
-              "0"
+              0
             ]
           }
         },
         "w_crowfeet_alpha": {
-          "priority": "50",
+          "priority": 50,
           "mapping": {
             "type": "polynomial",
-            "x0": "0",
+            "x0": 0,
             "exponents": [
-              "0"
+              0
             ]
           }
         },
         "h_mey12": {
-          "priority": "3",
+          "priority": 3,
           "mapping": {
             "type": "polynomial",
-            "x0": "0",
+            "x0": 0,
             "exponents": [
-              "0"
+              0
             ]
           }
         },
         "w_forehead1_m2": {
           "mapping": {
             "type": "polynomial",
-            "x0": "0",
+            "x0": 0,
             "exponents": [
-              "0",
-              "1.54",
-              "-3.14",
-              "1.6"
+              0,
+              1.54,
+              -3.14,
+              1.6
             ]
           }
         },
         "w_forehead_alpha": {
           "mapping": {
             "type": "polynomial",
-            "x0": "0",
+            "x0": 0,
             "exponents": [
-              "0",
-              "1.68",
-              "-2.07",
-              "1.39"
+              0,
+              1.68,
+              -2.07,
+              1.39
             ]
           }
         },
         "w_forehead1_m1": {
           "mapping": {
             "type": "sine",
-            "x0": "0",
-            "x1": "0.25",
-            "y0": "0",
-            "y1": "0.06"
+            "x0": 0,
+            "x1": 0.25,
+            "y0": 0,
+            "y1": 0.06
           }
         },
         "w_forehead1_m4": {
           "mapping": {
             "type": "sine",
-            "x0": "0",
-            "x1": "0.25",
-            "y0": "0",
-            "y1": "-0.17"
+            "x0": 0,
+            "x1": 0.25,
+            "y0": 0,
+            "y1": -0.17
           }
         },
         "w_forehead1_m5": {
           "mapping": {
             "type": "sine",
-            "x0": "0",
-            "x1": "0.25",
-            "y0": "0",
-            "y1": "-0.10"
+            "x0": 0,
+            "x1": 0.25,
+            "y0": 0,
+            "y1": -0.1
           }
         },
         "w_beloweye_m2": {
-          "priority": "2",
+          "priority": 2,
           "mapping": {
             "type": "sine",
-            "x0": "0",
-            "x1": "1",
-            "y0": "0",
-            "y1": "0.68"
+            "x0": 0,
+            "x1": 1,
+            "y0": 0,
+            "y1": 0.68
           }
         },
         "w_beloweye_m3": {
-          "priority": "2",
+          "priority": 2,
           "mapping": {
             "type": "sine",
-            "x0": "0",
-            "x1": "1",
-            "y0": "0",
-            "y1": "0.68"
+            "x0": 0,
+            "x1": 1,
+            "y0": 0,
+            "y1": 0.68
           }
         },
         "w_beloweye_m4": {
-          "priority": "2",
+          "priority": 2,
           "mapping": {
             "type": "polynomial",
-            "x0": "0",
+            "x0": 0,
             "exponents": [
-              "0"
+              0
             ]
           }
         },
         "w_mouthside_m1": {
-          "priority": "2",
+          "priority": 2,
           "mapping": {
             "type": "polynomial",
-            "x0": "0",
+            "x0": 0,
             "exponents": [
-              "0"
+              0
             ]
           }
         },
         "w_mouthside_m2": {
-          "priority": "2",
+          "priority": 2,
           "mapping": {
             "type": "polynomial",
-            "x0": "0",
+            "x0": 0,
             "exponents": [
-              "0"
+              0
             ]
           }
         },
         "w_mouthside_m3": {
-          "priority": "2",
+          "priority": 2,
           "mapping": {
             "type": "polynomial",
-            "x0": "0",
+            "x0": 0,
             "exponents": [
-              "0"
+              0
             ]
           }
         },
         "w_mouthside_m6": {
-          "priority": "10",
+          "priority": 10,
           "mapping": {
             "type": "polynomial",
-            "x0": "0",
+            "x0": 0,
             "exponents": [
-              "0"
+              0
             ]
           }
         },
         "w_betweenbrows_m1": {
-          "priority": "2",
+          "priority": 2,
           "mapping": {
             "type": "polynomial",
-            "x0": "0",
+            "x0": 0,
             "exponents": [
-              "0"
+              0
             ]
           }
         },
         "w_abovebrow_alpha": {
-          "priority": "200",
+          "priority": 200,
           "mapping": {
             "type": "polynomial",
-            "x0": "0",
+            "x0": 0,
             "exponents": [
-              "0"
+              0
             ]
           }
         },
         "h_teethupper": {
           "mapping": {
             "type": "sine",
-            "x0": "0.4",
-            "x1": "0.75",
-            "y0": "0",
-            "y1": "0.60"
+            "x0": 0.4,
+            "x1": 0.75,
+            "y0": 0,
+            "y1": 0.6
           }
         },
         "h_teethlower": {
           "mapping": {
             "type": "sine",
-            "x0": "0.25",
-            "x1": "1",
-            "y0": "0",
-            "y1": "0.9"
+            "x0": 0.25,
+            "x1": 1,
+            "y0": 0,
+            "y1": 0.9
           }
         }
       }
@@ -950,358 +1464,358 @@
     "fear": {
       "influences": {
         "m0": {
-          "priority": "2",
+          "priority": 2,
           "mapping": {
             "type": "polynomial",
-            "x0": "0",
+            "x0": 0,
             "exponents": [
-              "0.0029",
-              "2.2838",
-              "-4.1",
-              "2.4"
+              0.0029,
+              2.2838,
+              -4.1,
+              2.4
             ]
           }
         },
         "m1": {
-          "priority": "2",
+          "priority": 2,
           "mapping": {
             "type": "polynomial",
-            "x0": "0",
+            "x0": 0,
             "exponents": [
-              "0.0019",
-              "2.6838",
-              "-4.5",
-              "2.81"
+              0.0019,
+              2.6838,
+              -4.5,
+              2.81
             ]
           }
         },
         "m2": {
-          "priority": "10",
+          "priority": 10,
           "mapping": {
             "type": "sine",
-            "x0": "0.5",
-            "x1": "0.75",
-            "y0": "0",
-            "y1": "0.66"
+            "x0": 0.5,
+            "x1": 0.75,
+            "y0": 0,
+            "y1": 0.66
           }
         },
         "m3": {
-          "priority": "8",
+          "priority": 8,
           "mapping": {
             "type": "polynomial",
-            "x0": "0",
+            "x0": 0,
             "exponents": [
-              "0.0002",
-              "1.396",
-              "-0.72"
+              0.0002,
+              1.396,
+              -0.72
             ]
           }
         },
         "m041": {
           "mapping": {
             "type": "sine",
-            "x0": "0.3",
-            "x1": "0.9",
-            "y0": "0",
-            "y1": "0.79"
+            "x0": 0.3,
+            "x1": 0.9,
+            "y0": 0,
+            "y1": 0.79
           }
         },
         "m6": {
           "mapping": {
             "type": "sine",
-            "x0": "0.25",
-            "x1": "0.85",
-            "y0": "0",
-            "y1": "0.37"
+            "x0": 0.25,
+            "x1": 0.85,
+            "y0": 0,
+            "y1": 0.37
           }
         },
         "m7": {
-          "priority": "4",
+          "priority": 4,
           "mapping": {
             "type": "polynomial",
-            "x0": "0",
+            "x0": 0,
             "exponents": [
-              "0"
+              0
             ]
           }
         },
         "m8": {
-          "priority": "2",
+          "priority": 2,
           "mapping": {
             "type": "sine",
-            "x0": "0.75",
-            "x1": "1",
-            "y0": "0",
-            "y1": "0.61"
+            "x0": 0.75,
+            "x1": 1,
+            "y0": 0,
+            "y1": 0.61
           }
         },
         "m10": {
           "mapping": {
             "type": "sine",
-            "x0": "0.75",
-            "x1": "1",
-            "y0": "0",
-            "y1": "1"
+            "x0": 0.75,
+            "x1": 1,
+            "y0": 0,
+            "y1": 1
           }
         },
         "m11": {
           "mapping": {
             "type": "polynomial",
-            "x0": "0",
+            "x0": 0,
             "exponents": [
-              "0",
-              "1.678",
-              "-3.531",
-              "2.453"
+              0,
+              1.678,
+              -3.531,
+              2.453
             ]
           }
         },
         "m12": {
           "mapping": {
             "type": "sine",
-            "x0": "0.25",
-            "x1": "0.5",
-            "y0": "0",
-            "y1": "0.7"
+            "x0": 0.25,
+            "x1": 0.5,
+            "y0": 0,
+            "y1": 0.7
           }
         },
         "m14": {
-          "priority": "2",
+          "priority": 2,
           "mapping": {
             "type": "sine",
-            "x0": "0.75",
-            "x1": "1",
-            "y0": "0",
-            "y1": "1"
+            "x0": 0.75,
+            "x1": 1,
+            "y0": 0,
+            "y1": 1
           }
         },
         "m15": {
           "mapping": {
             "type": "sine",
-            "x0": "0.25",
-            "x1": "0.75",
-            "y0": "0",
-            "y1": "0.36"
+            "x0": 0.25,
+            "x1": 0.75,
+            "y0": 0,
+            "y1": 0.36
           }
         },
         "m16": {
           "mapping": {
             "type": "sine",
-            "x0": "0.25",
-            "x1": "0.5",
-            "y0": "0",
-            "y1": "0.09"
+            "x0": 0.25,
+            "x1": 0.5,
+            "y0": 0,
+            "y1": 0.09
           }
         },
         "h_meb6": {
           "mapping": {
             "type": "sine",
-            "x0": "0",
-            "x1": "0.25",
-            "y0": "0",
-            "y1": "0.40"
+            "x0": 0,
+            "x1": 0.25,
+            "y0": 0,
+            "y1": 0.4
           }
         },
         "h_meb7": {
-          "priority": "2",
+          "priority": 2,
           "mapping": {
             "type": "polynomial",
-            "x0": "0",
+            "x0": 0,
             "exponents": [
-              "0.0014",
-              "3.2",
-              "-6.5486",
-              "4.2"
+              0.0014,
+              3.2,
+              -6.5486,
+              4.2
             ]
           }
         },
         "m5": {
-          "priority": "3",
+          "priority": 3,
           "mapping": {
             "type": "polynomial",
-            "x0": "0",
+            "x0": 0,
             "exponents": [
-              "0"
+              0
             ]
           }
         },
         "m042": {
-          "priority": "3",
+          "priority": 3,
           "mapping": {
             "type": "polynomial",
-            "x0": "0",
+            "x0": 0,
             "exponents": [
-              "0"
+              0
             ]
           }
         },
         "h_mey12": {
-          "priority": "10",
+          "priority": 10,
           "mapping": {
             "type": "polynomial",
-            "x0": "0",
+            "x0": 0,
             "exponents": [
-              "0"
+              0
             ]
           }
         },
         "h_mey8": {
-          "priority": "3",
+          "priority": 3,
           "mapping": {
             "type": "polynomial",
-            "x0": "0",
+            "x0": 0,
             "exponents": [
-              "0"
+              0
             ]
           }
         },
         "w_forehead1_m1": {
           "mapping": {
             "type": "sine",
-            "x0": "0.75",
-            "x1": "1",
-            "y0": "0",
-            "y1": "0.07"
+            "x0": 0.75,
+            "x1": 1,
+            "y0": 0,
+            "y1": 0.07
           }
         },
         "w_forehead1_m2": {
           "mapping": {
             "type": "polynomial",
-            "x0": "0",
+            "x0": 0,
             "exponents": [
-              "0",
-              "1.28",
-              "-2",
-              "1.12"
+              0,
+              1.28,
+              -2,
+              1.12
             ]
           }
         },
         "w_forehead1_m4": {
           "mapping": {
             "type": "polynomial",
-            "x0": "0",
+            "x0": 0,
             "exponents": [
-              "0",
-              "-7.27",
-              "16.13",
-              "-8.85"
+              0,
+              -7.27,
+              16.13,
+              -8.85
             ]
           }
         },
         "w_forehead1_m5": {
           "mapping": {
             "type": "sine",
-            "x0": "0.5",
-            "x1": "0.75",
-            "y0": "0",
-            "y1": "-0.5"
+            "x0": 0.5,
+            "x1": 0.75,
+            "y0": 0,
+            "y1": -0.5
           }
         },
         "w_forehead_alpha": {
           "mapping": {
             "type": "polynomial",
-            "x0": "0",
+            "x0": 0,
             "exponents": [
-              "0",
-              "0.39",
-              "0.74",
-              "-0.53"
+              0,
+              0.39,
+              0.74,
+              -0.53
             ]
           }
         },
         "w_betweenbrows_m1": {
           "mapping": {
             "type": "polynomial",
-            "x0": "0",
+            "x0": 0,
             "exponents": [
-              "0",
-              "1.09",
-              "-2.8571",
-              "1.65"
+              0,
+              1.09,
+              -2.8571,
+              1.65
             ]
           }
         },
         "w_betweenbrows_alpha": {
           "mapping": {
             "type": "sine",
-            "x0": "0.05",
-            "x1": "0.75",
-            "y0": "0",
-            "y1": "1"
+            "x0": 0.05,
+            "x1": 0.75,
+            "y0": 0,
+            "y1": 1
           }
         },
         "w_mouthside_m1": {
           "mapping": {
             "type": "sine",
-            "x0": "0.25",
-            "x1": "0.75",
-            "y0": "0",
-            "y1": "0.78"
+            "x0": 0.25,
+            "x1": 0.75,
+            "y0": 0,
+            "y1": 0.78
           }
         },
         "w_mouthside_m2": {
           "mapping": {
             "type": "sine",
-            "x0": "0.5",
-            "x1": "1",
-            "y0": "0",
-            "y1": "0.61"
+            "x0": 0.5,
+            "x1": 1,
+            "y0": 0,
+            "y1": 0.61
           }
         },
         "w_mouthside_m3": {
           "mapping": {
             "type": "sine",
-            "x0": "0.25",
-            "x1": "0.75",
-            "y0": "0",
-            "y1": "0.64"
+            "x0": 0.25,
+            "x1": 0.75,
+            "y0": 0,
+            "y1": 0.64
           }
         },
         "w_mouthside_alpha": {
           "mapping": {
             "type": "sine",
-            "x0": "0.20",
-            "x1": "0.8",
-            "y0": "0",
-            "y1": "1"
+            "x0": 0.2,
+            "x1": 0.8,
+            "y0": 0,
+            "y1": 1
           }
         },
         "w_abovebrow_alpha": {
-          "priority": "200",
+          "priority": 200,
           "mapping": {
             "type": "polynomial",
-            "x0": "0",
+            "x0": 0,
             "exponents": [
-              "0"
+              0
             ]
           }
         },
         "w_crowfeet_alpha": {
-          "priority": "50",
+          "priority": 50,
           "mapping": {
             "type": "polynomial",
-            "x0": "0",
+            "x0": 0,
             "exponents": [
-              "0"
+              0
             ]
           }
         },
         "h_teethupper": {
           "mapping": {
             "type": "sine",
-            "x0": "0.4",
-            "x1": "0.75",
-            "y0": "0",
-            "y1": "0.39"
+            "x0": 0.4,
+            "x1": 0.75,
+            "y0": 0,
+            "y1": 0.39
           }
         },
         "h_teethlower": {
           "mapping": {
             "type": "sine",
-            "x0": "0.3",
-            "x1": "1",
-            "y0": "0",
-            "y1": "0.44"
+            "x0": 0.3,
+            "x1": 1,
+            "y0": 0,
+            "y1": 0.44
           }
         }
       }
@@ -1311,470 +1825,470 @@
         "m0": {
           "mapping": {
             "type": "polynomial",
-            "x0": "0",
+            "x0": 0,
             "exponents": [
-              "0",
-              "1.8867",
-              "-7.8267",
-              "11.4134",
-              "-5.3334"
+              0,
+              1.8867,
+              -7.8267,
+              11.4134,
+              -5.3334
             ]
           }
         },
         "m1": {
           "mapping": {
             "type": "sine",
-            "x0": "0.75",
-            "x1": "1",
-            "y0": "0",
-            "y1": "0.46"
+            "x0": 0.75,
+            "x1": 1,
+            "y0": 0,
+            "y1": 0.46
           }
         },
         "m2": {
-          "priority": "8",
+          "priority": 8,
           "mapping": {
             "type": "gauss",
-            "mean": "0.74",
-            "variance": "0.009",
-            "value": "0.068"
+            "mean": 0.74,
+            "variance": 0.009,
+            "value": 0.068
           }
         },
         "m3": {
-          "priority": "10",
+          "priority": 10,
           "mapping": {
             "type": "polynomial",
-            "x0": "0",
+            "x0": 0,
             "exponents": [
-              "-0.0099",
-              "1.399",
-              "-1.8347",
-              "0.8383"
+              -0.0099,
+              1.399,
+              -1.8347,
+              0.8383
             ]
           }
         },
         "m042": {
-          "priority": "5",
+          "priority": 5,
           "mapping": {
             "type": "sine",
-            "x0": "0.4",
-            "x1": "0.75",
-            "y0": "0",
-            "y1": "0.72"
+            "x0": 0.4,
+            "x1": 0.75,
+            "y0": 0,
+            "y1": 0.72
           }
         },
         "m5": {
-          "priority": "4",
+          "priority": 4,
           "mapping": {
             "type": "sine",
-            "x0": "0.15",
-            "x1": "0.5",
-            "y0": "0",
-            "y1": "0.32"
+            "x0": 0.15,
+            "x1": 0.5,
+            "y0": 0,
+            "y1": 0.32
           }
         },
         "m6": {
           "mapping": {
             "type": "sine",
-            "x0": "0.43",
-            "x1": "0.95",
-            "y0": "0",
-            "y1": "0.37"
+            "x0": 0.43,
+            "x1": 0.95,
+            "y0": 0,
+            "y1": 0.37
           }
         },
         "m7": {
           "mapping": {
             "type": "sine",
-            "x0": "0.43",
-            "x1": "0.97",
-            "y0": "0",
-            "y1": "1"
+            "x0": 0.43,
+            "x1": 0.97,
+            "y0": 0,
+            "y1": 1
           }
         },
         "m8": {
           "mapping": {
             "type": "sine",
-            "x0": "0",
-            "x1": "0.75",
-            "y0": "0",
-            "y1": "0.24"
+            "x0": 0,
+            "x1": 0.75,
+            "y0": 0,
+            "y1": 0.24
           }
         },
         "m10": {
           "mapping": {
             "type": "sine",
-            "x0": "0.5",
-            "x1": "0.75",
-            "y0": "0",
-            "y1": "1"
+            "x0": 0.5,
+            "x1": 0.75,
+            "y0": 0,
+            "y1": 1
           }
         },
         "m11": {
           "mapping": {
             "type": "polynomial",
-            "x0": "0",
+            "x0": 0,
             "exponents": [
-              "0.0097",
-              "0.2743",
-              "0.6857"
+              0.0097,
+              0.2743,
+              0.6857
             ]
           }
         },
         "m12": {
           "mapping": {
             "type": "sine",
-            "x0": "0.4",
-            "x1": "0.9",
-            "y0": "0",
-            "y1": "1"
+            "x0": 0.4,
+            "x1": 0.9,
+            "y0": 0,
+            "y1": 1
           }
         },
         "m15": {
           "mapping": {
             "type": "sine",
-            "x0": "0.46",
-            "x1": "1",
-            "y0": "0",
-            "y1": "0.44"
+            "x0": 0.46,
+            "x1": 1,
+            "y0": 0,
+            "y1": 0.44
           }
         },
         "m16": {
           "mapping": {
             "type": "gauss",
-            "mean": "0.45",
-            "variance": "0.02",
-            "value": "0.077"
+            "mean": 0.45,
+            "variance": 0.02,
+            "value": 0.077
           }
         },
         "h_meb6": {
           "mapping": {
             "type": "polynomial",
-            "x0": "0",
+            "x0": 0,
             "exponents": [
-              "0",
-              "1.7631",
-              "-4.7096",
-              "3.4407",
-              "3.3372",
-              "-3.2895"
+              0,
+              1.7631,
+              -4.7096,
+              3.4407,
+              3.3372,
+              -3.2895
             ]
           }
         },
         "h_meb7": {
-          "priority": "5",
+          "priority": 5,
           "mapping": {
             "type": "polynomial",
-            "x0": "0",
+            "x0": 0,
             "exponents": [
-              "0.0069",
-              "2.4705",
-              "-1.8971",
-              "0.4267"
+              0.0069,
+              2.4705,
+              -1.8971,
+              0.4267
             ]
           }
         },
         "h_mey12": {
           "mapping": {
             "type": "sine",
-            "x0": "0.75",
-            "x1": "1",
-            "y0": "0",
-            "y1": "0.27"
+            "x0": 0.75,
+            "x1": 1,
+            "y0": 0,
+            "y1": 0.27
           }
         },
         "h_mey8": {
           "mapping": {
             "type": "sine",
-            "x0": "0.75",
-            "x1": "1",
-            "y0": "0",
-            "y1": "0.3"
+            "x0": 0.75,
+            "x1": 1,
+            "y0": 0,
+            "y1": 0.3
           }
         },
         "m9": {
-          "priority": "1",
+          "priority": 1,
           "mapping": {
             "type": "sine",
-            "x0": "0.6",
-            "x1": "1",
-            "y0": "0",
-            "y1": "0.33"
+            "x0": 0.6,
+            "x1": 1,
+            "y0": 0,
+            "y1": 0.33
           }
         },
         "w_abovebrow_alpha": {
           "mapping": {
             "type": "sine",
-            "x0": "0.60",
-            "x1": "1",
-            "y0": "0",
-            "y1": "0.55"
+            "x0": 0.6,
+            "x1": 1,
+            "y0": 0,
+            "y1": 0.55
           }
         },
         "w_abovebrow_m1": {
           "mapping": {
             "type": "sine",
-            "x0": "0",
-            "x1": "1",
-            "y0": "0",
-            "y1": ".5"
+            "x0": 0,
+            "x1": 1,
+            "y0": 0,
+            "y1": 0.5
           }
         },
         "w_abovebrow_m2": {
           "mapping": {
             "type": "sine",
-            "x0": ".5",
-            "x1": "1",
-            "y0": "0",
-            "y1": "-0.5"
+            "x0": 0.5,
+            "x1": 1,
+            "y0": 0,
+            "y1": -0.5
           }
         },
         "w_beloweye_alpha": {
           "mapping": {
             "type": "sine",
-            "x0": "0.2",
-            "x1": "1",
-            "y0": "0",
-            "y1": "1"
+            "x0": 0.2,
+            "x1": 1,
+            "y0": 0,
+            "y1": 1
           }
         },
         "w_beloweye_m1": {
           "mapping": {
             "type": "sine",
-            "x0": "0.75",
-            "x1": "1",
-            "y0": "0",
-            "y1": "0.20"
+            "x0": 0.75,
+            "x1": 1,
+            "y0": 0,
+            "y1": 0.2
           }
         },
         "w_beloweye_m2": {
           "mapping": {
             "type": "sine",
-            "x0": "0.25",
-            "x1": "1",
-            "y0": "0",
-            "y1": "1"
+            "x0": 0.25,
+            "x1": 1,
+            "y0": 0,
+            "y1": 1
           }
         },
         "w_beloweye_m3": {
           "mapping": {
             "type": "sine",
-            "x0": "0.3",
-            "x1": "0.75",
-            "y0": "0",
-            "y1": "0.67"
+            "x0": 0.3,
+            "x1": 0.75,
+            "y0": 0,
+            "y1": 0.67
           }
         },
         "w_beloweye_m4": {
           "mapping": {
             "type": "sine",
-            "x0": "0.5",
-            "x1": "1",
-            "y0": "0",
-            "y1": "0.8"
+            "x0": 0.5,
+            "x1": 1,
+            "y0": 0,
+            "y1": 0.8
           }
         },
         "w_betweenbrows_alpha": {
           "mapping": {
             "type": "sine",
-            "x0": "0.25",
-            "x1": "0.75",
-            "y0": "0",
-            "y1": "1"
+            "x0": 0.25,
+            "x1": 0.75,
+            "y0": 0,
+            "y1": 1
           }
         },
         "w_betweenbrows_m1": {
           "mapping": {
             "type": "gauss",
-            "mean": "0.8",
-            "variance": "0.04",
-            "value": "0.11"
+            "mean": 0.8,
+            "variance": 0.04,
+            "value": 0.11
           }
         },
         "w_chin_alpha": {
           "mapping": {
             "type": "sine",
-            "x0": "0.45",
-            "x1": "1",
-            "y0": "0",
-            "y1": "1"
+            "x0": 0.45,
+            "x1": 1,
+            "y0": 0,
+            "y1": 1
           }
         },
         "w_chin_m1": {
           "mapping": {
             "type": "gauss",
-            "mean": "0.75",
-            "variance": "0.01",
-            "value": "0.07"
+            "mean": 0.75,
+            "variance": 0.01,
+            "value": 0.07
           }
         },
         "w_chin_m2": {
           "mapping": {
             "type": "sine",
-            "x0": "0.45",
-            "x1": "1",
-            "y0": "0",
-            "y1": "0.76"
+            "x0": 0.45,
+            "x1": 1,
+            "y0": 0,
+            "y1": 0.76
           }
         },
         "w_forehead1_m1": {
           "mapping": {
             "type": "polynomial",
-            "x0": "0",
+            "x0": 0,
             "exponents": [
-              "0",
-              "1.29",
-              "-0.64",
-              "-0.21"
+              0,
+              1.29,
+              -0.64,
+              -0.21
             ]
           }
         },
         "w_forehead1_m2": {
           "mapping": {
             "type": "polynomial",
-            "x0": "0",
+            "x0": 0,
             "exponents": [
-              "0",
-              "0.6",
-              "-0.26",
-              "0"
+              0,
+              0.6,
+              -0.26,
+              0
             ]
           }
         },
         "w_forehead1_m4": {
           "mapping": {
             "type": "polynomial",
-            "x0": "0",
+            "x0": 0,
             "exponents": [
-              "0",
-              "-4.43",
-              "7.69",
-              "-3.47"
+              0,
+              -4.43,
+              7.69,
+              -3.47
             ]
           }
         },
         "w_forehead1_m5": {
           "mapping": {
             "type": "polynomial",
-            "x0": "0",
+            "x0": 0,
             "exponents": [
-              "0",
-              "-0.033",
-              "0.48",
-              "-0.75"
+              0,
+              -0.033,
+              0.48,
+              -0.75
             ]
           }
         },
         "w_forehead_alpha": {
           "mapping": {
             "type": "sine",
-            "x0": "0.25",
-            "x1": "1",
-            "y0": "0",
-            "y1": "1"
+            "x0": 0.25,
+            "x1": 1,
+            "y0": 0,
+            "y1": 1
           }
         },
         "w_mouthside_m1": {
           "mapping": {
             "type": "polynomial",
-            "x0": "0",
+            "x0": 0,
             "exponents": [
-              "0",
-              "0.19",
-              "0.034",
-              "0.53"
+              0,
+              0.19,
+              0.034,
+              0.53
             ]
           }
         },
         "w_mouthside_m2": {
           "mapping": {
             "type": "sine",
-            "x0": "0.545",
-            "x1": "1",
-            "y0": "0",
-            "y1": "0.80"
+            "x0": 0.545,
+            "x1": 1,
+            "y0": 0,
+            "y1": 0.8
           }
         },
         "w_mouthside_m3": {
           "mapping": {
             "type": "sine",
-            "x0": "0.2",
-            "x1": "1.2",
-            "y0": "0",
-            "y1": "1.05"
+            "x0": 0.2,
+            "x1": 1.2,
+            "y0": 0,
+            "y1": 1.05
           }
         },
         "w_mouthside_m4": {
-          "priority": "10",
+          "priority": 10,
           "mapping": {
             "type": "polynomial",
-            "x0": "0",
+            "x0": 0,
             "exponents": [
-              "0"
+              0
             ]
           }
         },
         "w_mouthside_alpha": {
           "mapping": {
             "type": "sine",
-            "x0": "0.25",
-            "x1": "1",
-            "y0": "0",
-            "y1": "1"
+            "x0": 0.25,
+            "x1": 1,
+            "y0": 0,
+            "y1": 1
           }
         },
         "w_noseside_alpha": {
           "mapping": {
             "type": "sine",
-            "x0": "0.75",
-            "x1": "1",
-            "y0": "0",
-            "y1": "1"
+            "x0": 0.75,
+            "x1": 1,
+            "y0": 0,
+            "y1": 1
           }
         },
         "w_noseside_m2": {
           "mapping": {
             "type": "sine",
-            "x0": "0.5",
-            "x1": "1",
-            "y0": "0",
-            "y1": "1"
+            "x0": 0.5,
+            "x1": 1,
+            "y0": 0,
+            "y1": 1
           }
         },
         "w_noseside_m3": {
           "mapping": {
             "type": "sine",
-            "x0": "0.5",
-            "x1": "1",
-            "y0": "0",
-            "y1": "1"
+            "x0": 0.5,
+            "x1": 1,
+            "y0": 0,
+            "y1": 1
           }
         },
         "h_teethupper": {
-          "priority": "3",
+          "priority": 3,
           "mapping": {
             "type": "sine",
-            "x0": "0.5",
-            "x1": "1",
-            "y0": "0",
-            "y1": "0.39"
+            "x0": 0.5,
+            "x1": 1,
+            "y0": 0,
+            "y1": 0.39
           }
         },
         "h_teethlower": {
-          "priority": "3",
+          "priority": 3,
           "mapping": {
             "type": "sine",
-            "x0": "0.4",
-            "x1": "1",
-            "y0": "0",
-            "y1": "0.42"
+            "x0": 0.4,
+            "x1": 1,
+            "y0": 0,
+            "y1": 0.42
           }
         },
         "w_crowfeet_alpha": {
-          "priority": "50",
+          "priority": 50,
           "mapping": {
             "type": "polynomial",
-            "x0": "0",
+            "x0": 0,
             "exponents": [
-              "0"
+              0
             ]
           }
         }
@@ -1785,384 +2299,384 @@
         "m0": {
           "mapping": {
             "type": "polynomial",
-            "x0": "-0.01",
+            "x0": -0.01,
             "exponents": [
-              "0.0077",
-              "1.7476",
-              "-2.3543",
-              "0.7467"
+              0.0077,
+              1.7476,
+              -2.3543,
+              0.7467
             ]
           }
         },
         "m2": {
           "mapping": {
             "type": "sine",
-            "x0": "0.75",
-            "x1": "1",
-            "y0": "0",
-            "y1": "0.59"
+            "x0": 0.75,
+            "x1": 1,
+            "y0": 0,
+            "y1": 0.59
           }
         },
         "m042": {
           "mapping": {
             "type": "polynomial",
-            "x0": "0",
+            "x0": 0,
             "exponents": [
-              "0",
-              "-0.116",
-              "3.063",
-              "-2.347"
+              0,
+              -0.116,
+              3.063,
+              -2.347
             ]
           }
         },
         "m5": {
           "mapping": {
             "type": "polynomial",
-            "x0": "0",
+            "x0": 0,
             "exponents": [
-              "0",
-              "0.44",
-              "3.347",
-              "-7.35",
-              "4.0533"
+              0,
+              0.44,
+              3.347,
+              -7.35,
+              4.0533
             ]
           }
         },
         "m6": {
           "mapping": {
             "type": "sine",
-            "x0": "0.6",
-            "x1": "1",
-            "y0": "0",
-            "y1": "0.43"
+            "x0": 0.6,
+            "x1": 1,
+            "y0": 0,
+            "y1": 0.43
           }
         },
         "m7": {
           "mapping": {
             "type": "sine",
-            "x0": "0.55",
-            "x1": "1",
-            "y0": "0",
-            "y1": "0.40"
+            "x0": 0.55,
+            "x1": 1,
+            "y0": 0,
+            "y1": 0.4
           }
         },
         "m8": {
           "mapping": {
             "type": "sine",
-            "x0": "0.5",
-            "x1": "0.8",
-            "y0": "0",
-            "y1": "0.32"
+            "x0": 0.5,
+            "x1": 0.8,
+            "y0": 0,
+            "y1": 0.32
           }
         },
         "m10": {
           "mapping": {
             "type": "sine",
-            "x0": "0.75",
-            "x1": "1",
-            "y0": "0",
-            "y1": "1"
+            "x0": 0.75,
+            "x1": 1,
+            "y0": 0,
+            "y1": 1
           }
         },
         "m11": {
-          "priority": "7",
+          "priority": 7,
           "mapping": {
             "type": "polynomial",
-            "x0": "0",
+            "x0": 0,
             "exponents": [
-              "0"
+              0
             ]
           }
         },
         "m12": {
-          "priority": "20",
+          "priority": 20,
           "mapping": {
             "type": "polynomial",
-            "x0": "0",
+            "x0": 0,
             "exponents": [
-              "0"
+              0
             ]
           }
         },
         "m16": {
           "mapping": {
             "type": "polynomial",
-            "x0": "-0.01",
+            "x0": -0.01,
             "exponents": [
-              "0.0031",
-              "0.7962",
-              "-1.1429",
-              "0.4267"
+              0.0031,
+              0.7962,
+              -1.1429,
+              0.4267
             ]
           }
         },
         "m15": {
-          "priority": "4",
+          "priority": 4,
           "mapping": {
             "type": "polynomial",
-            "x0": "0",
+            "x0": 0,
             "exponents": [
-              "0"
+              0
             ]
           }
         },
         "h_meb6": {
           "mapping": {
             "type": "sine",
-            "x0": "0",
-            "x1": "0.75",
-            "y0": "0",
-            "y1": "0.53"
+            "x0": 0,
+            "x1": 0.75,
+            "y0": 0,
+            "y1": 0.53
           }
         },
         "h_meb7": {
           "mapping": {
             "type": "sine",
-            "x0": "0.75",
-            "x1": "1",
-            "y0": "0",
-            "y1": "1"
+            "x0": 0.75,
+            "x1": 1,
+            "y0": 0,
+            "y1": 1
           }
         },
         "h_mli9": {
           "mapping": {
             "type": "sine",
-            "x0": "0.5",
-            "x1": "0.75",
-            "y0": "0",
-            "y1": "0.73"
+            "x0": 0.5,
+            "x1": 0.75,
+            "y0": 0,
+            "y1": 0.73
           }
         },
         "h_mli10": {
           "mapping": {
             "type": "sine",
-            "x0": "0.5",
-            "x1": "0.75",
-            "y0": "0",
-            "y1": "0.40"
+            "x0": 0.5,
+            "x1": 0.75,
+            "y0": 0,
+            "y1": 0.4
           }
         },
         "w_abovebrow_alpha": {
           "mapping": {
             "type": "sine",
-            "x0": "0.53",
-            "x1": "1",
-            "y0": "0",
-            "y1": "1"
+            "x0": 0.53,
+            "x1": 1,
+            "y0": 0,
+            "y1": 1
           }
         },
         "w_abovebrow_m1": {
           "mapping": {
             "type": "gauss",
-            "mean": "0.75",
-            "variance": "0.009",
-            "value": "-0.023"
+            "mean": 0.75,
+            "variance": 0.009,
+            "value": -0.023
           }
         },
         "w_abovebrow_m2": {
           "mapping": {
             "type": "gauss",
-            "mean": "0.75",
-            "variance": "0.009",
-            "value": "0.09"
+            "mean": 0.75,
+            "variance": 0.009,
+            "value": 0.09
           }
         },
         "w_beloweye_alpha": {
           "mapping": {
             "type": "sine",
-            "x0": "0",
-            "x1": "0.75",
-            "y0": "0",
-            "y1": "1"
+            "x0": 0,
+            "x1": 0.75,
+            "y0": 0,
+            "y1": 1
           }
         },
         "w_beloweye_m1": {
           "mapping": {
             "type": "sine",
-            "x0": "0.5",
-            "x1": "1",
-            "y0": "0",
-            "y1": "0.35"
+            "x0": 0.5,
+            "x1": 1,
+            "y0": 0,
+            "y1": 0.35
           }
         },
         "w_beloweye_m2": {
           "mapping": {
             "type": "polynomial",
-            "x0": "0",
+            "x0": 0,
             "exponents": [
-              "0",
-              "0.85",
-              "2.44",
-              "-2.88"
+              0,
+              0.85,
+              2.44,
+              -2.88
             ]
           }
         },
         "w_beloweye_m3": {
           "mapping": {
             "type": "gauss",
-            "mean": "0.65",
-            "variance": "0.03",
-            "value": "0.17"
+            "mean": 0.65,
+            "variance": 0.03,
+            "value": 0.17
           }
         },
         "w_betweenbrows_alpha": {
           "mapping": {
             "type": "sine",
-            "x0": "0.21",
-            "x1": "1",
-            "y0": "0",
-            "y1": "1"
+            "x0": 0.21,
+            "x1": 1,
+            "y0": 0,
+            "y1": 1
           }
         },
         "w_betweenbrows_m1": {
           "mapping": {
             "type": "sine",
-            "x0": "0.21",
-            "x1": "1",
-            "y0": "0",
-            "y1": "0.47"
+            "x0": 0.21,
+            "x1": 1,
+            "y0": 0,
+            "y1": 0.47
           }
         },
         "w_chin_alpha": {
           "mapping": {
             "type": "sine",
-            "x0": "0.3",
-            "x1": "1",
-            "y0": "0",
-            "y1": "1"
+            "x0": 0.3,
+            "x1": 1,
+            "y0": 0,
+            "y1": 1
           }
         },
         "w_chin_m2": {
           "mapping": {
             "type": "sine",
-            "x0": "0.25",
-            "x1": "0.75",
-            "y0": "0",
-            "y1": "0.23"
+            "x0": 0.25,
+            "x1": 0.75,
+            "y0": 0,
+            "y1": 0.23
           }
         },
         "w_mouthside_alpha": {
           "mapping": {
             "type": "sine",
-            "x0": "0",
-            "x1": "0.75",
-            "y0": "0",
-            "y1": "1"
+            "x0": 0,
+            "x1": 0.75,
+            "y0": 0,
+            "y1": 1
           }
         },
         "w_mouthside_m1": {
           "mapping": {
             "type": "polynomial",
-            "x0": "0",
+            "x0": 0,
             "exponents": [
-              "0",
-              "3.98",
-              "-7.14",
-              "4.16"
+              0,
+              3.98,
+              -7.14,
+              4.16
             ]
           }
         },
         "w_mouthside_m2": {
           "mapping": {
             "type": "sine",
-            "x0": "0",
-            "x1": "0.25",
-            "y0": "0",
-            "y1": "-0.13"
+            "x0": 0,
+            "x1": 0.25,
+            "y0": 0,
+            "y1": -0.13
           }
         },
         "w_mouthside_m4": {
           "mapping": {
             "type": "sine",
-            "x0": "0.5",
-            "x1": "1",
-            "y0": "0",
-            "y1": "0.88"
+            "x0": 0.5,
+            "x1": 1,
+            "y0": 0,
+            "y1": 0.88
           }
         },
         "w_mouthside_m5": {
           "mapping": {
             "type": "sine",
-            "x0": "0",
-            "x1": "0.25",
-            "y0": "0",
-            "y1": "-0.15"
+            "x0": 0,
+            "x1": 0.25,
+            "y0": 0,
+            "y1": -0.15
           }
         },
         "w_mouthside_m6": {
           "mapping": {
             "type": "polynomial",
-            "x0": "0",
+            "x0": 0,
             "exponents": [
-              "0",
-              "3.21",
-              "-4.98",
-              "2.77"
+              0,
+              3.21,
+              -4.98,
+              2.77
             ]
           }
         },
         "w_noseside_alpha": {
           "mapping": {
             "type": "sine",
-            "x0": "0.5",
-            "x1": "0.75",
-            "y0": "0",
-            "y1": "1"
+            "x0": 0.5,
+            "x1": 0.75,
+            "y0": 0,
+            "y1": 1
           }
         },
         "w_noseside_m1": {
           "mapping": {
             "type": "gauss",
-            "mean": "0.6",
-            "variance": "0.009",
-            "value": "0.2"
+            "mean": 0.6,
+            "variance": 0.009,
+            "value": 0.2
           }
         },
         "w_noseside_m2": {
           "mapping": {
             "type": "sine",
-            "x0": "0.5",
-            "x1": "0.75",
-            "y0": "0",
-            "y1": "0.41"
+            "x0": 0.5,
+            "x1": 0.75,
+            "y0": 0,
+            "y1": 0.41
           }
         },
         "w_noseside_m3": {
           "mapping": {
             "type": "sine",
-            "x0": "0.5",
-            "x1": "0.75",
-            "y0": "0",
-            "y1": "0.25"
+            "x0": 0.5,
+            "x1": 0.75,
+            "y0": 0,
+            "y1": 0.25
           }
         },
         "h_teethupper": {
-          "priority": "9",
+          "priority": 9,
           "mapping": {
             "type": "sine",
-            "x0": "0.67",
-            "x1": "1",
-            "y0": "0",
-            "y1": "0.37"
+            "x0": 0.67,
+            "x1": 1,
+            "y0": 0,
+            "y1": 0.37
           }
         },
         "h_teethlower": {
-          "priority": "9",
+          "priority": 9,
           "mapping": {
             "type": "sine",
-            "x0": "0.75",
-            "x1": "1",
-            "y0": "0",
-            "y1": "0.05"
+            "x0": 0.75,
+            "x1": 1,
+            "y0": 0,
+            "y1": 0.05
           }
         },
         "w_crowfeet_alpha": {
-          "priority": "50",
+          "priority": 50,
           "mapping": {
             "type": "polynomial",
-            "x0": "0",
+            "x0": 0,
             "exponents": [
-              "0"
+              0
             ]
           }
         }
@@ -2173,358 +2687,358 @@
         "m0": {
           "mapping": {
             "type": "sine",
-            "x0": "0.25",
-            "x1": "0.77",
-            "y0": "0",
-            "y1": "0.61"
+            "x0": 0.25,
+            "x1": 0.77,
+            "y0": 0,
+            "y1": 0.61
           }
         },
         "m1": {
           "mapping": {
             "type": "sine",
-            "x0": "0.48",
-            "x1": "0.77",
-            "y0": "0",
-            "y1": "0.45"
+            "x0": 0.48,
+            "x1": 0.77,
+            "y0": 0,
+            "y1": 0.45
           }
         },
         "m2": {
-          "priority": "20",
+          "priority": 20,
           "mapping": {
             "type": "sine",
-            "x0": "0.25",
-            "x1": "0.78",
-            "y0": "0",
-            "y1": "0.77"
+            "x0": 0.25,
+            "x1": 0.78,
+            "y0": 0,
+            "y1": 0.77
           }
         },
         "m041": {
           "mapping": {
             "type": "sine",
-            "x0": "0.40",
-            "x1": "1",
-            "y0": "0",
-            "y1": "0.7"
+            "x0": 0.4,
+            "x1": 1,
+            "y0": 0,
+            "y1": 0.7
           }
         },
         "m042": {
-          "priority": "8",
+          "priority": 8,
           "mapping": {
             "type": "gauss",
-            "mean": "0.25",
-            "variance": "0.01",
-            "value": "0.03"
+            "mean": 0.25,
+            "variance": 0.01,
+            "value": 0.03
           }
         },
         "m5": {
-          "priority": "3",
+          "priority": 3,
           "mapping": {
             "type": "polynomial",
-            "x0": "0",
+            "x0": 0,
             "exponents": [
-              "1.67",
-              "-3.13",
-              "1.6"
+              1.67,
+              -3.13,
+              1.6
             ]
           }
         },
         "m6": {
           "mapping": {
             "type": "polynomial",
-            "x0": "0",
+            "x0": 0,
             "exponents": [
-              "0",
-              "0.13",
-              "0.81",
-              "-0.37"
+              0,
+              0.13,
+              0.81,
+              -0.37
             ]
           }
         },
         "m7": {
           "mapping": {
             "type": "polynomial",
-            "x0": "0",
+            "x0": 0,
             "exponents": [
-              "0.12",
-              "2.05",
-              "-1.97"
+              0.12,
+              2.05,
+              -1.97
             ]
           }
         },
         "m11": {
           "mapping": {
             "type": "polynomial",
-            "x0": "0",
+            "x0": 0,
             "exponents": [
-              "0.02",
-              "0.97",
-              "0.09",
-              "-0.96"
+              0.02,
+              0.97,
+              0.09,
+              -0.96
             ]
           }
         },
         "m12": {
           "mapping": {
             "type": "sine",
-            "x0": "0.23",
-            "x1": "0.52",
-            "y0": "0",
-            "y1": "0.27"
+            "x0": 0.23,
+            "x1": 0.52,
+            "y0": 0,
+            "y1": 0.27
           }
         },
         "m15": {
           "mapping": {
             "type": "sine",
-            "x0": "0.25",
-            "x1": "0.75",
-            "y0": "0",
-            "y1": "0.45"
+            "x0": 0.25,
+            "x1": 0.75,
+            "y0": 0,
+            "y1": 0.45
           }
         },
         "h_meb6": {
           "mapping": {
             "type": "polynomial",
-            "x0": "0.01",
+            "x0": 0.01,
             "exponents": [
-              "0.02",
-              "2.09",
-              "-3.79",
-              "2.35"
+              0.02,
+              2.09,
+              -3.79,
+              2.35
             ]
           }
         },
         "h_meb7": {
           "mapping": {
             "type": "polynomial",
-            "x0": "0",
+            "x0": 0,
             "exponents": [
-              "2.06",
-              "-4.16",
-              "2.24"
+              2.06,
+              -4.16,
+              2.24
             ]
           }
         },
         "h_mey8": {
           "mapping": {
             "type": "polynomial",
-            "x0": "0",
+            "x0": 0,
             "exponents": [
-              "1.04",
-              "-2.55",
-              "1.87"
+              1.04,
+              -2.55,
+              1.87
             ]
           }
         },
         "h_mli9": {
           "mapping": {
             "type": "polynomial",
-            "x0": "0",
+            "x0": 0,
             "exponents": [
-              "-0.01",
-              "2.30",
-              "-6.63",
-              "5.33"
+              -0.01,
+              2.3,
+              -6.63,
+              5.33
             ]
           }
         },
         "h_mey12": {
-          "priority": "5",
+          "priority": 5,
           "mapping": {
             "type": "polynomial",
-            "x0": "0",
+            "x0": 0,
             "exponents": [
-              "0"
+              0
             ]
           }
         },
         "w_beloweye_alpha": {
           "mapping": {
             "type": "sine",
-            "x0": "0.05",
-            "x1": "0.25",
-            "y0": "0",
-            "y1": "0.8"
+            "x0": 0.05,
+            "x1": 0.25,
+            "y0": 0,
+            "y1": 0.8
           }
         },
         "w_beloweye_m2": {
           "mapping": {
             "type": "polynomial",
-            "x0": "0",
+            "x0": 0,
             "exponents": [
-              "0",
-              "2.43",
-              "-3.43",
-              "1.55"
+              0,
+              2.43,
+              -3.43,
+              1.55
             ]
           }
         },
         "w_beloweye_m3": {
           "mapping": {
             "type": "sine",
-            "x0": "0.25",
-            "x1": "0.9",
-            "y0": "0",
-            "y1": "0.84"
+            "x0": 0.25,
+            "x1": 0.9,
+            "y0": 0,
+            "y1": 0.84
           }
         },
         "w_beloweye_m4": {
           "mapping": {
             "type": "sine",
-            "x0": "0.5",
-            "x1": "1",
-            "y0": "0",
-            "y1": "0.52"
+            "x0": 0.5,
+            "x1": 1,
+            "y0": 0,
+            "y1": 0.52
           }
         },
         "w_betweenbrows_alpha": {
           "mapping": {
             "type": "sine",
-            "x0": "0.25",
-            "x1": "1.2",
-            "y0": "0",
-            "y1": "1.1"
+            "x0": 0.25,
+            "x1": 1.2,
+            "y0": 0,
+            "y1": 1.1
           }
         },
         "w_betweenbrows_m1": {
           "mapping": {
             "type": "polynomial",
-            "x0": "0.01",
+            "x0": 0.01,
             "exponents": [
-              "0",
-              "1.46",
-              "-2.48",
-              "1.55"
+              0,
+              1.46,
+              -2.48,
+              1.55
             ]
           }
         },
         "w_mouthside_alpha": {
           "mapping": {
             "type": "sine",
-            "x0": "0.2",
-            "x1": "0.75",
-            "y0": "0",
-            "y1": "1"
+            "x0": 0.2,
+            "x1": 0.75,
+            "y0": 0,
+            "y1": 1
           }
         },
         "w_mouthside_m1": {
           "mapping": {
             "type": "sine",
-            "x0": "0.25",
-            "x1": "0.5",
-            "y0": "0",
-            "y1": "0.81"
+            "x0": 0.25,
+            "x1": 0.5,
+            "y0": 0,
+            "y1": 0.81
           }
         },
         "w_mouthside_m3": {
           "mapping": {
             "type": "sine",
-            "x0": "0",
-            "x1": "0.5",
-            "y0": "0",
-            "y1": "0.23"
+            "x0": 0,
+            "x1": 0.5,
+            "y0": 0,
+            "y1": 0.23
           }
         },
         "w_mouthside_m4": {
           "mapping": {
             "type": "gauss",
-            "mean": "1",
-            "variance": "0.06",
-            "value": "0.42"
+            "mean": 1,
+            "variance": 0.06,
+            "value": 0.42
           }
         },
         "w_abovebrow_m1": {
           "mapping": {
             "type": "sine",
-            "x0": "0.5",
-            "x1": "1",
-            "y0": "0",
-            "y1": "-0.25"
+            "x0": 0.5,
+            "x1": 1,
+            "y0": 0,
+            "y1": -0.25
           }
         },
         "w_abovebrow_m2": {
           "mapping": {
             "type": "sine",
-            "x0": "0.5",
-            "x1": "1",
-            "y0": "0",
-            "y1": "-0.35"
+            "x0": 0.5,
+            "x1": 1,
+            "y0": 0,
+            "y1": -0.35
           }
         },
         "w_abovebrow_alpha": {
           "mapping": {
             "type": "sine",
-            "x0": "0.5",
-            "x1": "1",
-            "y0": "0",
-            "y1": "1"
+            "x0": 0.5,
+            "x1": 1,
+            "y0": 0,
+            "y1": 1
           }
         },
         "w_noseside_m1": {
           "mapping": {
             "type": "sine",
-            "x0": "0.5",
-            "x1": "0.75",
-            "y0": "0",
-            "y1": "1"
+            "x0": 0.5,
+            "x1": 0.75,
+            "y0": 0,
+            "y1": 1
           }
         },
         "w_noseside_m2": {
           "mapping": {
             "type": "sine",
-            "x0": "0.5",
-            "x1": "0.75",
-            "y0": "0",
-            "y1": "1"
+            "x0": 0.5,
+            "x1": 0.75,
+            "y0": 0,
+            "y1": 1
           }
         },
         "w_noseside_alpha": {
           "mapping": {
             "type": "sine",
-            "x0": "0.5",
-            "x1": "1.3",
-            "y0": "0",
-            "y1": "1.45"
+            "x0": 0.5,
+            "x1": 1.3,
+            "y0": 0,
+            "y1": 1.45
           }
         },
         "h_teethupper": {
           "mapping": {
             "type": "sine",
-            "x0": "0.6",
-            "x1": "1",
-            "y0": "0",
-            "y1": "0.36"
+            "x0": 0.6,
+            "x1": 1,
+            "y0": 0,
+            "y1": 0.36
           }
         },
         "h_teethlower": {
           "mapping": {
             "type": "sine",
-            "x0": "0.6",
-            "x1": "1",
-            "y0": "0",
-            "y1": "0.32"
+            "x0": 0.6,
+            "x1": 1,
+            "y0": 0,
+            "y1": 0.32
           }
         },
         "m3": {
-          "priority": "9",
+          "priority": 9,
           "mapping": {
             "type": "polynomial",
-            "x0": "0",
+            "x0": 0,
             "exponents": [
-              "0"
+              0
             ]
           }
         },
         "w_crowfeet_alpha": {
-          "priority": "50",
+          "priority": 50,
           "mapping": {
             "type": "polynomial",
-            "x0": "0",
+            "x0": 0,
             "exponents": [
-              "0"
+              0
             ]
           }
         }
       }
     }
   }
- }
+}
