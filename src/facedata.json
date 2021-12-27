@@ -219,7 +219,6 @@
             "color": "#404040"
           }
         }
-
       ]
     },
     {
@@ -241,8 +240,69 @@
             "alpha": 1,
             "color": "#404040"
           }
+        },
+        {
+          "id": "f3",
+          "spline": "s3",
+          "label": "lowerlid",
+          "alpha": 1,
+          "strokestyle": {
+            "type": "brush",
+            "startwidth": 1,
+            "maxwidth": 2,
+            "endwidth": 1,
+            "alpha": 1,
+            "color": "#404040"
+          }
         }
-
+      ]
+    },
+    {
+      "label": "mouth",
+      "stroked": true,
+      "filled": true,
+      "mirrored": true,
+      "segments": [
+        {
+          "id": "f4",
+          "spline": "s4",
+          "label": "upperlipjoiner",
+          "strokestyle": {
+            "type": "basic",
+            "width": 4,
+            "color": "#222222"
+          }
+        },
+        {
+          "id": "f5",
+          "spline": "s5",
+          "label": "upperlip",
+          "strokestyle": {
+            "type": "basic",
+            "width": 4,
+            "color": "#222222"
+          }
+        },
+        {
+          "id": "f6",
+          "spline": "s6",
+          "label": "lowerlip",
+          "strokestyle": {
+            "type": "basic",
+            "width": 4,
+            "color": "#222222"
+          }
+        },
+        {
+          "id": "f7",
+          "spline": "s7",
+          "label": "lowerlipjoiner",
+          "strokestyle": {
+            "type": "basic",
+            "width": 4,
+            "color": "#222222"
+          }
+        }
       ]
     }
   ],
