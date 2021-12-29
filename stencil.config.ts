@@ -1,4 +1,5 @@
 import { Config } from '@stencil/core'
+import nodePolyfills from 'rollup-plugin-node-polyfills'
 
 export const config: Config = {
   namespace: 'grimace',
@@ -18,4 +19,7 @@ export const config: Config = {
       serviceWorker: null, // disable service workers
     },
   ],
+  rollupPlugins: {
+    after: [nodePolyfills()],
+  },
 }

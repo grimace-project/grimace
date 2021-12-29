@@ -1,28 +1,28 @@
-export interface Facedata {
+export default interface Facedata {
   points: {
-    [pointId: string]: Point
+    [pointId: string]: FacedataPoint
   }
 
   splines: {
-    [splineId: string]: Spline
+    [splineId: string]: FacedataSpline
   }
 
   muscles: {
-    [muscleId: string]: Muscle
+    [muscleId: string]: FacedataMuscle
   }
 
   musclegroups: {
-    [muscleGroupId: string]: MuscleGroup
+    [muscleGroupId: string]: FacedataMuscleGroup
   }
 
-  features: Feature[]
+  features: FacedataFeature[]
 
   emotions: {
-    [emotionId: string]: Emotion
+    [emotionId: string]: FacedataEmotion
   }
 }
 
-export interface Point {
+export interface FacedataPoint {
   x: number
   y: number
   muscleweights?: {
@@ -30,48 +30,48 @@ export interface Point {
   }
 }
 
-export interface Spline {
+export interface FacedataSpline {
   type: 'line' | 'quadraticbezier' | 'cubicbezier'
   points: string[]
 }
 
-export interface Muscle {
+export interface FacedataMuscle {
   group: 'feature'
   label: string
   spline: string
 }
 
-export interface MuscleGroup {
+export interface FacedataMuscleGroup {
   color: string
   width: number
   alpha: number
   zindex: number
 }
 
-export interface Feature {
+export interface FacedataFeature {
   label: string
   stroked: boolean
   mirrored: boolean
-  segments: FeatureSegment[]
+  segments: FacedataFeatureSegment[]
 }
 
-export interface FeatureSegment {
+export interface FacedataFeatureSegment {
   id: string
   spline: string
   label: string
   alpha?: number
-  strokestyle: StrokeStyle
+  strokestyle: FacedataStrokeStyle
 }
 
-type StrokeStyle = BasicStrokeStyle | BrushStrokeStyle
+type FacedataStrokeStyle = FacedataBasicStrokeStyle | FacedataBrushStrokeStyle
 
-export interface BasicStrokeStyle {
+export interface FacedataBasicStrokeStyle {
   type: 'basic'
   width: number
   color: string
 }
 
-export interface BrushStrokeStyle {
+export interface FacedataBrushStrokeStyle {
   type: 'brush'
   startwidth: number
   maxwidth: number
@@ -80,18 +80,18 @@ export interface BrushStrokeStyle {
   color: string
 }
 
-export interface Emotion {
+export interface FacedataEmotion {
   influences: {
-    [muscleId: string]: EmotionInfluence
+    [muscleId: string]: FacedataEmotionInfluence
   }
 }
 
-export interface EmotionInfluence {
+export interface FacedataEmotionInfluence {
   priority?: number
-  mapping: Mapping
+  mapping: FacedataMapping
 }
 
-export interface Mapping {
+export interface FacedataMapping {
   type: 'gauss' | 'polynomial' | 'sine'
 
   // GaussMapping properties

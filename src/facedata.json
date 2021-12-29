@@ -517,15 +517,15 @@
     "h_teethupper_s": {
       "type": "line",
       "points": [
-        "h_teethupper_s_p0",
-        "h_teethupper_s_p1"
+        "h_teethupper_p0",
+        "h_teethupper_p1"
       ]
     },
     "h_teethlower_s": {
       "type": "line",
       "points": [
-        "h_teethlower_s_p0",
-        "h_teethlower_s_p1"
+        "h_teethlower_p0",
+        "h_teethlower_p1"
       ]
     },
     "s1": {
