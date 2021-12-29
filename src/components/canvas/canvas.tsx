@@ -3,6 +3,7 @@ import { h, Fragment, Component, State, Prop, Element } from '@stencil/core'
 import { loadFacedataFromJson } from '../../facedata-loader'
 import { processFacedata } from '../../core/factory'
 import json from '../../facedata.json'
+import scaleCanvas from '../../util/scale-canvas'
 
 // import { createStore } from '@stencil/store'
 
@@ -57,6 +58,8 @@ export class GrimaceCanvas {
 
     this.context.lineCap = 'round'
     this.context.lineJoin = 'round'
+
+    scaleCanvas(this.canvas, this.context, this.canvas.width, this.canvas.height)
 
     this.renderCanvas()
     const facedata = loadFacedataFromJson(json)
