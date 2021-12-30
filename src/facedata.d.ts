@@ -25,13 +25,10 @@ export default interface Facedata {
 export interface FacedataPoint {
   x: number
   y: number
-  muscleweights?: {
-    [muscleId: string]: number
-  }
 }
 
 export interface FacedataSpline {
-  type: 'line' | 'quadraticbezier' | 'cubicbezier'
+  type: 'line' | 'quadraticbezier' | 'cubicbezier' | 'joiner'
   points: string[]
 }
 
@@ -39,6 +36,9 @@ export interface FacedataMuscle {
   group: 'feature'
   label: string
   spline: string
+  weights?: {
+    [pointId: string]: number
+  }
 }
 
 export interface FacedataMuscleGroup {

@@ -46,8 +46,6 @@ export default class CubicSpline extends AbstractSpline {
       x3 *= -1
     }
 
-    console.log(x0, x1, x2, x3)
-
     if (nonstop) {
       context.lineTo(x0, y0)
     } else {

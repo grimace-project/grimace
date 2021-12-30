@@ -226,39 +226,19 @@
     },
     "p1": {
       "x": 150,
-      "y": 160,
-      "muscleweights": {
-        "m0": 0.59,
-        "h_meb6": 1
-      }
+      "y": 160
     },
     "p2": {
       "x": 119,
-      "y": 130,
-      "muscleweights": {
-        "m1": 0.3,
-        "m2": 0.15,
-        "m14": 0.24,
-        "h_meb6": 1
-      }
+      "y": 130
     },
     "p3": {
       "x": 80,
-      "y": 125,
-      "muscleweights": {
-        "m2": 0.29,
-        "m14": 0.18,
-        "h_meb6": 1,
-        "h_meb7": 0.29
-      }
+      "y": 125
     },
     "p4": {
       "x": 32,
-      "y": 153,
-      "muscleweights": {
-        "m3": 0.59,
-        "h_meb6": 1
-      }
+      "y": 153
     },
     "p5": {
       "x": 125,
@@ -266,27 +246,15 @@
     },
     "p6": {
       "x": 105,
-      "y": 174,
-      "muscleweights": {
-        "m041": 1,
-        "m042": 1
-      }
+      "y": 174
     },
     "p7": {
       "x": 60,
-      "y": 178,
-      "muscleweights": {
-        "m041": 0.67,
-        "m042": 0.67,
-        "h_mey8": 0.33
-      }
+      "y": 178
     },
     "p8": {
       "x": 43,
-      "y": 212,
-      "muscleweights": {
-        "h_mey12": 1
-      }
+      "y": 212
     },
     "p11": {
       "x": 56,
@@ -555,6 +523,15 @@
         "p5"
       ]
     },
+    "s4": {
+      "type": "joiner",
+      "points": [
+        "p21",
+        "p20",
+        "p16",
+        "p15"
+      ]
+    },
     "s5": {
       "type": "cubicbezier",
       "points": [
@@ -572,128 +549,245 @@
         "p18",
         "p19"
       ]
+    },
+    "s7": {
+      "type": "joiner",
+      "points": [
+        "p18",
+        "p19",
+        "llj_p1",
+        "llj_p0"
+      ]
     }
   },
   "muscles": {
     "m0": {
       "group": "feature",
       "label": "m00",
-      "spline": "m0_s"
+      "spline": "m0_s",
+      "weights": {
+        "p1": 0.59
+      }
     },
     "m1": {
       "group": "feature",
       "label": "m01",
-      "spline": "m1_s"
+      "spline": "m1_s",
+      "weights": {
+        "p2": 0.3
+      }
     },
     "m2": {
       "group": "feature",
       "label": "m02",
-      "spline": "m2_s"
+      "spline": "m2_s",
+      "weights": {
+        "p2": 0.15,
+        "p3": 0.29
+      }
     },
     "m3": {
       "group": "feature",
       "label": "m03",
-      "spline": "m3_s"
+      "spline": "m3_s",
+      "weights": {
+        "p4": 0.59
+      }
     },
     "m5": {
       "group": "feature",
       "label": "m05",
-      "spline": "m5_s"
+      "spline": "m5_s",
+      "weights": {
+        "p10": 1.0
+      }
     },
     "m6": {
       "group": "feature",
       "label": "m06",
-      "spline": "m6_s"
+      "spline": "m6_s",
+      "weights": {
+        "p14": 0.95,
+        "p15": 0.95,
+        "p16": 1.0,
+        "p20": 1.0,
+        "p21": 1.0
+      }
     },
     "m7": {
       "group": "feature",
       "label": "m07",
-      "spline": "m7_s"
+      "spline": "m7_s",
+      "weights": {
+        "p14": 0.5,
+        "p15": 0.1
+      }
     },
     "m8": {
       "group": "feature",
       "label": "m08",
-      "spline": "m8_s"
+      "spline": "m8_s",
+      "weights": {
+        "p13": 0.23,
+        "p14": 0.29,
+        "p15": 0.1
+      }
     },
     "m9": {
       "group": "feature",
       "label": "m09",
-      "spline": "m9_s"
+      "spline": "m9_s",
+      "weights": {
+        "p13": 0.5,
+        "p17": 0.13,
+        "p18": 0.05
+      }
     },
     "m10": {
       "group": "feature",
       "label": "m10",
-      "spline": "m10_s"
+      "spline": "m10_s",
+      "weights": {
+        "p13": 0.09,
+        "p14": 0.29,
+        "p15": 0.2,
+        "p17": 0.30,
+        "p18": 0.31,
+        "p19": 0.13
+      }
     },
     "m11": {
       "group": "feature",
       "label": "m11",
-      "spline": "m11_s"
+      "spline": "m11_s",
+      "weights": {
+        "p13": 0.23
+      }
     },
     "m12": {
       "group": "feature",
       "label": "m12",
-      "spline": "m12_s"
+      "spline": "m12_s",
+      "weights": {
+        "p17": 0.5,
+        "p18": 0.31,
+        "p19": 0.13
+      }
     },
     "m14": {
       "group": "feature",
       "label": "m14",
-      "spline": "m14_s"
+      "spline": "m14_s",
+      "weights": {
+        "p2": 0.24,
+        "p3": 0.18
+      }
     },
     "m15": {
       "group": "feature",
       "label": "m15",
-      "spline": "m15_s"
-    },
-    "m041": {
-      "group": "feature",
-      "label": "m041",
-      "spline": "m041_s"
-    },
-    "m042": {
-      "group": "feature",
-      "label": "m042",
-      "spline": "m042_s"
+      "spline": "m15_s",
+      "weights": {
+        "p17": 0.4,
+        "p18": 0.7,
+        "p19": 0.85,
+        "llj_p0": 1.0,
+        "llj_p1": 1.0
+      }
     },
     "m16": {
       "group": "feature",
       "label": "m16",
-      "spline": "m16_s"
+      "spline": "m16_s",
+      "weights": {
+        "p13": 1.0,
+        "p15": 0.1,
+        "p14": 0.3,
+        "p17": 0.3,
+        "p18": 0.1
+      }
+    },
+    "m041": {
+      "group": "feature",
+      "label": "m041",
+      "spline": "m041_s",
+      "weights": {
+        "p6": 1,
+        "p7": 0.67
+      }
+    },
+    "m042": {
+      "group": "feature",
+      "label": "m042",
+      "spline": "m042_s",
+      "weights": {
+        "p6": 1,
+        "p7": 0.67
+      }
     },
     "h_meb6": {
       "group": "feature",
       "label": "h_meb6",
-      "spline": "h_meb6_s"
+      "spline": "h_meb6_s",
+      "weights": {
+        "p1": 1,
+        "p2": 1,
+        "p3": 1,
+        "p4": 1
+      }
     },
     "h_meb7": {
       "group": "feature",
       "label": "h_meb7",
-      "spline": "h_meb7_s"
+      "spline": "h_meb7_s",
+      "weights": {
+        "p3": 0.29
+      }
     },
     "h_mey8": {
       "group": "feature",
       "label": "h_mey8",
-      "spline": "h_mey8_s"
+      "spline": "h_mey8_s",
+      "weights": {
+        "p7": 0.33
+      }
     },
     "h_mli9": {
       "group": "feature",
       "label": "h_mli9",
-      "spline": "h_mli9_s"
+      "spline": "h_mli9_s",
+      "weights": {
+        "p16": 0.25,
+        "p20": 0.4,
+        "p21": 0.4
+      }
     },
     "h_mli10": {
       "group": "feature",
       "label": "h_mli10",
-      "spline": "h_mli10_s"
+      "spline": "h_mli10_s",
+      "weights": {
+        "p17": 1.0,
+        "p18": 0.2,
+        "p19": 0.1
+      }
     },
     "h_mli11": {
       "group": "feature",
       "label": "h_mli11",
-      "spline": "h_mli11_s"
+      "spline": "h_mli11_s",
+      "weights": {
+        "llj_p0": 1.0,
+        "llj_p1": 1.0
+      }
     },
     "h_mey12": {
       "group": "feature",
       "label": "h_mey12",
-      "spline": "h_mey12_s"
+      "spline": "h_mey12_s",
+      "weights": {
+        "p8": 1
+      }
     },
     "h_teethupper": {
       "group": "feature",

@@ -6,6 +6,11 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
+    interface GrimaceCanvas {
+        "color": string;
+        "isServer": boolean;
+        "width": number;
+    }
     interface MyComponent {
         /**
           * The first name
@@ -20,19 +25,40 @@ export namespace Components {
          */
         "middle": string;
     }
+    interface PaintContainer {
+    }
 }
 declare global {
+    interface HTMLGrimaceCanvasElement extends Components.GrimaceCanvas, HTMLStencilElement {
+    }
+    var HTMLGrimaceCanvasElement: {
+        prototype: HTMLGrimaceCanvasElement;
+        new (): HTMLGrimaceCanvasElement;
+    };
     interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {
     }
     var HTMLMyComponentElement: {
         prototype: HTMLMyComponentElement;
         new (): HTMLMyComponentElement;
     };
+    interface HTMLPaintContainerElement extends Components.PaintContainer, HTMLStencilElement {
+    }
+    var HTMLPaintContainerElement: {
+        prototype: HTMLPaintContainerElement;
+        new (): HTMLPaintContainerElement;
+    };
     interface HTMLElementTagNameMap {
+        "grimace-canvas": HTMLGrimaceCanvasElement;
         "my-component": HTMLMyComponentElement;
+        "paint-container": HTMLPaintContainerElement;
     }
 }
 declare namespace LocalJSX {
+    interface GrimaceCanvas {
+        "color"?: string;
+        "isServer"?: boolean;
+        "width"?: number;
+    }
     interface MyComponent {
         /**
           * The first name
@@ -47,15 +73,21 @@ declare namespace LocalJSX {
          */
         "middle"?: string;
     }
+    interface PaintContainer {
+    }
     interface IntrinsicElements {
+        "grimace-canvas": GrimaceCanvas;
         "my-component": MyComponent;
+        "paint-container": PaintContainer;
     }
 }
 export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
+            "grimace-canvas": LocalJSX.GrimaceCanvas & JSXBase.HTMLAttributes<HTMLGrimaceCanvasElement>;
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
+            "paint-container": LocalJSX.PaintContainer & JSXBase.HTMLAttributes<HTMLPaintContainerElement>;
         }
     }
 }

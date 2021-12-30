@@ -4,6 +4,7 @@ import ISpline from '../display/ispline'
 import LinearSpline from '../display/linear-spline'
 import QuadraticSpline from '../display/quadratic-spline'
 import CubicSpline from '../display/cubic-spline'
+import JoinerSpline from '../display/joiner-spline'
 
 interface PointMap {
   [pointId: string]: Point
@@ -41,6 +42,8 @@ export const createSpline = (def: FacedataSpline, pointMap: PointMap): ISpline =
     return new QuadraticSpline(points[0], points[1], points[2])
   } else if (type === 'cubicbezier') {
     return new CubicSpline(points[0], points[1], points[2], points[3])
+  } else if (type === 'joiner') {
+    return new JoinerSpline(points[0], points[1], points[2], points[3])
   }
 }
 
@@ -49,8 +52,6 @@ export const processFacedata = (facedata: Facedata): TBD => {
   Object.entries(facedata.points).forEach(([pointId, pointDef]) => {
     points[pointId] = createPoint(pointDef)
   })
-
-  console.log(points)
 
   const splines: SplineMap = {}
   Object.entries(facedata.splines).forEach(([splineId, splineDef]) => {
