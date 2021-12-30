@@ -1,12 +1,11 @@
 import Facedata from './facedata'
-// import validate from './facedata.d.validator'
+import validate from './facedata.d.validator'
 
 export const loadFacedataFromJson = (json: unknown): Facedata => {
-  return json as Facedata
-  // try {
-  //   return validate(json)
-  // } catch (e) {
-  //   e.message = e.message.replace(/, /g, '\n')
-  //   throw e
-  // }
+  try {
+    return validate(json)
+  } catch (e) {
+    e.message = e.message.replace(/, /g, '\n')
+    throw e
+  }
 }
