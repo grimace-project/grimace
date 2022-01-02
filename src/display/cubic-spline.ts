@@ -16,6 +16,39 @@ export default class CubicSpline extends AbstractSpline {
     this.c3 = c3
   }
 
+  duplicate(): CubicSpline {
+    return new CubicSpline(this.c0.duplicate(), this.c1.duplicate(), this.c2.duplicate(), this.c3.duplicate())
+  }
+
+  getEnd(): Point {
+    return this.c3
+  }
+
+  getPoint(t: number, mirror = false): Point {
+    const omt = 1.0 - t
+    const t2 = t * t
+    const t3 = t2 * t
+    const omt2 = omt * omt
+    const omt3 = omt2 * omt
+
+    let x = this.c0.x * omt3 + this.c1.x * 3 * omt2 * t + this.c2.x * 3 * omt * t2 + this.c3.x * t3
+    const y = this.c0.y * omt3 + this.c1.y * 3 * omt2 * t + this.c2.y * 3 * omt * t2 + this.c3.y * t3
+
+    if (mirror) {
+      x *= -1
+    }
+
+    return new Point(x, y)
+  }
+
+  getPointsAsArray(): Point[] {
+    return [this.c0, this.c1, this.c2, this.c3]
+  }
+
+  getStart(): Point {
+    return this.c0
+  }
+
   traceSplineInContext(context: CanvasRenderingContext2D, nonstop: boolean, mirror: boolean, reverse: boolean): void {
     let x0: number, y0: number, x1: number, y1: number, x2: number, y2: number, x3: number, y3: number
 
@@ -53,22 +86,5 @@ export default class CubicSpline extends AbstractSpline {
     }
 
     context.bezierCurveTo(x1, y1, x2, y2, x3, y3)
-  }
-
-  getPoint(t: number, mirror: boolean): Point {
-    const omt = 1.0 - t
-    const t2 = t * t
-    const t3 = t2 * t
-    const omt2 = omt * omt
-    const omt3 = omt2 * omt
-
-    let x = this.c0.x * omt3 + this.c1.x * 3 * omt2 * t + this.c2.x * 3 * omt * t2 + this.c3.x * t3
-    const y = this.c0.y * omt3 + this.c1.y * 3 * omt2 * t + this.c2.y * 3 * omt * t2 + this.c3.y * t3
-
-    if (mirror) {
-      x *= -1
-    }
-
-    return new Point(x, y)
   }
 }

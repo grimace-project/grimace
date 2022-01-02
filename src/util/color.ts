@@ -44,4 +44,8 @@ export default class Color {
   toRgba(): string {
     return `rgba(${this.r}, ${this.g}, ${this.b}, ${this.a})`
   }
+
+  public static Black(): Color {
+    return new Color('#000000')
+  }
 }

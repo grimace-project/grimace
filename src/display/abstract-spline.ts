@@ -2,6 +2,8 @@ import Color from '../util/color'
 import ISpline from './ispline'
 import Point from './point'
 
+const DT = 0.01
+
 export default abstract class AbstractSpline implements ISpline {
   fillColor: Color = new Color('#777777')
   lineColor: Color = new Color('#333333')
@@ -31,7 +33,49 @@ export default abstract class AbstractSpline implements ISpline {
     this.traceSplineInContext(context, !start, mirror, false)
   }
 
-  getPoint(_t: number, _mirror: boolean): Point {
+  duplicate(): ISpline {
+    throw 'AbstractSpline cannot be instantiated'
+  }
+
+  getEnd(): Point {
+    throw 'AbstractSpline cannot be instantiated'
+  }
+
+  getPoint(_t: number, _mirror = false): Point {
+    throw 'AbstractSpline cannot be instantiated'
+  }
+
+  getPointsAsArray(_visibleOnly = false): Point[] {
+    throw 'AbstractSpline cannot be instantiated'
+  }
+
+  getNormalAngle(t: number): number {
+    return this.getSlopeAngle(t) + Math.PI / 2
+  }
+
+  getSlopeAngle(t: number): number {
+    const pLeft = this.getPoint(t - DT)
+    const pRight = this.getPoint(t + DT)
+
+    const dx = pRight.x - pLeft.x
+    const dy = pRight.y - pLeft.y
+
+    let angle = Math.atan(dy / dx)
+
+    // arctan problem:
+    // http://hyperphysics.phy-astr.gsu.edu/hbase/ttrig.html#c3
+    if (dx < 0) {
+      // quadrants II & III
+      angle += Math.PI
+    } else if (dx >= 0 && dy < 0) {
+      // quadrant IV
+      angle += 2.0 * Math.PI
+    }
+
+    return angle
+  }
+
+  getStart(): Point {
     throw 'AbstractSpline cannot be instantiated'
   }
 }

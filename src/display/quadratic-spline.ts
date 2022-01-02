@@ -14,6 +14,35 @@ export default class QuadraticSpline extends AbstractSpline {
     this.aPt2 = aPt2
   }
 
+  duplicate(): QuadraticSpline {
+    return new QuadraticSpline(this.aPt1.duplicate(), this.cPt.duplicate(), this.aPt2.duplicate())
+  }
+
+  getEnd(): Point {
+    return this.aPt2
+  }
+
+  getPoint(t: number, mirror = false): Point {
+    const omt = 1.0 - t
+
+    let x = this.aPt1.x * omt * omt + this.cPt.x * 2 * t * omt + this.aPt2.x * t * t
+    const y = this.aPt1.y * omt * omt + this.cPt.y * 2 * t * omt + this.aPt2.y * t * t
+
+    if (mirror) {
+      x *= -1
+    }
+
+    return new Point(x, y)
+  }
+
+  getPointsAsArray(): Point[] {
+    return [this.aPt1, this.cPt, this.aPt2]
+  }
+
+  getStart(): Point {
+    return this.aPt1
+  }
+
   traceSplineInContext(context: CanvasRenderingContext2D, nonstop: boolean, mirror: boolean, reverse: boolean): void {
     let x0: number, y0: number, x2: number, y2: number
 
@@ -45,18 +74,5 @@ export default class QuadraticSpline extends AbstractSpline {
     }
 
     context.quadraticCurveTo(x1, y1, x2, y2)
-  }
-
-  getPoint(t: number, mirror: boolean): Point {
-    const omt = 1.0 - t
-
-    let x = this.aPt1.x * omt * omt + this.cPt.x * 2 * t * omt + this.aPt2.x * t * t
-    const y = this.aPt1.y * omt * omt + this.cPt.y * 2 * t * omt + this.aPt2.y * t * t
-
-    if (mirror) {
-      x *= -1
-    }
-
-    return new Point(x, y)
   }
 }

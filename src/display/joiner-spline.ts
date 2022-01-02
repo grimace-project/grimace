@@ -14,6 +14,10 @@ export default class JoinerSpline extends CubicSpline {
     this.b = b
   }
 
+  duplicate(): JoinerSpline {
+    return new JoinerSpline(this.a.duplicate(), this.c0.duplicate(), this.c3.duplicate(), this.b.duplicate())
+  }
+
   traceSplineInContext(context: CanvasRenderingContext2D, nonstop: boolean, mirror: boolean, reverse: boolean): void {
     this.evaluate()
     super.traceSplineInContext(context, nonstop, mirror, reverse)
@@ -29,5 +33,13 @@ export default class JoinerSpline extends CubicSpline {
     this.c1.y = this.c0.y + (this.c0.y - this.a.y) * fA
     this.c2.x = this.c3.x + (this.c3.x - this.b.x) * fB
     this.c2.y = this.c3.y + (this.c3.y - this.b.y) * fB
+  }
+
+  getPointsAsArray(visibleOnly = false): Point[] {
+    if (visibleOnly) {
+      return [this.c0, this.c1, this.c2, this.c3]
+    } else {
+      return [this.a, this.c0, this.c1, this.c2, this.c3, this.b]
+    }
   }
 }

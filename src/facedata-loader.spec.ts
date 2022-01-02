@@ -6,9 +6,21 @@ describe('facedata-loader', () => {
   it('parses valid Facedata JSON', () => {
     const facedata = loadFacedataFromJson(json)
 
-    expect(facedata.points['m0_s_p0']).toStrictEqual({
-      x: 136,
-      y: 144,
+    expect(facedata.musclegroups['feature'].muscles['m0']).toStrictEqual({
+      label: 'm00',
+      spline: {
+        points: [
+          {
+            x: 136,
+            y: 144,
+          },
+          {
+            x: 140,
+            y: 52,
+          },
+        ],
+        type: 'line',
+      },
     })
   })
 

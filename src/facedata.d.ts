@@ -1,16 +1,4 @@
 export default interface Facedata {
-  points: {
-    [pointId: string]: FacedataPoint
-  }
-
-  splines: {
-    [splineId: string]: FacedataSpline
-  }
-
-  muscles: {
-    [muscleId: string]: FacedataMuscle
-  }
-
   musclegroups: {
     [muscleGroupId: string]: FacedataMuscleGroup
   }
@@ -29,13 +17,13 @@ export interface FacedataPoint {
 
 export interface FacedataSpline {
   type: 'line' | 'quadraticbezier' | 'cubicbezier' | 'joiner'
-  points: string[]
+  points: FacedataPoint[]
 }
 
 export interface FacedataMuscle {
-  group: 'feature'
   label: string
-  spline: string
+  spline: FacedataSpline
+  inittension?: number
   weights?: {
     [pointId: string]: number
   }
@@ -46,10 +34,14 @@ export interface FacedataMuscleGroup {
   width: number
   alpha: number
   zindex: number
+  muscles: {
+    [muscleId: string]: FacedataMuscle
+  }
 }
 
 export interface FacedataFeature {
   label: string
+  filled: boolean
   stroked: boolean
   mirrored: boolean
   segments: FacedataFeatureSegment[]
@@ -57,10 +49,18 @@ export interface FacedataFeature {
 
 export interface FacedataFeatureSegment {
   id: string
-  spline: string
+  spline: FacedataSpline
   label: string
   alpha?: number
-  strokestyle: FacedataStrokeStyle
+  strokestyle?: FacedataStrokeStyle
+  influences?: FacedataFeatureSegmentInfluence[]
+}
+
+export interface FacedataFeatureSegmentInfluence {
+  nodenum: number
+  muscle: string
+  musclegroup: string
+  weight: number
 }
 
 type FacedataStrokeStyle = FacedataBasicStrokeStyle | FacedataBrushStrokeStyle

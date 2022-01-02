@@ -12,6 +12,33 @@ export default class LinearSpline extends AbstractSpline {
     this.p1 = p1
   }
 
+  duplicate(): LinearSpline {
+    return new LinearSpline(this.p0.duplicate(), this.p1.duplicate())
+  }
+
+  getEnd(): Point {
+    return this.p1
+  }
+
+  getPoint(t: number, mirror = false): Point {
+    let x = this.p0.x + t * (this.p1.x - this.p0.x)
+    const y = this.p0.y + t * (this.p1.y - this.p0.y)
+
+    if (mirror) {
+      x *= -1
+    }
+
+    return new Point(x, y)
+  }
+
+  getPointsAsArray(): Point[] {
+    return [this.p0, this.p1]
+  }
+
+  getStart(): Point {
+    return this.p0
+  }
+
   traceSplineInContext(context: CanvasRenderingContext2D, nonstop: boolean, mirror: boolean, reverse: boolean): void {
     let x0: number, y0: number, x1: number, y1: number
 
@@ -39,16 +66,5 @@ export default class LinearSpline extends AbstractSpline {
     }
 
     context.lineTo(x1, y1)
-  }
-
-  getPoint(t: number, mirror: boolean): Point {
-    let x = this.p0.x + t * (this.p1.x - this.p0.x)
-    const y = this.p0.y + t * (this.p1.y - this.p0.y)
-
-    if (mirror) {
-      x *= -1
-    }
-
-    return new Point(x, y)
   }
 }

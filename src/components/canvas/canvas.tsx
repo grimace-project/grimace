@@ -66,8 +66,8 @@ export class GrimaceCanvas {
 
     const components = processFacedata(facedata)
 
-    Object.values(components.splines).forEach((spline) => {
-      spline.drawStrokeInContext(this.context)
+    Object.values(components.features).forEach((feature) => {
+      feature.drawStrokeInContext(this.context)
     })
   }
 
