@@ -19,6 +19,7 @@ import FeatureSegment from '../feature/feature-segment'
 import IStrokeStyle from '../display/istrokestyle'
 import BrushStyle from '../display/brush-style'
 import Color from '../util/color'
+import BasicStyle from '../display/basic-style'
 
 interface MuscleMap {
   [muscleGroupId: string]: MuscleGroup
@@ -64,9 +65,11 @@ export const createStrokeStyle = (def: FacedataStrokeStyle): IStrokeStyle | unde
     return
   }
 
+  const color = new Color(def.color)
   if (def.type === 'brush') {
-    const color = new Color(def.color)
     return new BrushStyle(def.startwidth, def.maxwidth, def.endwidth, color, def.alpha)
+  } else if (def.type === 'basic') {
+    return new BasicStyle(def.width, color, 1.0)
   }
 }
 

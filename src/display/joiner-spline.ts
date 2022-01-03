@@ -26,8 +26,8 @@ export default class JoinerSpline extends CubicSpline {
   evaluate(): void {
     const distC0C3 = Point.distance(this.c0, this.c3)
 
-    const fA = distC0C3 * this.aFactor * Point.distance(this.c0, this.a)
-    const fB = distC0C3 * this.bFactor * Point.distance(this.c3, this.b)
+    const fA = (distC0C3 * this.aFactor) / Point.distance(this.c0, this.a)
+    const fB = (distC0C3 * this.bFactor) / Point.distance(this.c3, this.b)
 
     this.c1.x = this.c0.x + (this.c0.x - this.a.x) * fA
     this.c1.y = this.c0.y + (this.c0.y - this.a.y) * fA

@@ -39,7 +39,6 @@ export default class FeatureSegment {
     start: boolean,
     end: boolean,
   ): void {
-    console.log(this.id, stroke, this.strokeStyle)
     if (stroke && this.strokeStyle) {
       this.strokeStyle.drawInContext(context, this.spline, start, end, mirror)
     }

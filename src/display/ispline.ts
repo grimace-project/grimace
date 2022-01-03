@@ -1,11 +1,6 @@
 import Point from './point'
 
 export default interface ISpline {
-  // fillColor: Color
-  // lineColor: Color
-  // lineWidth: number
-  // lineMinWidth: number
-  // lineMaxWidth: number
   mirrored: boolean
 
   drawStrokeInContext(context: CanvasRenderingContext2D): void
