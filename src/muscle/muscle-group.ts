@@ -10,4 +10,12 @@ export default class MuscleGroup {
     this.id = id
     this.muscles = muscles
   }
+
+  clear(): void {
+    Object.values(this.muscles).forEach((muscle) => muscle.clear())
+  }
+
+  evaluate(): void {
+    Object.values(this.muscles).forEach((muscle) => muscle.evaluate())
+  }
 }

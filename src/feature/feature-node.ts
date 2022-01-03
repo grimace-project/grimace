@@ -13,7 +13,7 @@ export default class FeatureNode {
   weightSum = 0.0
 
   constructor(point: Point) {
-    this.point = point.duplicate()
+    this.point = point
     this.point0 = point.duplicate()
   }
 

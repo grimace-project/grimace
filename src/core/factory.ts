@@ -1,33 +1,49 @@
 import Facedata, {
+  FacedataEmotion,
   FacedataFeature,
   FacedataFeatureSegment,
+  FacedataMapping,
   FacedataMuscleGroup,
   FacedataPoint,
   FacedataSpline,
   FacedataStrokeStyle,
 } from '../facedata'
-import Point from '../display/point'
-import ISpline from '../display/ispline'
-import LinearSpline from '../display/linear-spline'
-import QuadraticSpline from '../display/quadratic-spline'
-import CubicSpline from '../display/cubic-spline'
-import JoinerSpline from '../display/joiner-spline'
-import MuscleGroup from '../muscle/muscle-group'
-import Muscle from '../muscle/muscle'
-import Feature from '../feature/feature'
-import FeatureSegment from '../feature/feature-segment'
-import IStrokeStyle from '../display/istrokestyle'
+import BasicStyle from '../display/basic-style'
 import BrushStyle from '../display/brush-style'
 import Color from '../util/color'
-import BasicStyle from '../display/basic-style'
+import CubicSpline from '../display/cubic-spline'
+import Emotion, { EmotionInfluence } from '../emotion/emotion'
+import Feature from '../feature/feature'
+import FeatureSegment from '../feature/feature-segment'
+import ISpline from '../display/ispline'
+import IStrokeStyle from '../display/istrokestyle'
+import JoinerSpline from '../display/joiner-spline'
+import LinearSpline from '../display/linear-spline'
+import Mapping from '../display/mapping'
+import Muscle from '../muscle/muscle'
+import MuscleGroup from '../muscle/muscle-group'
+import Point from '../display/point'
+import QuadraticSpline from '../display/quadratic-spline'
+import GaussMapping from '../display/gauss-mapping'
+import PolynomialMapping from '../display/polynomial-mapping'
+import SineMapping from '../display/sine-mapping'
 
 interface MuscleMap {
+  [muscleId: string]: Muscle
+}
+
+interface MuscleGroupMap {
   [muscleGroupId: string]: MuscleGroup
 }
 
+interface EmotionMap {
+  [emotionId: string]: Emotion
+}
+
 export interface TBD {
-  muscleGroups: MuscleMap
+  muscleGroups: MuscleGroupMap
   features: Feature[]
+  emotions: EmotionMap
 }
 
 export const createPoint = (def: FacedataPoint): Point => {
@@ -73,14 +89,14 @@ export const createStrokeStyle = (def: FacedataStrokeStyle): IStrokeStyle | unde
   }
 }
 
-export const createFeatureSegment = (def: FacedataFeatureSegment, muscleMap: MuscleMap): FeatureSegment => {
+export const createFeatureSegment = (def: FacedataFeatureSegment, muscleGroupMap: MuscleGroupMap): FeatureSegment => {
   const spline = createSpline(def.spline)
   const strokeStyle = createStrokeStyle(def.strokestyle)
   const segment = new FeatureSegment(def.id, def.label, spline, strokeStyle)
 
   if (def.influences) {
     def.influences.forEach((influence) => {
-      const muscle = muscleMap[influence.musclegroup].muscles[influence.muscle]
+      const muscle = muscleGroupMap[influence.musclegroup].muscles[influence.muscle]
       segment.addInfluenceToNode(influence.nodenum, muscle, influence.weight)
     })
   }
@@ -88,26 +104,65 @@ export const createFeatureSegment = (def: FacedataFeatureSegment, muscleMap: Mus
   return segment
 }
 
-export const createFeature = (def: FacedataFeature, muscleMap: MuscleMap): Feature => {
+export const createFeature = (def: FacedataFeature, muscleGroupMap: MuscleGroupMap): Feature => {
   const segments = def.segments.map((defSegment) => {
-    return createFeatureSegment(defSegment, muscleMap)
+    return createFeatureSegment(defSegment, muscleGroupMap)
   })
 
   return new Feature(def.label, def.filled, def.stroked, def.mirrored, segments)
 }
 
+export const createMapping = (def: FacedataMapping): Mapping => {
+  if (def.type === 'gauss') {
+    return new GaussMapping(def.mean, def.variance, def.value)
+  } else if (def.type === 'polynomial') {
+    return new PolynomialMapping(def.x0, def.exponents)
+  } else if (def.type === 'sine') {
+    return new SineMapping(def.x0, def.x1, def.y0, def.y1)
+  }
+}
+
+export const createEmotion = (label: string, def: FacedataEmotion, muscleMap: MuscleMap): Emotion => {
+  const influences: EmotionInfluence[] = Object.entries(def.influences)
+    .map(([muscleId, defInfluence]) => {
+      const muscle = muscleMap[muscleId]
+
+      if (!muscle) {
+        return
+      }
+
+      return {
+        muscle,
+        mapping: createMapping(defInfluence.mapping),
+        priority: defInfluence.priority || 1.0,
+      }
+    })
+    .filter((x) => Boolean(x))
+
+  return new Emotion(label, influences)
+}
+
 export const processFacedata = (facedata: Facedata): TBD => {
-  const muscleGroups: { [muscleGroupId: string]: MuscleGroup } = {}
+  const muscleMap: { [muscleId: string]: Muscle } = {}
+  const muscleGroups: MuscleGroupMap = {}
   Object.entries(facedata.musclegroups).forEach(([muscleGroupId, defMuscleGroup]) => {
-    muscleGroups[muscleGroupId] = createMuscleGroup(muscleGroupId, defMuscleGroup)
+    const muscleGroup = createMuscleGroup(muscleGroupId, defMuscleGroup)
+    Object.assign(muscleMap, muscleGroup.muscles)
+    muscleGroups[muscleGroupId] = muscleGroup
   })
 
   const features = facedata.features.map((defFeature) => {
     return createFeature(defFeature, muscleGroups)
   })
 
+  const emotions: { [emotionId: string]: Emotion } = {}
+  Object.entries(facedata.emotions).forEach(([emotionId, defEmotion]) => {
+    emotions[emotionId] = createEmotion(emotionId, defEmotion, muscleMap)
+  })
+
   return {
     muscleGroups,
     features,
+    emotions,
   }
 }

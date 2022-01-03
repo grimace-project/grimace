@@ -11,7 +11,7 @@ export default class Muscle {
   spline: ISpline
   tension: number
   initTension: number
-  private rawTensions: MuscleTension[]
+  private rawTensions: MuscleTension[] = []
 
   constructor(label: string, spline: ISpline, initTension: number) {
     this.label = label
