@@ -2,10 +2,12 @@ import { h, Fragment, Component, State, Prop, Element } from '@stencil/core'
 
 import { loadFacedataFromJson } from '../../facedata-loader'
 import { processFacedata } from '../../core/factory'
-import json from '../../facedata.json'
 import scaleCanvas from '../../util/scale-canvas'
 import MuscleController from '../../muscle/muscle-controller'
 import EmotionController from '../../emotion/emotion-controller'
+import facedataFeatures from '../../facedata/features.json'
+import facedataWrinkles from '../../facedata/wrinkles.json'
+import facedataEmotions from '../../facedata/emotions.json'
 
 // import { createStore } from '@stencil/store'
 
@@ -64,7 +66,7 @@ export class GrimaceCanvas {
     scaleCanvas(this.canvas, this.context, this.canvas.width, this.canvas.height)
 
     this.renderCanvas()
-    const facedata = loadFacedataFromJson(json)
+    const facedata = loadFacedataFromJson(facedataFeatures, facedataWrinkles, facedataEmotions)
 
     const { emotions, features, muscleGroups } = processFacedata(facedata)
 

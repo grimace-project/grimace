@@ -1,0 +1,2223 @@
+{
+  "emotions": {
+    "joy": {
+      "influences": {
+        "m042": {
+          "priority": 10,
+          "mapping": {
+            "type": "polynomial",
+            "x0": 0,
+            "exponents": [
+              0,
+              0.033,
+              0.309
+            ]
+          }
+        },
+        "m5": {
+          "mapping": {
+            "type": "polynomial",
+            "x0": 0,
+            "exponents": [
+              0,
+              1.299,
+              -2.686,
+              2.027
+            ]
+          }
+        },
+        "m6": {
+          "priority": 2,
+          "mapping": {
+            "type": "polynomial",
+            "x0": 0,
+            "exponents": [
+              0,
+              0.056,
+              -0.126,
+              0.48
+            ]
+          }
+        },
+        "m7": {
+          "priority": 2,
+          "mapping": {
+            "type": "sine",
+            "x0": 0.75,
+            "x1": 1,
+            "y0": 0,
+            "y1": 0.13
+          }
+        },
+        "m9": {
+          "priority": 2,
+          "mapping": {
+            "type": "polynomial",
+            "x0": 0,
+            "exponents": [
+              0,
+              4.053,
+              -16.386,
+              26.346,
+              -13.013
+            ]
+          }
+        },
+        "m15": {
+          "priority": 2,
+          "mapping": {
+            "type": "sine",
+            "x0": 0.25,
+            "x1": 1,
+            "y0": 0,
+            "y1": 0.55
+          }
+        },
+        "m16": {
+          "priority": 2,
+          "mapping": {
+            "type": "sine",
+            "x0": 0,
+            "x1": 0.25,
+            "y0": 0,
+            "y1": 0.28
+          }
+        },
+        "h_meb6": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0.1,
+            "x1": 0.75,
+            "y0": 0,
+            "y1": 0.24
+          }
+        },
+        "h_mli9": {
+          "priority": 2,
+          "mapping": {
+            "type": "sine",
+            "x0": 0.5,
+            "x1": 0.85,
+            "y0": 0,
+            "y1": 0.33
+          }
+        },
+        "h_mli10": {
+          "priority": 2,
+          "mapping": {
+            "type": "sine",
+            "x0": 0.5,
+            "x1": 0.75,
+            "y0": 0,
+            "y1": 0.49
+          }
+        },
+        "h_mey8": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0.5,
+            "x1": 1,
+            "y0": 0,
+            "y1": 0.26
+          }
+        },
+        "m11": {
+          "priority": 2,
+          "mapping": {
+            "type": "polynomial",
+            "x0": 0,
+            "exponents": [
+              0
+            ]
+          }
+        },
+        "m8": {
+          "priority": 10,
+          "mapping": {
+            "type": "polynomial",
+            "x0": 0,
+            "exponents": [
+              0
+            ]
+          }
+        },
+        "m10": {
+          "priority": 10,
+          "mapping": {
+            "type": "polynomial",
+            "x0": 0,
+            "exponents": [
+              0
+            ]
+          }
+        },
+        "m12": {
+          "priority": 10,
+          "mapping": {
+            "type": "polynomial",
+            "x0": 0,
+            "exponents": [
+              0
+            ]
+          }
+        },
+        "w_mouthside_m1": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0.45,
+            "x1": 0.93,
+            "y0": 0,
+            "y1": 0.42
+          }
+        },
+        "w_mouthside_m2": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0.45,
+            "x1": 0.93,
+            "y0": 0,
+            "y1": 0.37
+          }
+        },
+        "w_mouthside_m3": {
+          "mapping": {
+            "type": "gauss",
+            "mean": 0.75,
+            "variance": 0.01,
+            "value": 0.05
+          }
+        },
+        "w_mouthside_m4": {
+          "priority": 3,
+          "mapping": {
+            "type": "polynomial",
+            "x0": 0,
+            "exponents": [
+              0
+            ]
+          }
+        },
+        "w_mouthside_m5": {
+          "priority": 3,
+          "mapping": {
+            "type": "sine",
+            "x0": 0.42,
+            "x1": 1,
+            "y0": 0,
+            "y1": 0.34
+          }
+        },
+        "w_mouthside_alpha": {
+          "mapping": {
+            "type": "gauss",
+            "mean": 1,
+            "variance": 0.035,
+            "value": 0.35
+          }
+        },
+        "w_crowfeet_alpha": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0,
+            "x1": 0.5,
+            "y0": 0,
+            "y1": 1
+          }
+        },
+        "w_crowfeet1_inner": {
+          "mapping": {
+            "type": "polynomial",
+            "x0": 0,
+            "exponents": [
+              0,
+              1.15,
+              -6.82,
+              7.78,
+              6,
+              -7.2
+            ]
+          }
+        },
+        "w_crowfeet1_outer": {
+          "mapping": {
+            "type": "polynomial",
+            "x0": 0,
+            "exponents": [
+              0,
+              0,
+              0.5,
+              0.43
+            ]
+          }
+        },
+        "w_crowfeet2_outer": {
+          "mapping": {
+            "type": "polynomial",
+            "x0": 0,
+            "exponents": [
+              0,
+              0.16,
+              0.11,
+              0.37
+            ]
+          }
+        },
+        "w_crowfeet2_inner": {
+          "mapping": {
+            "type": "polynomial",
+            "x0": 0,
+            "exponents": [
+              0,
+              -0.16,
+              -0.03,
+              3.15,
+              -2.03
+            ]
+          }
+        },
+        "h_teethupper": {
+          "priority": 5,
+          "mapping": {
+            "type": "sine",
+            "x0": 0.75,
+            "x1": 1,
+            "y0": 0,
+            "y1": 0.22
+          }
+        },
+        "h_teethlower": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0.75,
+            "x1": 1,
+            "y0": 0,
+            "y1": 0.43
+          }
+        }
+      }
+    },
+    "surprise": {
+      "influences": {
+        "m0": {
+          "priority": 1,
+          "mapping": {
+            "type": "polynomial",
+            "x0": 0,
+            "exponents": [
+              0
+            ]
+          }
+        },
+        "m1": {
+          "priority": 3,
+          "mapping": {
+            "type": "sine",
+            "x0": 0.25,
+            "x1": 0.5,
+            "y0": 0,
+            "y1": 0.26
+          }
+        },
+        "m2": {
+          "priority": 3,
+          "mapping": {
+            "type": "polynomial",
+            "x0": 0,
+            "exponents": [
+              0,
+              -0.101,
+              2.274,
+              -1.173
+            ]
+          }
+        },
+        "m3": {
+          "priority": 3,
+          "mapping": {
+            "type": "sine",
+            "x0": 0.25,
+            "x1": 0.5,
+            "y0": 0,
+            "y1": 0.19
+          }
+        },
+        "m041": {
+          "priority": 3,
+          "mapping": {
+            "type": "sine",
+            "x0": 0,
+            "x1": 0.83,
+            "y0": 0,
+            "y1": 1
+          }
+        },
+        "m042": {
+          "priority": 5,
+          "mapping": {
+            "type": "polynomial",
+            "x0": 0,
+            "exponents": [
+              0
+            ]
+          }
+        },
+        "m5": {
+          "priority": 6,
+          "mapping": {
+            "type": "polynomial",
+            "x0": 0,
+            "exponents": [
+              0
+            ]
+          }
+        },
+        "m6": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0.18,
+            "x1": 0.95,
+            "y0": 0,
+            "y1": 0.41
+          }
+        },
+        "m7": {
+          "priority": 15,
+          "mapping": {
+            "type": "polynomial",
+            "x0": 0,
+            "exponents": [
+              0
+            ]
+          }
+        },
+        "m10": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0.5,
+            "x1": 0.9,
+            "y0": 0,
+            "y1": 0.34
+          }
+        },
+        "m11": {
+          "mapping": {
+            "type": "polynomial",
+            "x0": 0,
+            "exponents": [
+              1.66,
+              -3.49,
+              2.4
+            ]
+          }
+        },
+        "m15": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0.4,
+            "x1": 1,
+            "y0": 0,
+            "y1": 0.65
+          }
+        },
+        "m16": {
+          "priority": 3,
+          "mapping": {
+            "type": "sine",
+            "x0": 0,
+            "x1": 0.25,
+            "y0": 0,
+            "y1": 0.11
+          }
+        },
+        "h_meb6": {
+          "priority": 3,
+          "mapping": {
+            "type": "polynomial",
+            "x0": 0,
+            "exponents": [
+              0
+            ]
+          }
+        },
+        "h_meb7": {
+          "priority": 3,
+          "mapping": {
+            "type": "polynomial",
+            "x0": 0,
+            "exponents": [
+              0
+            ]
+          }
+        },
+        "h_mey8": {
+          "priority": 2,
+          "mapping": {
+            "type": "polynomial",
+            "x0": 0,
+            "exponents": [
+              0
+            ]
+          }
+        },
+        "w_crowfeet_alpha": {
+          "priority": 50,
+          "mapping": {
+            "type": "polynomial",
+            "x0": 0,
+            "exponents": [
+              0
+            ]
+          }
+        },
+        "h_mey12": {
+          "priority": 3,
+          "mapping": {
+            "type": "polynomial",
+            "x0": 0,
+            "exponents": [
+              0
+            ]
+          }
+        },
+        "w_forehead1_m2": {
+          "mapping": {
+            "type": "polynomial",
+            "x0": 0,
+            "exponents": [
+              0,
+              1.54,
+              -3.14,
+              1.6
+            ]
+          }
+        },
+        "w_forehead_alpha": {
+          "mapping": {
+            "type": "polynomial",
+            "x0": 0,
+            "exponents": [
+              0,
+              1.68,
+              -2.07,
+              1.39
+            ]
+          }
+        },
+        "w_forehead1_m1": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0,
+            "x1": 0.25,
+            "y0": 0,
+            "y1": 0.06
+          }
+        },
+        "w_forehead1_m4": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0,
+            "x1": 0.25,
+            "y0": 0,
+            "y1": -0.17
+          }
+        },
+        "w_forehead1_m5": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0,
+            "x1": 0.25,
+            "y0": 0,
+            "y1": -0.1
+          }
+        },
+        "w_beloweye_m2": {
+          "priority": 2,
+          "mapping": {
+            "type": "sine",
+            "x0": 0,
+            "x1": 1,
+            "y0": 0,
+            "y1": 0.68
+          }
+        },
+        "w_beloweye_m3": {
+          "priority": 2,
+          "mapping": {
+            "type": "sine",
+            "x0": 0,
+            "x1": 1,
+            "y0": 0,
+            "y1": 0.68
+          }
+        },
+        "w_beloweye_m4": {
+          "priority": 2,
+          "mapping": {
+            "type": "polynomial",
+            "x0": 0,
+            "exponents": [
+              0
+            ]
+          }
+        },
+        "w_mouthside_m1": {
+          "priority": 2,
+          "mapping": {
+            "type": "polynomial",
+            "x0": 0,
+            "exponents": [
+              0
+            ]
+          }
+        },
+        "w_mouthside_m2": {
+          "priority": 2,
+          "mapping": {
+            "type": "polynomial",
+            "x0": 0,
+            "exponents": [
+              0
+            ]
+          }
+        },
+        "w_mouthside_m3": {
+          "priority": 2,
+          "mapping": {
+            "type": "polynomial",
+            "x0": 0,
+            "exponents": [
+              0
+            ]
+          }
+        },
+        "w_mouthside_m6": {
+          "priority": 10,
+          "mapping": {
+            "type": "polynomial",
+            "x0": 0,
+            "exponents": [
+              0
+            ]
+          }
+        },
+        "w_betweenbrows_m1": {
+          "priority": 2,
+          "mapping": {
+            "type": "polynomial",
+            "x0": 0,
+            "exponents": [
+              0
+            ]
+          }
+        },
+        "w_abovebrow_alpha": {
+          "priority": 200,
+          "mapping": {
+            "type": "polynomial",
+            "x0": 0,
+            "exponents": [
+              0
+            ]
+          }
+        },
+        "h_teethupper": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0.4,
+            "x1": 0.75,
+            "y0": 0,
+            "y1": 0.6
+          }
+        },
+        "h_teethlower": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0.25,
+            "x1": 1,
+            "y0": 0,
+            "y1": 0.9
+          }
+        }
+      }
+    },
+    "fear": {
+      "influences": {
+        "m0": {
+          "priority": 2,
+          "mapping": {
+            "type": "polynomial",
+            "x0": 0,
+            "exponents": [
+              0.0029,
+              2.2838,
+              -4.1,
+              2.4
+            ]
+          }
+        },
+        "m1": {
+          "priority": 2,
+          "mapping": {
+            "type": "polynomial",
+            "x0": 0,
+            "exponents": [
+              0.0019,
+              2.6838,
+              -4.5,
+              2.81
+            ]
+          }
+        },
+        "m2": {
+          "priority": 10,
+          "mapping": {
+            "type": "sine",
+            "x0": 0.5,
+            "x1": 0.75,
+            "y0": 0,
+            "y1": 0.66
+          }
+        },
+        "m3": {
+          "priority": 8,
+          "mapping": {
+            "type": "polynomial",
+            "x0": 0,
+            "exponents": [
+              0.0002,
+              1.396,
+              -0.72
+            ]
+          }
+        },
+        "m041": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0.3,
+            "x1": 0.9,
+            "y0": 0,
+            "y1": 0.79
+          }
+        },
+        "m6": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0.25,
+            "x1": 0.85,
+            "y0": 0,
+            "y1": 0.37
+          }
+        },
+        "m7": {
+          "priority": 4,
+          "mapping": {
+            "type": "polynomial",
+            "x0": 0,
+            "exponents": [
+              0
+            ]
+          }
+        },
+        "m8": {
+          "priority": 2,
+          "mapping": {
+            "type": "sine",
+            "x0": 0.75,
+            "x1": 1,
+            "y0": 0,
+            "y1": 0.61
+          }
+        },
+        "m10": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0.75,
+            "x1": 1,
+            "y0": 0,
+            "y1": 1
+          }
+        },
+        "m11": {
+          "mapping": {
+            "type": "polynomial",
+            "x0": 0,
+            "exponents": [
+              0,
+              1.678,
+              -3.531,
+              2.453
+            ]
+          }
+        },
+        "m12": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0.25,
+            "x1": 0.5,
+            "y0": 0,
+            "y1": 0.7
+          }
+        },
+        "m14": {
+          "priority": 2,
+          "mapping": {
+            "type": "sine",
+            "x0": 0.75,
+            "x1": 1,
+            "y0": 0,
+            "y1": 1
+          }
+        },
+        "m15": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0.25,
+            "x1": 0.75,
+            "y0": 0,
+            "y1": 0.36
+          }
+        },
+        "m16": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0.25,
+            "x1": 0.5,
+            "y0": 0,
+            "y1": 0.09
+          }
+        },
+        "h_meb6": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0,
+            "x1": 0.25,
+            "y0": 0,
+            "y1": 0.4
+          }
+        },
+        "h_meb7": {
+          "priority": 2,
+          "mapping": {
+            "type": "polynomial",
+            "x0": 0,
+            "exponents": [
+              0.0014,
+              3.2,
+              -6.5486,
+              4.2
+            ]
+          }
+        },
+        "m5": {
+          "priority": 3,
+          "mapping": {
+            "type": "polynomial",
+            "x0": 0,
+            "exponents": [
+              0
+            ]
+          }
+        },
+        "m042": {
+          "priority": 3,
+          "mapping": {
+            "type": "polynomial",
+            "x0": 0,
+            "exponents": [
+              0
+            ]
+          }
+        },
+        "h_mey12": {
+          "priority": 10,
+          "mapping": {
+            "type": "polynomial",
+            "x0": 0,
+            "exponents": [
+              0
+            ]
+          }
+        },
+        "h_mey8": {
+          "priority": 3,
+          "mapping": {
+            "type": "polynomial",
+            "x0": 0,
+            "exponents": [
+              0
+            ]
+          }
+        },
+        "w_forehead1_m1": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0.75,
+            "x1": 1,
+            "y0": 0,
+            "y1": 0.07
+          }
+        },
+        "w_forehead1_m2": {
+          "mapping": {
+            "type": "polynomial",
+            "x0": 0,
+            "exponents": [
+              0,
+              1.28,
+              -2,
+              1.12
+            ]
+          }
+        },
+        "w_forehead1_m4": {
+          "mapping": {
+            "type": "polynomial",
+            "x0": 0,
+            "exponents": [
+              0,
+              -7.27,
+              16.13,
+              -8.85
+            ]
+          }
+        },
+        "w_forehead1_m5": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0.5,
+            "x1": 0.75,
+            "y0": 0,
+            "y1": -0.5
+          }
+        },
+        "w_forehead_alpha": {
+          "mapping": {
+            "type": "polynomial",
+            "x0": 0,
+            "exponents": [
+              0,
+              0.39,
+              0.74,
+              -0.53
+            ]
+          }
+        },
+        "w_betweenbrows_m1": {
+          "mapping": {
+            "type": "polynomial",
+            "x0": 0,
+            "exponents": [
+              0,
+              1.09,
+              -2.8571,
+              1.65
+            ]
+          }
+        },
+        "w_betweenbrows_alpha": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0.05,
+            "x1": 0.75,
+            "y0": 0,
+            "y1": 1
+          }
+        },
+        "w_mouthside_m1": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0.25,
+            "x1": 0.75,
+            "y0": 0,
+            "y1": 0.78
+          }
+        },
+        "w_mouthside_m2": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0.5,
+            "x1": 1,
+            "y0": 0,
+            "y1": 0.61
+          }
+        },
+        "w_mouthside_m3": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0.25,
+            "x1": 0.75,
+            "y0": 0,
+            "y1": 0.64
+          }
+        },
+        "w_mouthside_alpha": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0.2,
+            "x1": 0.8,
+            "y0": 0,
+            "y1": 1
+          }
+        },
+        "w_abovebrow_alpha": {
+          "priority": 200,
+          "mapping": {
+            "type": "polynomial",
+            "x0": 0,
+            "exponents": [
+              0
+            ]
+          }
+        },
+        "w_crowfeet_alpha": {
+          "priority": 50,
+          "mapping": {
+            "type": "polynomial",
+            "x0": 0,
+            "exponents": [
+              0
+            ]
+          }
+        },
+        "h_teethupper": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0.4,
+            "x1": 0.75,
+            "y0": 0,
+            "y1": 0.39
+          }
+        },
+        "h_teethlower": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0.3,
+            "x1": 1,
+            "y0": 0,
+            "y1": 0.44
+          }
+        }
+      }
+    },
+    "sadness": {
+      "influences": {
+        "m0": {
+          "mapping": {
+            "type": "polynomial",
+            "x0": 0,
+            "exponents": [
+              0,
+              1.8867,
+              -7.8267,
+              11.4134,
+              -5.3334
+            ]
+          }
+        },
+        "m1": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0.75,
+            "x1": 1,
+            "y0": 0,
+            "y1": 0.46
+          }
+        },
+        "m2": {
+          "priority": 8,
+          "mapping": {
+            "type": "gauss",
+            "mean": 0.74,
+            "variance": 0.009,
+            "value": 0.068
+          }
+        },
+        "m3": {
+          "priority": 10,
+          "mapping": {
+            "type": "polynomial",
+            "x0": 0,
+            "exponents": [
+              -0.0099,
+              1.399,
+              -1.8347,
+              0.8383
+            ]
+          }
+        },
+        "m042": {
+          "priority": 5,
+          "mapping": {
+            "type": "sine",
+            "x0": 0.4,
+            "x1": 0.75,
+            "y0": 0,
+            "y1": 0.72
+          }
+        },
+        "m5": {
+          "priority": 4,
+          "mapping": {
+            "type": "sine",
+            "x0": 0.15,
+            "x1": 0.5,
+            "y0": 0,
+            "y1": 0.32
+          }
+        },
+        "m6": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0.43,
+            "x1": 0.95,
+            "y0": 0,
+            "y1": 0.37
+          }
+        },
+        "m7": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0.43,
+            "x1": 0.97,
+            "y0": 0,
+            "y1": 1
+          }
+        },
+        "m8": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0,
+            "x1": 0.75,
+            "y0": 0,
+            "y1": 0.24
+          }
+        },
+        "m10": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0.5,
+            "x1": 0.75,
+            "y0": 0,
+            "y1": 1
+          }
+        },
+        "m11": {
+          "mapping": {
+            "type": "polynomial",
+            "x0": 0,
+            "exponents": [
+              0.0097,
+              0.2743,
+              0.6857
+            ]
+          }
+        },
+        "m12": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0.4,
+            "x1": 0.9,
+            "y0": 0,
+            "y1": 1
+          }
+        },
+        "m15": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0.46,
+            "x1": 1,
+            "y0": 0,
+            "y1": 0.44
+          }
+        },
+        "m16": {
+          "mapping": {
+            "type": "gauss",
+            "mean": 0.45,
+            "variance": 0.02,
+            "value": 0.077
+          }
+        },
+        "h_meb6": {
+          "mapping": {
+            "type": "polynomial",
+            "x0": 0,
+            "exponents": [
+              0,
+              1.7631,
+              -4.7096,
+              3.4407,
+              3.3372,
+              -3.2895
+            ]
+          }
+        },
+        "h_meb7": {
+          "priority": 5,
+          "mapping": {
+            "type": "polynomial",
+            "x0": 0,
+            "exponents": [
+              0.0069,
+              2.4705,
+              -1.8971,
+              0.4267
+            ]
+          }
+        },
+        "h_mey12": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0.75,
+            "x1": 1,
+            "y0": 0,
+            "y1": 0.27
+          }
+        },
+        "h_mey8": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0.75,
+            "x1": 1,
+            "y0": 0,
+            "y1": 0.3
+          }
+        },
+        "m9": {
+          "priority": 1,
+          "mapping": {
+            "type": "sine",
+            "x0": 0.6,
+            "x1": 1,
+            "y0": 0,
+            "y1": 0.33
+          }
+        },
+        "w_abovebrow_alpha": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0.6,
+            "x1": 1,
+            "y0": 0,
+            "y1": 0.55
+          }
+        },
+        "w_abovebrow_m1": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0,
+            "x1": 1,
+            "y0": 0,
+            "y1": 0.5
+          }
+        },
+        "w_abovebrow_m2": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0.5,
+            "x1": 1,
+            "y0": 0,
+            "y1": -0.5
+          }
+        },
+        "w_beloweye_alpha": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0.2,
+            "x1": 1,
+            "y0": 0,
+            "y1": 1
+          }
+        },
+        "w_beloweye_m1": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0.75,
+            "x1": 1,
+            "y0": 0,
+            "y1": 0.2
+          }
+        },
+        "w_beloweye_m2": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0.25,
+            "x1": 1,
+            "y0": 0,
+            "y1": 1
+          }
+        },
+        "w_beloweye_m3": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0.3,
+            "x1": 0.75,
+            "y0": 0,
+            "y1": 0.67
+          }
+        },
+        "w_beloweye_m4": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0.5,
+            "x1": 1,
+            "y0": 0,
+            "y1": 0.8
+          }
+        },
+        "w_betweenbrows_alpha": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0.25,
+            "x1": 0.75,
+            "y0": 0,
+            "y1": 1
+          }
+        },
+        "w_betweenbrows_m1": {
+          "mapping": {
+            "type": "gauss",
+            "mean": 0.8,
+            "variance": 0.04,
+            "value": 0.11
+          }
+        },
+        "w_chin_alpha": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0.45,
+            "x1": 1,
+            "y0": 0,
+            "y1": 1
+          }
+        },
+        "w_chin_m1": {
+          "mapping": {
+            "type": "gauss",
+            "mean": 0.75,
+            "variance": 0.01,
+            "value": 0.07
+          }
+        },
+        "w_chin_m2": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0.45,
+            "x1": 1,
+            "y0": 0,
+            "y1": 0.76
+          }
+        },
+        "w_forehead1_m1": {
+          "mapping": {
+            "type": "polynomial",
+            "x0": 0,
+            "exponents": [
+              0,
+              1.29,
+              -0.64,
+              -0.21
+            ]
+          }
+        },
+        "w_forehead1_m2": {
+          "mapping": {
+            "type": "polynomial",
+            "x0": 0,
+            "exponents": [
+              0,
+              0.6,
+              -0.26,
+              0
+            ]
+          }
+        },
+        "w_forehead1_m4": {
+          "mapping": {
+            "type": "polynomial",
+            "x0": 0,
+            "exponents": [
+              0,
+              -4.43,
+              7.69,
+              -3.47
+            ]
+          }
+        },
+        "w_forehead1_m5": {
+          "mapping": {
+            "type": "polynomial",
+            "x0": 0,
+            "exponents": [
+              0,
+              -0.033,
+              0.48,
+              -0.75
+            ]
+          }
+        },
+        "w_forehead_alpha": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0.25,
+            "x1": 1,
+            "y0": 0,
+            "y1": 1
+          }
+        },
+        "w_mouthside_m1": {
+          "mapping": {
+            "type": "polynomial",
+            "x0": 0,
+            "exponents": [
+              0,
+              0.19,
+              0.034,
+              0.53
+            ]
+          }
+        },
+        "w_mouthside_m2": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0.545,
+            "x1": 1,
+            "y0": 0,
+            "y1": 0.8
+          }
+        },
+        "w_mouthside_m3": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0.2,
+            "x1": 1.2,
+            "y0": 0,
+            "y1": 1.05
+          }
+        },
+        "w_mouthside_m4": {
+          "priority": 10,
+          "mapping": {
+            "type": "polynomial",
+            "x0": 0,
+            "exponents": [
+              0
+            ]
+          }
+        },
+        "w_mouthside_alpha": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0.25,
+            "x1": 1,
+            "y0": 0,
+            "y1": 1
+          }
+        },
+        "w_noseside_alpha": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0.75,
+            "x1": 1,
+            "y0": 0,
+            "y1": 1
+          }
+        },
+        "w_noseside_m2": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0.5,
+            "x1": 1,
+            "y0": 0,
+            "y1": 1
+          }
+        },
+        "w_noseside_m3": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0.5,
+            "x1": 1,
+            "y0": 0,
+            "y1": 1
+          }
+        },
+        "h_teethupper": {
+          "priority": 3,
+          "mapping": {
+            "type": "sine",
+            "x0": 0.5,
+            "x1": 1,
+            "y0": 0,
+            "y1": 0.39
+          }
+        },
+        "h_teethlower": {
+          "priority": 3,
+          "mapping": {
+            "type": "sine",
+            "x0": 0.4,
+            "x1": 1,
+            "y0": 0,
+            "y1": 0.42
+          }
+        },
+        "w_crowfeet_alpha": {
+          "priority": 50,
+          "mapping": {
+            "type": "polynomial",
+            "x0": 0,
+            "exponents": [
+              0
+            ]
+          }
+        }
+      }
+    },
+    "disgust": {
+      "influences": {
+        "m0": {
+          "mapping": {
+            "type": "polynomial",
+            "x0": -0.01,
+            "exponents": [
+              0.0077,
+              1.7476,
+              -2.3543,
+              0.7467
+            ]
+          }
+        },
+        "m2": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0.75,
+            "x1": 1,
+            "y0": 0,
+            "y1": 0.59
+          }
+        },
+        "m042": {
+          "mapping": {
+            "type": "polynomial",
+            "x0": 0,
+            "exponents": [
+              0,
+              -0.116,
+              3.063,
+              -2.347
+            ]
+          }
+        },
+        "m5": {
+          "mapping": {
+            "type": "polynomial",
+            "x0": 0,
+            "exponents": [
+              0,
+              0.44,
+              3.347,
+              -7.35,
+              4.0533
+            ]
+          }
+        },
+        "m6": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0.6,
+            "x1": 1,
+            "y0": 0,
+            "y1": 0.43
+          }
+        },
+        "m7": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0.55,
+            "x1": 1,
+            "y0": 0,
+            "y1": 0.4
+          }
+        },
+        "m8": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0.5,
+            "x1": 0.8,
+            "y0": 0,
+            "y1": 0.32
+          }
+        },
+        "m10": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0.75,
+            "x1": 1,
+            "y0": 0,
+            "y1": 1
+          }
+        },
+        "m11": {
+          "priority": 7,
+          "mapping": {
+            "type": "polynomial",
+            "x0": 0,
+            "exponents": [
+              0
+            ]
+          }
+        },
+        "m12": {
+          "priority": 20,
+          "mapping": {
+            "type": "polynomial",
+            "x0": 0,
+            "exponents": [
+              0
+            ]
+          }
+        },
+        "m16": {
+          "mapping": {
+            "type": "polynomial",
+            "x0": -0.01,
+            "exponents": [
+              0.0031,
+              0.7962,
+              -1.1429,
+              0.4267
+            ]
+          }
+        },
+        "m15": {
+          "priority": 4,
+          "mapping": {
+            "type": "polynomial",
+            "x0": 0,
+            "exponents": [
+              0
+            ]
+          }
+        },
+        "h_meb6": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0,
+            "x1": 0.75,
+            "y0": 0,
+            "y1": 0.53
+          }
+        },
+        "h_meb7": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0.75,
+            "x1": 1,
+            "y0": 0,
+            "y1": 1
+          }
+        },
+        "h_mli9": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0.5,
+            "x1": 0.75,
+            "y0": 0,
+            "y1": 0.73
+          }
+        },
+        "h_mli10": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0.5,
+            "x1": 0.75,
+            "y0": 0,
+            "y1": 0.4
+          }
+        },
+        "w_abovebrow_alpha": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0.53,
+            "x1": 1,
+            "y0": 0,
+            "y1": 1
+          }
+        },
+        "w_abovebrow_m1": {
+          "mapping": {
+            "type": "gauss",
+            "mean": 0.75,
+            "variance": 0.009,
+            "value": -0.023
+          }
+        },
+        "w_abovebrow_m2": {
+          "mapping": {
+            "type": "gauss",
+            "mean": 0.75,
+            "variance": 0.009,
+            "value": 0.09
+          }
+        },
+        "w_beloweye_alpha": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0,
+            "x1": 0.75,
+            "y0": 0,
+            "y1": 1
+          }
+        },
+        "w_beloweye_m1": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0.5,
+            "x1": 1,
+            "y0": 0,
+            "y1": 0.35
+          }
+        },
+        "w_beloweye_m2": {
+          "mapping": {
+            "type": "polynomial",
+            "x0": 0,
+            "exponents": [
+              0,
+              0.85,
+              2.44,
+              -2.88
+            ]
+          }
+        },
+        "w_beloweye_m3": {
+          "mapping": {
+            "type": "gauss",
+            "mean": 0.65,
+            "variance": 0.03,
+            "value": 0.17
+          }
+        },
+        "w_betweenbrows_alpha": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0.21,
+            "x1": 1,
+            "y0": 0,
+            "y1": 1
+          }
+        },
+        "w_betweenbrows_m1": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0.21,
+            "x1": 1,
+            "y0": 0,
+            "y1": 0.47
+          }
+        },
+        "w_chin_alpha": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0.3,
+            "x1": 1,
+            "y0": 0,
+            "y1": 1
+          }
+        },
+        "w_chin_m2": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0.25,
+            "x1": 0.75,
+            "y0": 0,
+            "y1": 0.23
+          }
+        },
+        "w_mouthside_alpha": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0,
+            "x1": 0.75,
+            "y0": 0,
+            "y1": 1
+          }
+        },
+        "w_mouthside_m1": {
+          "mapping": {
+            "type": "polynomial",
+            "x0": 0,
+            "exponents": [
+              0,
+              3.98,
+              -7.14,
+              4.16
+            ]
+          }
+        },
+        "w_mouthside_m2": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0,
+            "x1": 0.25,
+            "y0": 0,
+            "y1": -0.13
+          }
+        },
+        "w_mouthside_m4": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0.5,
+            "x1": 1,
+            "y0": 0,
+            "y1": 0.88
+          }
+        },
+        "w_mouthside_m5": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0,
+            "x1": 0.25,
+            "y0": 0,
+            "y1": -0.15
+          }
+        },
+        "w_mouthside_m6": {
+          "mapping": {
+            "type": "polynomial",
+            "x0": 0,
+            "exponents": [
+              0,
+              3.21,
+              -4.98,
+              2.77
+            ]
+          }
+        },
+        "w_noseside_alpha": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0.5,
+            "x1": 0.75,
+            "y0": 0,
+            "y1": 1
+          }
+        },
+        "w_noseside_m1": {
+          "mapping": {
+            "type": "gauss",
+            "mean": 0.6,
+            "variance": 0.009,
+            "value": 0.2
+          }
+        },
+        "w_noseside_m2": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0.5,
+            "x1": 0.75,
+            "y0": 0,
+            "y1": 0.41
+          }
+        },
+        "w_noseside_m3": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0.5,
+            "x1": 0.75,
+            "y0": 0,
+            "y1": 0.25
+          }
+        },
+        "h_teethupper": {
+          "priority": 9,
+          "mapping": {
+            "type": "sine",
+            "x0": 0.67,
+            "x1": 1,
+            "y0": 0,
+            "y1": 0.37
+          }
+        },
+        "h_teethlower": {
+          "priority": 9,
+          "mapping": {
+            "type": "sine",
+            "x0": 0.75,
+            "x1": 1,
+            "y0": 0,
+            "y1": 0.05
+          }
+        },
+        "w_crowfeet_alpha": {
+          "priority": 50,
+          "mapping": {
+            "type": "polynomial",
+            "x0": 0,
+            "exponents": [
+              0
+            ]
+          }
+        }
+      }
+    },
+    "anger": {
+      "influences": {
+        "m0": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0.25,
+            "x1": 0.77,
+            "y0": 0,
+            "y1": 0.61
+          }
+        },
+        "m1": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0.48,
+            "x1": 0.77,
+            "y0": 0,
+            "y1": 0.45
+          }
+        },
+        "m2": {
+          "priority": 20,
+          "mapping": {
+            "type": "sine",
+            "x0": 0.25,
+            "x1": 0.78,
+            "y0": 0,
+            "y1": 0.77
+          }
+        },
+        "m041": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0.4,
+            "x1": 1,
+            "y0": 0,
+            "y1": 0.7
+          }
+        },
+        "m042": {
+          "priority": 8,
+          "mapping": {
+            "type": "gauss",
+            "mean": 0.25,
+            "variance": 0.01,
+            "value": 0.03
+          }
+        },
+        "m5": {
+          "priority": 3,
+          "mapping": {
+            "type": "polynomial",
+            "x0": 0,
+            "exponents": [
+              1.67,
+              -3.13,
+              1.6
+            ]
+          }
+        },
+        "m6": {
+          "mapping": {
+            "type": "polynomial",
+            "x0": 0,
+            "exponents": [
+              0,
+              0.13,
+              0.81,
+              -0.37
+            ]
+          }
+        },
+        "m7": {
+          "mapping": {
+            "type": "polynomial",
+            "x0": 0,
+            "exponents": [
+              0.12,
+              2.05,
+              -1.97
+            ]
+          }
+        },
+        "m11": {
+          "mapping": {
+            "type": "polynomial",
+            "x0": 0,
+            "exponents": [
+              0.02,
+              0.97,
+              0.09,
+              -0.96
+            ]
+          }
+        },
+        "m12": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0.23,
+            "x1": 0.52,
+            "y0": 0,
+            "y1": 0.27
+          }
+        },
+        "m15": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0.25,
+            "x1": 0.75,
+            "y0": 0,
+            "y1": 0.45
+          }
+        },
+        "h_meb6": {
+          "mapping": {
+            "type": "polynomial",
+            "x0": 0.01,
+            "exponents": [
+              0.02,
+              2.09,
+              -3.79,
+              2.35
+            ]
+          }
+        },
+        "h_meb7": {
+          "mapping": {
+            "type": "polynomial",
+            "x0": 0,
+            "exponents": [
+              2.06,
+              -4.16,
+              2.24
+            ]
+          }
+        },
+        "h_mey8": {
+          "mapping": {
+            "type": "polynomial",
+            "x0": 0,
+            "exponents": [
+              1.04,
+              -2.55,
+              1.87
+            ]
+          }
+        },
+        "h_mli9": {
+          "mapping": {
+            "type": "polynomial",
+            "x0": 0,
+            "exponents": [
+              -0.01,
+              2.3,
+              -6.63,
+              5.33
+            ]
+          }
+        },
+        "h_mey12": {
+          "priority": 5,
+          "mapping": {
+            "type": "polynomial",
+            "x0": 0,
+            "exponents": [
+              0
+            ]
+          }
+        },
+        "w_beloweye_alpha": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0.05,
+            "x1": 0.25,
+            "y0": 0,
+            "y1": 0.8
+          }
+        },
+        "w_beloweye_m2": {
+          "mapping": {
+            "type": "polynomial",
+            "x0": 0,
+            "exponents": [
+              0,
+              2.43,
+              -3.43,
+              1.55
+            ]
+          }
+        },
+        "w_beloweye_m3": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0.25,
+            "x1": 0.9,
+            "y0": 0,
+            "y1": 0.84
+          }
+        },
+        "w_beloweye_m4": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0.5,
+            "x1": 1,
+            "y0": 0,
+            "y1": 0.52
+          }
+        },
+        "w_betweenbrows_alpha": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0.25,
+            "x1": 1.2,
+            "y0": 0,
+            "y1": 1.1
+          }
+        },
+        "w_betweenbrows_m1": {
+          "mapping": {
+            "type": "polynomial",
+            "x0": 0.01,
+            "exponents": [
+              0,
+              1.46,
+              -2.48,
+              1.55
+            ]
+          }
+        },
+        "w_mouthside_alpha": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0.2,
+            "x1": 0.75,
+            "y0": 0,
+            "y1": 1
+          }
+        },
+        "w_mouthside_m1": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0.25,
+            "x1": 0.5,
+            "y0": 0,
+            "y1": 0.81
+          }
+        },
+        "w_mouthside_m3": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0,
+            "x1": 0.5,
+            "y0": 0,
+            "y1": 0.23
+          }
+        },
+        "w_mouthside_m4": {
+          "mapping": {
+            "type": "gauss",
+            "mean": 1,
+            "variance": 0.06,
+            "value": 0.42
+          }
+        },
+        "w_abovebrow_m1": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0.5,
+            "x1": 1,
+            "y0": 0,
+            "y1": -0.25
+          }
+        },
+        "w_abovebrow_m2": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0.5,
+            "x1": 1,
+            "y0": 0,
+            "y1": -0.35
+          }
+        },
+        "w_abovebrow_alpha": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0.5,
+            "x1": 1,
+            "y0": 0,
+            "y1": 1
+          }
+        },
+        "w_noseside_m1": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0.5,
+            "x1": 0.75,
+            "y0": 0,
+            "y1": 1
+          }
+        },
+        "w_noseside_m2": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0.5,
+            "x1": 0.75,
+            "y0": 0,
+            "y1": 1
+          }
+        },
+        "w_noseside_alpha": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0.5,
+            "x1": 1.3,
+            "y0": 0,
+            "y1": 1.45
+          }
+        },
+        "h_teethupper": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0.6,
+            "x1": 1,
+            "y0": 0,
+            "y1": 0.36
+          }
+        },
+        "h_teethlower": {
+          "mapping": {
+            "type": "sine",
+            "x0": 0.6,
+            "x1": 1,
+            "y0": 0,
+            "y1": 0.32
+          }
+        },
+        "m3": {
+          "priority": 9,
+          "mapping": {
+            "type": "polynomial",
+            "x0": 0,
+            "exponents": [
+              0
+            ]
+          }
+        },
+        "w_crowfeet_alpha": {
+          "priority": 50,
+          "mapping": {
+            "type": "polynomial",
+            "x0": 0,
+            "exponents": [
+              0
+            ]
+          }
+        }
+      }
+    }
+  }
+}

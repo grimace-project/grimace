@@ -1,0 +1,1287 @@
+{
+  "musclegroups": {
+    "feature": {
+      "color": "#d16d00",
+      "width": 2,
+      "alpha": 0.3,
+      "zindex": 0,
+      "muscles": {
+        "m0": {
+          "label": "m00",
+          "spline": {
+            "type": "line",
+            "points": [
+              {
+                "x": 136,
+                "y": 144
+              },
+              {
+                "x": 140,
+                "y": 52
+              }
+            ]
+          }
+        },
+        "m1": {
+          "label": "m01",
+          "spline": {
+            "type": "line",
+            "points": [
+              {
+                "x": 109,
+                "y": 125
+              },
+              {
+                "x": 119,
+                "y": 25
+              }
+            ]
+          }
+        },
+        "m2": {
+          "label": "m02",
+          "spline": {
+            "type": "line",
+            "points": [
+              {
+                "x": 73,
+                "y": 127
+              },
+              {
+                "x": 79,
+                "y": 19
+              }
+            ]
+          }
+        },
+        "m3": {
+          "label": "m03",
+          "spline": {
+            "type": "line",
+            "points": [
+              {
+                "x": 26,
+                "y": 152
+              },
+              {
+                "x": 27,
+                "y": 30
+              }
+            ]
+          }
+        },
+        "m5": {
+          "label": "m05",
+          "spline": {
+            "type": "line",
+            "points": [
+              {
+                "x": 87,
+                "y": 244
+              },
+              {
+                "x": 87,
+                "y": 170
+              }
+            ]
+          }
+        },
+        "m6": {
+          "label": "m06",
+          "spline": {
+            "type": "line",
+            "points": [
+              {
+                "x": 36,
+                "y": 345
+              },
+              {
+                "x": 36,
+                "y": 262
+              }
+            ]
+          }
+        },
+        "m7": {
+          "label": "m07",
+          "spline": {
+            "type": "line",
+            "points": [
+              {
+                "x": 58,
+                "y": 349
+              },
+              {
+                "x": 92,
+                "y": 269
+              }
+            ]
+          }
+        },
+        "m8": {
+          "label": "m08",
+          "spline": {
+            "type": "quadraticbezier",
+            "points": [
+              {
+                "x": 79,
+                "y": 358
+              },
+              {
+                "x": 119,
+                "y": 335
+              },
+              {
+                "x": 147,
+                "y": 303
+              }
+            ]
+          }
+        },
+        "m9": {
+          "label": "m09",
+          "spline": {
+            "type": "quadraticbezier",
+            "points": [
+              {
+                "x": 89,
+                "y": 382
+              },
+              {
+                "x": 133,
+                "y": 378
+              },
+              {
+                "x": 155,
+                "y": 331
+              }
+            ]
+          }
+        },
+        "m10": {
+          "label": "m10",
+          "spline": {
+            "type": "line",
+            "points": [
+              {
+                "x": 89,
+                "y": 411
+              },
+              {
+                "x": 131,
+                "y": 424
+              }
+            ]
+          }
+        },
+        "m11": {
+          "label": "m11",
+          "spline": {
+            "type": "quadraticbezier",
+            "points": [
+              {
+                "x": 75,
+                "y": 425
+              },
+              {
+                "x": 80,
+                "y": 457
+              },
+              {
+                "x": 59,
+                "y": 488
+              }
+            ]
+          }
+        },
+        "m12": {
+          "label": "m12",
+          "spline": {
+            "type": "line",
+            "points": [
+              {
+                "x": 25,
+                "y": 447
+              },
+              {
+                "x": 44,
+                "y": 493
+              }
+            ]
+          }
+        },
+        "m14": {
+          "label": "m14",
+          "spline": {
+            "type": "quadraticbezier",
+            "points": [
+              {
+                "x": 99,
+                "y": 114
+              },
+              {
+                "x": 70,
+                "y": 137
+              },
+              {
+                "x": 55,
+                "y": 159
+              }
+            ]
+          }
+        },
+        "m15": {
+          "label": "m15",
+          "spline": {
+            "type": "line",
+            "points": [
+              {
+                "x": 8,
+                "y": 447
+              },
+              {
+                "x": 8,
+                "y": 502
+              }
+            ]
+          }
+        },
+        "m16": {
+          "label": "m16",
+          "spline": {
+            "type": "line",
+            "points": [
+              {
+                "x": 64,
+                "y": 399
+              },
+              {
+                "x": -10,
+                "y": 399
+              }
+            ]
+          }
+        },
+        "m041": {
+          "label": "m041",
+          "spline": {
+            "type": "line",
+            "points": [
+              {
+                "x": 116,
+                "y": 171
+              },
+              {
+                "x": 116,
+                "y": 152
+              }
+            ]
+          }
+        },
+        "m042": {
+          "label": "m042",
+          "spline": {
+            "type": "line",
+            "points": [
+              {
+                "x": 98,
+                "y": 171
+              },
+              {
+                "x": 98,
+                "y": 224
+              }
+            ]
+          }
+        },
+        "h_meb6": {
+          "label": "h_meb6",
+          "spline": {
+            "type": "line",
+            "points": [
+              {
+                "x": 14,
+                "y": 122
+              },
+              {
+                "x": 14,
+                "y": 211
+              }
+            ]
+          }
+        },
+        "h_meb7": {
+          "label": "h_meb7",
+          "spline": {
+            "type": "line",
+            "points": [
+              {
+                "x": 42,
+                "y": 122
+              },
+              {
+                "x": 131,
+                "y": 235
+              }
+            ]
+          }
+        },
+        "h_mey8": {
+          "label": "h_mey8",
+          "spline": {
+            "type": "line",
+            "points": [
+              {
+                "x": 49,
+                "y": 165
+              },
+              {
+                "x": 123,
+                "y": 269
+              }
+            ]
+          }
+        },
+        "h_mli9": {
+          "label": "h_mli9",
+          "spline": {
+            "type": "line",
+            "points": [
+              {
+                "x": 0,
+                "y": 339
+              },
+              {
+                "x": 0,
+                "y": 354
+              }
+            ]
+          }
+        },
+        "h_mli10": {
+          "label": "h_mli10",
+          "spline": {
+            "type": "line",
+            "points": [
+              {
+                "x": 43,
+                "y": 446
+              },
+              {
+                "x": 58,
+                "y": 465
+              }
+            ]
+          }
+        },
+        "h_mli11": {
+          "label": "h_mli11",
+          "spline": {
+            "type": "line",
+            "points": [
+              {
+                "x": -21,
+                "y": 449
+              },
+              {
+                "x": -21,
+                "y": 462
+              }
+            ]
+          }
+        },
+        "h_mey12": {
+          "label": "h_mey12",
+          "spline": {
+            "type": "line",
+            "points": [
+              {
+                "x": 32,
+                "y": 215
+              },
+              {
+                "x": 32,
+                "y": 175
+              }
+            ]
+          }
+        },
+        "h_teethupper": {
+          "label": "h_teethupper",
+          "spline": {
+            "type": "line",
+            "points": [
+              {
+                "x": 196,
+                "y": 399
+              },
+              {
+                "x": 196,
+                "y": 337
+              }
+            ]
+          }
+        },
+        "h_teethlower": {
+          "label": "h_teethlower",
+          "spline": {
+            "type": "line",
+            "points": [
+              {
+                "x": 196,
+                "y": 417
+              },
+              {
+                "x": 196,
+                "y": 462
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "features": [
+    {
+      "label": "eyebrow",
+      "stroked": true,
+      "filled": false,
+      "mirrored": true,
+      "segments": [
+        {
+          "id": "f1",
+          "spline": {
+            "type": "cubicbezier",
+            "points": [
+              {
+                "x": 150,
+                "y": 160
+              },
+              {
+                "x": 119,
+                "y": 130
+              },
+              {
+                "x": 80,
+                "y": 125
+              },
+              {
+                "x": 32,
+                "y": 153
+              }
+            ]
+          },
+          "label": "eyebrow",
+          "strokestyle": {
+            "type": "brush",
+            "startwidth": 1,
+            "maxwidth": 7,
+            "endwidth": 3,
+            "alpha": 1,
+            "color": "#404040"
+          },
+          "influences": [
+            {
+              "nodenum": 0,
+              "muscle": "m0",
+              "weight": 0.59
+            },
+            {
+              "nodenum": 1,
+              "muscle": "m1",
+              "weight": 0.3
+            },
+            {
+              "nodenum": 1,
+              "muscle": "m2",
+              "weight": 0.15
+            },
+            {
+              "nodenum": 2,
+              "muscle": "m2",
+              "weight": 0.29
+            },
+            {
+              "nodenum": 3,
+              "muscle": "m3",
+              "weight": 0.59
+            },
+            {
+              "nodenum": 1,
+              "muscle": "m14",
+              "weight": 0.24
+            },
+            {
+              "nodenum": 2,
+              "muscle": "m14",
+              "weight": 0.18
+            },
+            {
+              "nodenum": 3,
+              "muscle": "h_meb6",
+              "weight": 1
+            },
+            {
+              "nodenum": 2,
+              "muscle": "h_meb6",
+              "weight": 1
+            },
+            {
+              "nodenum": 1,
+              "muscle": "h_meb6",
+              "weight": 1
+            },
+            {
+              "nodenum": 0,
+              "muscle": "h_meb6",
+              "weight": 1
+            },
+            {
+              "nodenum": 2,
+              "muscle": "h_meb7",
+              "weight": 0.29
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "eye",
+      "stroked": true,
+      "filled": true,
+      "mirrored": true,
+      "segments": [
+        {
+          "id": "f2",
+          "spline": {
+            "type": "cubicbezier",
+            "points": [
+              {
+                "x": 125,
+                "y": 210
+              },
+              {
+                "x": 105,
+                "y": 174
+              },
+              {
+                "x": 60,
+                "y": 178
+              },
+              {
+                "x": 43,
+                "y": 212
+              }
+            ]
+          },
+          "label": "upperlid",
+          "alpha": 1,
+          "strokestyle": {
+            "type": "brush",
+            "startwidth": 1,
+            "maxwidth": 2,
+            "endwidth": 1,
+            "alpha": 1,
+            "color": "#404040"
+          },
+          "influences": [
+            {
+              "nodenum": 1,
+              "muscle": "m041",
+              "weight": 1
+            },
+            {
+              "nodenum": 2,
+              "muscle": "m041",
+              "weight": 0.67
+            },
+            {
+              "nodenum": 1,
+              "muscle": "m042",
+              "weight": 1
+            },
+            {
+              "nodenum": 2,
+              "muscle": "m042",
+              "weight": 0.67
+            },
+            {
+              "nodenum": 2,
+              "muscle": "h_mey8",
+              "weight": 0.33
+            },
+            {
+              "nodenum": 3,
+              "muscle": "h_mey12",
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "id": "f3",
+          "spline": {
+            "type": "cubicbezier",
+            "points": [
+              {
+                "x": 43,
+                "y": 212
+              },
+              {
+                "x": 56,
+                "y": 212
+              },
+              {
+                "x": 80,
+                "y": 235
+              },
+              {
+                "x": 125,
+                "y": 210
+              }
+            ]
+          },
+          "label": "lowerlid",
+          "alpha": 1,
+          "strokestyle": {
+            "type": "brush",
+            "startwidth": 1,
+            "maxwidth": 2,
+            "endwidth": 1,
+            "alpha": 1,
+            "color": "#404040"
+          },
+          "influences": [
+            {
+              "nodenum": 2,
+              "muscle": "m5",
+              "weight": 1
+            }
+          ]
+        }
+      ],
+      "fills": [
+        {
+          "draw": [
+            {
+              "command": "beginFill",
+              "color": "#ffffff",
+              "alpha": 1
+            },
+            {
+              "command": "drawCircle",
+              "x": 84,
+              "y": 200,
+              "radius": 100
+            },
+            {
+              "command": "endFill"
+            },
+            {
+              "command": "beginFill",
+              "color": "#B3D5ED",
+              "alpha": 1
+            },
+            {
+              "command": "drawCircle",
+              "x": 84,
+              "y": 200,
+              "radius": 17
+            },
+            {
+              "command": "endFill"
+            },
+            {
+              "command": "beginFill",
+              "color": "#000000",
+              "alpha": 1
+            },
+            {
+              "command": "drawCircle",
+              "x": 84,
+              "y": 200,
+              "radius": 6
+            },
+            {
+              "command": "endFill"
+            },
+            {
+              "command": "beginFill",
+              "color": "#ffffff",
+              "alpha": 1
+            },
+            {
+              "command": "drawCircle",
+              "x": -84,
+              "y": 200,
+              "radius": 100
+            },
+            {
+              "command": "endFill"
+            },
+            {
+              "command": "beginFill",
+              "color": "#B3D5ED",
+              "alpha": 1
+            },
+            {
+              "command": "drawCircle",
+              "x": -84,
+              "y": 200,
+              "radius": 17
+            },
+            {
+              "command": "endFill"
+            },
+            {
+              "command": "beginFill",
+              "color": "#000000",
+              "alpha": 1
+            },
+            {
+              "command": "drawCircle",
+              "x": -84,
+              "y": 200,
+              "radius": 6
+            },
+            {
+              "command": "endFill"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "mouth",
+      "stroked": true,
+      "filled": true,
+      "mirrored": true,
+      "segments": [
+        {
+          "id": "f4",
+          "spline": {
+            "type": "joiner",
+            "points": [
+              {
+                "x": -10,
+                "y": 399
+              },
+              {
+                "x": 0,
+                "y": 399
+              },
+              {
+                "x": 15,
+                "y": 399
+              },
+              {
+                "x": 30,
+                "y": 399
+              }
+            ]
+          },
+          "label": "upperlipjoiner",
+          "strokestyle": {
+            "type": "basic",
+            "width": 4,
+            "color": "#222222"
+          },
+          "influences": [
+            {
+              "nodenum": 0,
+              "muscle": "m6",
+              "weight": 1
+            },
+            {
+              "nodenum": 1,
+              "muscle": "m6",
+              "weight": 1
+            },
+            {
+              "nodenum": 0,
+              "muscle": "h_mli9",
+              "weight": 0.4
+            },
+            {
+              "nodenum": 1,
+              "muscle": "h_mli9",
+              "weight": 0.4
+            },
+            {
+              "nodenum": 4,
+              "muscle": "m6",
+              "weight": 1
+            },
+            {
+              "nodenum": 5,
+              "muscle": "m6",
+              "weight": 0.95
+            },
+            {
+              "nodenum": 5,
+              "muscle": "m7",
+              "weight": 0.1
+            },
+            {
+              "nodenum": 5,
+              "muscle": "m8",
+              "weight": 0.1
+            },
+            {
+              "nodenum": 5,
+              "muscle": "m10",
+              "weight": 0.2
+            },
+            {
+              "nodenum": 5,
+              "muscle": "m16",
+              "weight": 0.1
+            },
+            {
+              "nodenum": 4,
+              "muscle": "h_mli9",
+              "weight": 0.25
+            }
+          ]
+        },
+        {
+          "id": "f5",
+          "spline": {
+            "type": "cubicbezier",
+            "points": [
+              {
+                "x": 15,
+                "y": 399
+              },
+              {
+                "x": 30,
+                "y": 399
+              },
+              {
+                "x": 45,
+                "y": 400
+              },
+              {
+                "x": 60,
+                "y": 399
+              }
+            ]
+          },
+          "label": "upperlip",
+          "strokestyle": {
+            "type": "basic",
+            "width": 4,
+            "color": "#222222"
+          },
+          "influences": [
+            {
+              "nodenum": 0,
+              "muscle": "m6",
+              "weight": 1
+            },
+            {
+              "nodenum": 1,
+              "muscle": "m6",
+              "weight": 0.95
+            },
+            {
+              "nodenum": 1,
+              "muscle": "m7",
+              "weight": 0.1
+            },
+            {
+              "nodenum": 1,
+              "muscle": "m8",
+              "weight": 0.1
+            },
+            {
+              "nodenum": 1,
+              "muscle": "m10",
+              "weight": 0.2
+            },
+            {
+              "nodenum": 1,
+              "muscle": "m16",
+              "weight": 0.1
+            },
+            {
+              "nodenum": 0,
+              "muscle": "h_mli9",
+              "weight": 0.25
+            },
+            {
+              "nodenum": 2,
+              "muscle": "m6",
+              "weight": 0.95
+            },
+            {
+              "nodenum": 2,
+              "muscle": "m7",
+              "weight": 0.5
+            },
+            {
+              "nodenum": 2,
+              "muscle": "m8",
+              "weight": 0.29
+            },
+            {
+              "nodenum": 3,
+              "muscle": "m8",
+              "weight": 0.23
+            },
+            {
+              "nodenum": 3,
+              "muscle": "m9",
+              "weight": 0.5
+            },
+            {
+              "nodenum": 2,
+              "muscle": "m10",
+              "weight": 0.29
+            },
+            {
+              "nodenum": 3,
+              "muscle": "m10",
+              "weight": 0.09
+            },
+            {
+              "nodenum": 3,
+              "muscle": "m11",
+              "weight": 0.23
+            },
+            {
+              "nodenum": 3,
+              "muscle": "m16",
+              "weight": 1
+            },
+            {
+              "nodenum": 2,
+              "muscle": "m16",
+              "weight": 0.3
+            }
+          ]
+        },
+        {
+          "id": "f6",
+          "spline": {
+            "type": "cubicbezier",
+            "points": [
+              {
+                "x": 60,
+                "y": 399
+              },
+              {
+                "x": 50,
+                "y": 399
+              },
+              {
+                "x": 40,
+                "y": 400
+              },
+              {
+                "x": 25,
+                "y": 401
+              }
+            ]
+          },
+          "label": "lowerlip",
+          "strokestyle": {
+            "type": "basic",
+            "width": 4,
+            "color": "#222222"
+          },
+          "influences": [
+            {
+              "nodenum": 0,
+              "muscle": "m8",
+              "weight": 0.23
+            },
+            {
+              "nodenum": 0,
+              "muscle": "m9",
+              "weight": 0.5
+            },
+            {
+              "nodenum": 1,
+              "muscle": "m9",
+              "weight": 0.13
+            },
+            {
+              "nodenum": 2,
+              "muscle": "m9",
+              "weight": 0.05
+            },
+            {
+              "nodenum": 0,
+              "muscle": "m10",
+              "weight": 0.09
+            },
+            {
+              "nodenum": 1,
+              "muscle": "m10",
+              "weight": 0.3
+            },
+            {
+              "nodenum": 2,
+              "muscle": "m10",
+              "weight": 0.31
+            },
+            {
+              "nodenum": 3,
+              "muscle": "m10",
+              "weight": 0.13
+            },
+            {
+              "nodenum": 0,
+              "muscle": "m11",
+              "weight": 0.22
+            },
+            {
+              "nodenum": 1,
+              "muscle": "m12",
+              "weight": 0.5
+            },
+            {
+              "nodenum": 2,
+              "muscle": "m12",
+              "weight": 0.31
+            },
+            {
+              "nodenum": 3,
+              "muscle": "m12",
+              "weight": 0.13
+            },
+            {
+              "nodenum": 3,
+              "muscle": "m15",
+              "weight": 0.85
+            },
+            {
+              "nodenum": 2,
+              "muscle": "m15",
+              "weight": 0.7
+            },
+            {
+              "nodenum": 1,
+              "muscle": "m15",
+              "weight": 0.4
+            },
+            {
+              "nodenum": 0,
+              "muscle": "m16",
+              "weight": 1
+            },
+            {
+              "nodenum": 1,
+              "muscle": "m16",
+              "weight": 0.3
+            },
+            {
+              "nodenum": 2,
+              "muscle": "m16",
+              "weight": 0.1
+            },
+            {
+              "nodenum": 1,
+              "muscle": "h_mli10",
+              "weight": 1
+            },
+            {
+              "nodenum": 2,
+              "muscle": "h_mli10",
+              "weight": 0.2
+            },
+            {
+              "nodenum": 3,
+              "muscle": "h_mli10",
+              "weight": 0.1
+            }
+          ]
+        },
+        {
+          "id": "f7",
+          "spline": {
+            "type": "joiner",
+            "points": [
+              {
+                "x": 40,
+                "y": 400
+              },
+              {
+                "x": 25,
+                "y": 401
+              },
+              {
+                "x": 0,
+                "y": 401
+              },
+              {
+                "x": -10,
+                "y": 401
+              }
+            ]
+          },
+          "label": "lowerlipjoiner",
+          "strokestyle": {
+            "type": "basic",
+            "width": 4,
+            "color": "#222222"
+          },
+          "influences": [
+            {
+              "nodenum": 0,
+              "muscle": "m9",
+              "weight": 0.05
+            },
+            {
+              "nodenum": 0,
+              "muscle": "m10",
+              "weight": 0.31
+            },
+            {
+              "nodenum": 1,
+              "muscle": "m10",
+              "weight": 0.13
+            },
+            {
+              "nodenum": 0,
+              "muscle": "m12",
+              "weight": 0.31
+            },
+            {
+              "nodenum": 1,
+              "muscle": "m12",
+              "weight": 0.13
+            },
+            {
+              "nodenum": 1,
+              "muscle": "m15",
+              "weight": 0.85
+            },
+            {
+              "nodenum": 0,
+              "muscle": "m15",
+              "weight": 0.7
+            },
+            {
+              "nodenum": 0,
+              "muscle": "m16",
+              "weight": 0.1
+            },
+            {
+              "nodenum": 0,
+              "muscle": "h_mli10",
+              "weight": 0.2
+            },
+            {
+              "nodenum": 1,
+              "muscle": "h_mli10",
+              "weight": 0.1
+            },
+            {
+              "nodenum": 5,
+              "muscle": "m15",
+              "weight": 1
+            },
+            {
+              "nodenum": 4,
+              "muscle": "m15",
+              "weight": 1
+            },
+            {
+              "nodenum": 4,
+              "muscle": "h_mli11",
+              "weight": 1
+            },
+            {
+              "nodenum": 5,
+              "muscle": "h_mli11",
+              "weight": 1
+            }
+          ]
+        }
+      ],
+      "fills": [
+        {
+          "draw": [
+            {
+              "command": "beginFill",
+              "color": "#000000",
+              "alpha": 1
+            },
+            {
+              "command": "drawRect",
+              "x": -200,
+              "y": 270,
+              "width": 400,
+              "height": 200
+            },
+            {
+              "command": "endFill"
+            }
+          ]
+        },
+        {
+          "draw": [
+            {
+              "command": "beginFill",
+              "color": "#ffffff",
+              "alpha": 1
+            },
+            {
+              "command": "drawEllipse",
+              "x": -150,
+              "y": 300,
+              "width": 300,
+              "height": 100
+            },
+            {
+              "command": "endFill"
+            }
+          ],
+          "influence": {
+            "muscle": "h_teethupper",
+            "weight": 1
+          }
+        },
+        {
+          "draw": [
+            {
+              "command": "beginFill",
+              "color": "#ffffff",
+              "alpha": 1
+            },
+            {
+              "command": "moveTo",
+              "x": 160,
+              "y": 480
+            },
+            {
+              "command": "lineTo",
+              "x": 160,
+              "y": 370
+            },
+            {
+              "command": "curveTo",
+              "controlX": 0,
+              "controlY": 433,
+              "anchorX": -160,
+              "anchorY": 370
+            },
+            {
+              "command": "lineTo",
+              "x": -160,
+              "y": 480
+            },
+            {
+              "command": "endFill"
+            }
+          ],
+          "influence": {
+            "muscle": "h_teethlower",
+            "weight": 1
+          }
+        }
+      ]
+    }
+  ]
+}

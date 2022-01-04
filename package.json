@@ -29,7 +29,8 @@
     "generate-facedata-validator": "typescript-json-validator src/facedata.d.ts Facedata && scripts/patch-validator.sh"
   },
   "dependencies": {
-    "@stencil/core": "^2.11.0"
+    "@stencil/core": "^2.11.0",
+    "ts-deepmerge": "^1.1.0"
   },
   "devDependencies": {
     "@stencil/store": "^1.5.0",
