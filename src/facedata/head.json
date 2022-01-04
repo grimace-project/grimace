@@ -1,0 +1,197 @@
+{
+  "features": [
+    {
+      "label": "head",
+      "stroked": true,
+      "filled": false,
+      "mirrored": true,
+      "fills": [
+        {
+          "draw": [
+            {
+              "command": "beginFill",
+              "color": "#F1E2D6",
+              "alpha": 1
+            },
+            {
+              "command": "drawRect",
+              "x": -200,
+              "y": -30,
+              "width": 400,
+              "height": 530
+            },
+            {
+              "command": "endFill"
+            }
+          ]
+        }
+      ],
+      "segments": [
+        {
+          "id": "fh1",
+          "label": "headtop",
+          "strokestyle": {
+            "type": "basic",
+            "width": 4,
+            "color": "#222222"
+          },
+          "spline": {
+            "type": "joiner",
+            "points": [
+              {
+                "x": -10,
+                "y": -24
+              },
+              {
+                "x": 0,
+                "y": -24
+              },
+              {
+                "x": 150,
+                "y": 23
+              },
+              {
+                "x": 180,
+                "y": 51
+              }
+            ]
+          }
+        },
+        {
+          "id": "fh2",
+          "label": "headside",
+          "strokestyle": {
+            "type": "basic",
+            "width": 4,
+            "color": "#222222"
+          },
+          "spline": {
+            "type": "cubicbezier",
+            "points": [
+              {
+                "x": 150,
+                "y": 23
+              },
+              {
+                "x": 197,
+                "y": 180
+              },
+              {
+                "x": 193,
+                "y": 285
+              },
+              {
+                "x": 146,
+                "y": 397
+              }
+            ]
+          }
+        },
+        {
+          "id": "fh3",
+          "label": "headbottom",
+          "strokestyle": {
+            "type": "basic",
+            "width": 4,
+            "color": "#222222"
+          },
+          "spline": {
+            "type": "joiner",
+            "points": [
+              {
+                "x": 193,
+                "y": 285
+              },
+              {
+                "x": 146,
+                "y": 397
+              },
+              {
+                "x": 0,
+                "y": 497
+              },
+              {
+                "x": -10,
+                "y": 497
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "label": "nose",
+      "stroked": true,
+      "filled": false,
+      "mirrored": true,
+      "segments": [
+        {
+          "id": "n1",
+          "label": "nose1",
+          "strokestyle": {
+            "type": "brush",
+            "startwidth": 0.5,
+            "maxwidth": 1,
+            "endwidth": 1,
+            "alpha": 1,
+            "color": "#222222"
+          },
+          "spline": {
+            "type": "joiner",
+            "points": [
+              {
+                "x": -5,
+                "y": 333
+              },
+              {
+                "x": 0,
+                "y": 333
+              },
+              {
+                "x": 23,
+                "y": 326
+              },
+              {
+                "x": 36,
+                "y": 329
+              }
+            ]
+          }
+        },
+        {
+          "id": "n2",
+          "label": "nose2",
+          "strokestyle": {
+            "type": "brush",
+            "startwidth": 1,
+            "maxwidth": 1,
+            "endwidth": 1,
+            "alpha": 1,
+            "color": "#222222"
+          },
+          "spline": {
+            "type": "cubicbezier",
+            "points": [
+              {
+                "x": 23,
+                "y": 326
+              },
+              {
+                "x": 36,
+                "y": 329
+              },
+              {
+                "x": 47,
+                "y": 326
+              },
+              {
+                "x": 44,
+                "y": 305
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
