@@ -22,15 +22,21 @@ export default class BasicStyle {
   drawInContext(
     context: CanvasRenderingContext2D,
     spline: ISpline,
-    _start: boolean,
-    _end: boolean,
+    start: boolean,
+    end: boolean,
     mirror: boolean,
   ): void {
-    context.beginPath()
+    if (start) {
+      context.beginPath()
+    }
     context.strokeStyle = this.strokeColor.toRgba()
     context.lineWidth = this.width
+    context.lineCap = 'round'
+    context.lineJoin = 'round'
     context.moveTo(spline.getStart().x, spline.getStart().y)
-    spline.traceSplineInContext(context, true, mirror, false)
-    context.stroke()
+    spline.traceSplineInContext(context, false, mirror, false)
+    if (end) {
+      context.stroke()
+    }
   }
 }

@@ -33,7 +33,7 @@ export default class BrushStyle {
   drawInContext(
     context: CanvasRenderingContext2D,
     spline: ISpline,
-    _start: boolean,
+    start: boolean,
     _end: boolean,
     mirror: boolean,
   ): void {
@@ -80,7 +80,7 @@ export default class BrushStyle {
 
     context.beginPath()
 
-    context.fillStyle = this.strokeColor.toHex()
+    context.fillStyle = this.strokeColor.toRgba()
 
     context.moveTo(startSplineX, startSplineY)
     context.lineTo(startLowerX, startLowerY)
@@ -91,7 +91,6 @@ export default class BrushStyle {
     splineUpper.traceSplineInContext(context, true, mirror, true)
     context.lineTo(startSplineX, startSplineY)
 
-    context.closePath()
     context.fill()
 
     context.moveTo(endSplineX, endSplineY)

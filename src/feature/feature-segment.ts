@@ -45,9 +45,6 @@ export default class FeatureSegment {
 
     if (fill) {
       this.spline.drawFillInContext(context, start, end, mirror)
-      if (end) {
-        context.closePath()
-      }
     }
   }
 

@@ -6,10 +6,6 @@ import FeatureNode from './feature-node'
 
 export default class FeatureFill {
   commands: FacedataFeatureFillCommand[]
-  influence?: {
-    muscle: Muscle
-    weight: number
-  }
   pivot: FeatureNode
 
   constructor(commands: FacedataFeatureFillCommand[], influence: { muscle: Muscle; weight: number }) {
@@ -17,7 +13,7 @@ export default class FeatureFill {
     this.commands = commands
 
     if (influence) {
-      this.influence = influence
+      this.pivot.addInfluence(influence.muscle, influence.weight)
     }
   }
 
@@ -44,13 +40,20 @@ export default class FeatureFill {
         break
       case 'endFill':
         context.fill()
-        context.stroke()
         break
       case 'drawCircle':
-        context.ellipse(command.x, command.y, command.radius, command.radius, Math.PI / 4, 0, 2 * Math.PI)
+        context.ellipse(command.x, command.y, command.radius, command.radius, 0, 0, 2 * Math.PI)
         break
       case 'drawEllipse':
-        context.ellipse(command.x, command.y, command.width / 2.0, command.height / 2.0, Math.PI / 4, 0, 2 * Math.PI)
+        context.ellipse(
+          command.x + command.width / 2.0,
+          command.y + command.height / 2.0,
+          command.width / 2.0,
+          command.height / 2.0,
+          0,
+          0,
+          2 * Math.PI,
+        )
         break
       case 'drawRect':
         context.rect(command.x, command.y, command.width, command.height)
@@ -65,5 +68,9 @@ export default class FeatureFill {
         context.quadraticCurveTo(command.controlX, command.controlY, command.anchorX, command.anchorY)
         break
     }
+  }
+
+  evaluate(): void {
+    this.pivot.evaluate()
   }
 }

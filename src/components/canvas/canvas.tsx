@@ -73,7 +73,7 @@ export class GrimaceCanvas {
     const emotionController = new EmotionController(emotions, muscleController)
 
     emotionController.setEmotionSet({
-      anger: 0.95,
+      anger: 1,
     })
 
     Object.values(features).forEach((feature) => {

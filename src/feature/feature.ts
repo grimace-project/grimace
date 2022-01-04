@@ -59,6 +59,7 @@ export default class Feature {
 
   drawStrokeInContext(context: CanvasRenderingContext2D): void {
     context.save()
+
     const lastIndex = this.segments.length - 1
 
     context.lineCap = 'round'
@@ -72,7 +73,6 @@ export default class Feature {
         segment.drawInContext(context, true, false, true, index === 0, index === lastIndex)
       })
     }
-
     context.restore()
   }
 
@@ -82,6 +82,12 @@ export default class Feature {
       const segmentHasChanged = segment.evaluate()
       hasChanged = hasChanged || segmentHasChanged
     })
+
+    if (this.fills) {
+      this.fills.forEach((featureFill) => {
+        featureFill.evaluate()
+      })
+    }
 
     return hasChanged
   }
