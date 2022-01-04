@@ -8,6 +8,8 @@ export default interface Facedata {
   emotions: {
     [emotionId: string]: FacedataEmotion
   }
+
+  overlays?: FacedataOverlay[]
 }
 
 export interface FacedataPoint {
@@ -147,4 +149,13 @@ export interface FacedataFeatureFill {
     muscle: string
     weight: number
   }
+}
+
+export interface FacedataOverlay {
+  id: string
+  x: number
+  y: number
+  scale: number
+  alpha: number
+  data: string
 }

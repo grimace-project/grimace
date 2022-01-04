@@ -9,6 +9,7 @@ import facedataHead from '../../facedata/head.json'
 import facedataFeatures from '../../facedata/features.json'
 import facedataWrinkles from '../../facedata/wrinkles.json'
 import facedataEmotions from '../../facedata/emotions.json'
+import facedataOverlays from '../../facedata/overlay.json'
 
 // import { createStore } from '@stencil/store'
 
@@ -67,9 +68,15 @@ export class GrimaceCanvas {
     scaleCanvas(this.canvas, this.context, this.canvas.width, this.canvas.height)
 
     this.renderCanvas()
-    const facedata = loadFacedataFromJson(facedataHead, facedataFeatures, facedataWrinkles, facedataEmotions)
+    const facedata = loadFacedataFromJson(
+      facedataHead,
+      facedataFeatures,
+      facedataWrinkles,
+      facedataEmotions,
+      facedataOverlays,
+    )
 
-    const { emotions, features, muscleGroups } = processFacedata(facedata)
+    const { emotions, features, muscleGroups, overlays } = processFacedata(facedata)
 
     const muscleController = new MuscleController(muscleGroups)
 
@@ -82,6 +89,10 @@ export class GrimaceCanvas {
     Object.values(features).forEach((feature) => {
       feature.evaluate()
       feature.drawInContext(this.context)
+    })
+
+    overlays.forEach((overlay) => {
+      overlay.drawInContext(this.context)
     })
   }
 

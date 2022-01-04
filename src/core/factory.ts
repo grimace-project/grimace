@@ -5,6 +5,7 @@ import Facedata, {
   FacedataFeatureSegment,
   FacedataMapping,
   FacedataMuscleGroup,
+  FacedataOverlay,
   FacedataPoint,
   FacedataSpline,
   FacedataStrokeStyle,
@@ -29,6 +30,7 @@ import GaussMapping from '../display/gauss-mapping'
 import PolynomialMapping from '../display/polynomial-mapping'
 import SineMapping from '../display/sine-mapping'
 import FeatureFill from '../feature/feature-fill'
+import Overlay from './overlay'
 
 interface MuscleMap {
   [muscleId: string]: Muscle
@@ -46,6 +48,7 @@ export interface TBD {
   muscleGroups: MuscleGroupMap
   features: Feature[]
   emotions: EmotionMap
+  overlays: Overlay[]
 }
 
 export const createPoint = (def: FacedataPoint): Point => {
@@ -173,6 +176,10 @@ export const createEmotion = (label: string, def: FacedataEmotion, muscleMap: Mu
   return new Emotion(label, influences)
 }
 
+export const createOverlay = (def: FacedataOverlay): Overlay => {
+  return new Overlay(def.id, def.x, def.y, def.scale, def.alpha, def.data)
+}
+
 export const processFacedata = (facedata: Facedata): TBD => {
   const muscleMap: { [muscleId: string]: Muscle } = {}
   const muscleGroups: MuscleGroupMap = {}
@@ -191,9 +198,12 @@ export const processFacedata = (facedata: Facedata): TBD => {
     emotions[emotionId] = createEmotion(emotionId, defEmotion, muscleMap)
   })
 
+  const overlays = facedata.overlays.map(createOverlay)
+
   return {
     muscleGroups,
     features,
     emotions,
+    overlays,
   }
 }
