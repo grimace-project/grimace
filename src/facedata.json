@@ -481,18 +481,18 @@
             "color": "#404040"
           },
           "influences": [
-            { "nodenum": 0, "musclegroup": "feature", "muscle": "m0", "weight": 0.59 },
-            { "nodenum": 1, "musclegroup": "feature", "muscle": "m1", "weight": 0.3 },
-            { "nodenum": 1, "musclegroup": "feature", "muscle": "m2", "weight": 0.15 },
-            { "nodenum": 2, "musclegroup": "feature", "muscle": "m2", "weight": 0.29 },
-            { "nodenum": 3, "musclegroup": "feature", "muscle": "m3", "weight": 0.59 },
-            { "nodenum": 1, "musclegroup": "feature", "muscle": "m14", "weight": 0.24 },
-            { "nodenum": 2, "musclegroup": "feature", "muscle": "m14", "weight": 0.18 },
-            { "nodenum": 3, "musclegroup": "feature", "muscle": "h_meb6", "weight": 1 },
-            { "nodenum": 2, "musclegroup": "feature", "muscle": "h_meb6", "weight": 1 },
-            { "nodenum": 1, "musclegroup": "feature", "muscle": "h_meb6", "weight": 1 },
-            { "nodenum": 0, "musclegroup": "feature", "muscle": "h_meb6", "weight": 1 },
-            { "nodenum": 2, "musclegroup": "feature", "muscle": "h_meb7", "weight": 0.29 }
+            { "nodenum": 0, "muscle": "m0", "weight": 0.59 },
+            { "nodenum": 1, "muscle": "m1", "weight": 0.3 },
+            { "nodenum": 1, "muscle": "m2", "weight": 0.15 },
+            { "nodenum": 2, "muscle": "m2", "weight": 0.29 },
+            { "nodenum": 3, "muscle": "m3", "weight": 0.59 },
+            { "nodenum": 1, "muscle": "m14", "weight": 0.24 },
+            { "nodenum": 2, "muscle": "m14", "weight": 0.18 },
+            { "nodenum": 3, "muscle": "h_meb6", "weight": 1 },
+            { "nodenum": 2, "muscle": "h_meb6", "weight": 1 },
+            { "nodenum": 1, "muscle": "h_meb6", "weight": 1 },
+            { "nodenum": 0, "muscle": "h_meb6", "weight": 1 },
+            { "nodenum": 2, "muscle": "h_meb7", "weight": 0.29 }
           ]
         }
       ]
@@ -537,12 +537,12 @@
             "color": "#404040"
           },
           "influences": [
-            { "nodenum": 1, "musclegroup": "feature", "muscle": "m041", "weight": 1 },
-            { "nodenum": 2, "musclegroup": "feature", "muscle": "m041", "weight": 0.67 },
-            { "nodenum": 1, "musclegroup": "feature", "muscle": "m042", "weight": 1 },
-            { "nodenum": 2, "musclegroup": "feature", "muscle": "m042", "weight": 0.67 },
-            { "nodenum": 2, "musclegroup": "feature", "muscle": "h_mey8", "weight": 0.33 },
-            { "nodenum": 3, "musclegroup": "feature", "muscle": "h_mey12", "weight": 1 }
+            { "nodenum": 1, "muscle": "m041", "weight": 1 },
+            { "nodenum": 2, "muscle": "m041", "weight": 0.67 },
+            { "nodenum": 1, "muscle": "m042", "weight": 1 },
+            { "nodenum": 2, "muscle": "m042", "weight": 0.67 },
+            { "nodenum": 2, "muscle": "h_mey8", "weight": 0.33 },
+            { "nodenum": 3, "muscle": "h_mey12", "weight": 1 }
           ]
         },
         {
@@ -579,7 +579,35 @@
             "color": "#404040"
           },
           "influences": [
-            { "nodenum": 2, "musclegroup": "feature", "muscle": "m5", "weight": 1 }
+            { "nodenum": 2, "muscle": "m5", "weight": 1 }
+          ]
+        }
+      ],
+      "fills": [
+        {
+          "draw": [
+            { "command": "beginFill", "color": "#ffffff", "alpha": 1 },
+            { "command": "drawCircle", "x": 84, "y": 200, "radius": 100 },
+            { "command": "endFill" },
+            { "command": "beginFill", "color": "#B3D5ED", "alpha": 1 },
+            { "command": "drawCircle", "x": 84, "y": 200, "radius": 17 },
+            { "command": "endFill" },
+            { "command": "lineStyle", "thickness": 1, "color": "#000000", "alpha": 1 },
+            { "command": "beginFill", "color": "#000000", "alpha": 1 },
+            { "command": "drawCircle", "x": 84, "y": 200, "radius": 6 },
+            { "command": "endFill" },
+            { "command": "lineStyle", "thickness": 1, "color": "#000000", "alpha": 1 },
+            { "command": "beginFill", "color": "#ffffff", "alpha": 1 },
+            { "command": "drawCircle", "x": -84, "y": 200, "radius": 100 },
+            { "command": "endFill" },
+            { "command": "lineStyle", "thickness": 1, "color": "#000000", "alpha": 0 },
+            { "command": "beginFill", "color": "#B3D5ED", "alpha": 1 },
+            { "command": "drawCircle", "x": -84, "y": 200, "radius": 17 },
+            { "command": "endFill" },
+            { "command": "lineStyle", "thickness": 1, "color": "#000000", "alpha": 1 },
+            { "command": "beginFill", "color": "#000000", "alpha": 1 },
+            { "command": "drawCircle", "x": -84, "y": 200, "radius": 6 },
+            { "command": "endFill" }
           ]
         }
       ]
@@ -620,17 +648,17 @@
             "color": "#222222"
           },
           "influences": [
-            { "nodenum": 0, "musclegroup": "feature", "muscle": "m6", "weight": 1 },
-            { "nodenum": 1, "musclegroup": "feature", "muscle": "m6", "weight": 1 },
-            { "nodenum": 0, "musclegroup": "feature", "muscle": "h_mli9", "weight": 0.4 },
-            { "nodenum": 1, "musclegroup": "feature", "muscle": "h_mli9", "weight": 0.4 },
-            { "nodenum": 4, "musclegroup": "feature", "muscle": "m6", "weight": 1 },
-            { "nodenum": 5, "musclegroup": "feature", "muscle": "m6", "weight": 0.95 },
-            { "nodenum": 5, "musclegroup": "feature", "muscle": "m7", "weight": 0.1 },
-            { "nodenum": 5, "musclegroup": "feature", "muscle": "m8", "weight": 0.1 },
-            { "nodenum": 5, "musclegroup": "feature", "muscle": "m10", "weight": 0.2 },
-            { "nodenum": 5, "musclegroup": "feature", "muscle": "m16", "weight": 0.1 },
-            { "nodenum": 4, "musclegroup": "feature", "muscle": "h_mli9", "weight": 0.25 }
+            { "nodenum": 0, "muscle": "m6", "weight": 1 },
+            { "nodenum": 1, "muscle": "m6", "weight": 1 },
+            { "nodenum": 0, "muscle": "h_mli9", "weight": 0.4 },
+            { "nodenum": 1, "muscle": "h_mli9", "weight": 0.4 },
+            { "nodenum": 4, "muscle": "m6", "weight": 1 },
+            { "nodenum": 5, "muscle": "m6", "weight": 0.95 },
+            { "nodenum": 5, "muscle": "m7", "weight": 0.1 },
+            { "nodenum": 5, "muscle": "m8", "weight": 0.1 },
+            { "nodenum": 5, "muscle": "m10", "weight": 0.2 },
+            { "nodenum": 5, "muscle": "m16", "weight": 0.1 },
+            { "nodenum": 4, "muscle": "h_mli9", "weight": 0.25 }
           ]
         },
         {
@@ -663,16 +691,16 @@
             "color": "#222222"
           },
           "influences": [
-            { "nodenum": 2, "musclegroup": "feature", "muscle": "m6", "weight": 0.95 },
-            { "nodenum": 2, "musclegroup": "feature", "muscle": "m7", "weight": 0.5 },
-            { "nodenum": 2, "musclegroup": "feature", "muscle": "m8", "weight": 0.29 },
-            { "nodenum": 3, "musclegroup": "feature", "muscle": "m8", "weight": 0.23 },
-            { "nodenum": 3, "musclegroup": "feature", "muscle": "m9", "weight": 0.5 },
-            { "nodenum": 2, "musclegroup": "feature", "muscle": "m10", "weight": 0.29 },
-            { "nodenum": 3, "musclegroup": "feature", "muscle": "m10", "weight": 0.09 },
-            { "nodenum": 3, "musclegroup": "feature", "muscle": "m11", "weight": 0.23 },
-            { "nodenum": 3, "musclegroup": "feature", "muscle": "m16", "weight": 1 },
-            { "nodenum": 2, "musclegroup": "feature", "muscle": "m16", "weight": 0.3 }
+            { "nodenum": 2, "muscle": "m6", "weight": 0.95 },
+            { "nodenum": 2, "muscle": "m7", "weight": 0.5 },
+            { "nodenum": 2, "muscle": "m8", "weight": 0.29 },
+            { "nodenum": 3, "muscle": "m8", "weight": 0.23 },
+            { "nodenum": 3, "muscle": "m9", "weight": 0.5 },
+            { "nodenum": 2, "muscle": "m10", "weight": 0.29 },
+            { "nodenum": 3, "muscle": "m10", "weight": 0.09 },
+            { "nodenum": 3, "muscle": "m11", "weight": 0.23 },
+            { "nodenum": 3, "muscle": "m16", "weight": 1 },
+            { "nodenum": 2, "muscle": "m16", "weight": 0.3 }
           ]
         },
         {
@@ -705,27 +733,27 @@
             "color": "#222222"
           },
           "influences": [
-            { "nodenum": 0, "musclegroup": "feature", "muscle": "m8", "weight": 0.23 },
-            { "nodenum": 0, "musclegroup": "feature", "muscle": "m9", "weight": 0.5 },
-            { "nodenum": 1, "musclegroup": "feature", "muscle": "m9", "weight": 0.13 },
-            { "nodenum": 2, "musclegroup": "feature", "muscle": "m9", "weight": 0.05 },
-            { "nodenum": 0, "musclegroup": "feature", "muscle": "m10", "weight": 0.09 },
-            { "nodenum": 1, "musclegroup": "feature", "muscle": "m10", "weight": 0.30 },
-            { "nodenum": 2, "musclegroup": "feature", "muscle": "m10", "weight": 0.31 },
-            { "nodenum": 3, "musclegroup": "feature", "muscle": "m10", "weight": 0.13 },
-            { "nodenum": 0, "musclegroup": "feature", "muscle": "m11", "weight": 0.22 },
-            { "nodenum": 1, "musclegroup": "feature", "muscle": "m12", "weight": 0.5 },
-            { "nodenum": 2, "musclegroup": "feature", "muscle": "m12", "weight": 0.31 },
-            { "nodenum": 3, "musclegroup": "feature", "muscle": "m12", "weight": 0.13 },
-            { "nodenum": 3, "musclegroup": "feature", "muscle": "m15", "weight": 0.85 },
-            { "nodenum": 2, "musclegroup": "feature", "muscle": "m15", "weight": 0.7 },
-            { "nodenum": 1, "musclegroup": "feature", "muscle": "m15", "weight": 0.4 },
-            { "nodenum": 0, "musclegroup": "feature", "muscle": "m16", "weight": 1 },
-            { "nodenum": 1, "musclegroup": "feature", "muscle": "m16", "weight": 0.3 },
-            { "nodenum": 2, "musclegroup": "feature", "muscle": "m16", "weight": 0.1 },
-            { "nodenum": 1, "musclegroup": "feature", "muscle": "h_mli10", "weight": 1 },
-            { "nodenum": 2, "musclegroup": "feature", "muscle": "h_mli10", "weight": 0.2 },
-            { "nodenum": 3, "musclegroup": "feature", "muscle": "h_mli10", "weight": 0.1 }
+            { "nodenum": 0, "muscle": "m8", "weight": 0.23 },
+            { "nodenum": 0, "muscle": "m9", "weight": 0.5 },
+            { "nodenum": 1, "muscle": "m9", "weight": 0.13 },
+            { "nodenum": 2, "muscle": "m9", "weight": 0.05 },
+            { "nodenum": 0, "muscle": "m10", "weight": 0.09 },
+            { "nodenum": 1, "muscle": "m10", "weight": 0.30 },
+            { "nodenum": 2, "muscle": "m10", "weight": 0.31 },
+            { "nodenum": 3, "muscle": "m10", "weight": 0.13 },
+            { "nodenum": 0, "muscle": "m11", "weight": 0.22 },
+            { "nodenum": 1, "muscle": "m12", "weight": 0.5 },
+            { "nodenum": 2, "muscle": "m12", "weight": 0.31 },
+            { "nodenum": 3, "muscle": "m12", "weight": 0.13 },
+            { "nodenum": 3, "muscle": "m15", "weight": 0.85 },
+            { "nodenum": 2, "muscle": "m15", "weight": 0.7 },
+            { "nodenum": 1, "muscle": "m15", "weight": 0.4 },
+            { "nodenum": 0, "muscle": "m16", "weight": 1 },
+            { "nodenum": 1, "muscle": "m16", "weight": 0.3 },
+            { "nodenum": 2, "muscle": "m16", "weight": 0.1 },
+            { "nodenum": 1, "muscle": "h_mli10", "weight": 1 },
+            { "nodenum": 2, "muscle": "h_mli10", "weight": 0.2 },
+            { "nodenum": 3, "muscle": "h_mli10", "weight": 0.1 }
           ]
         },
         {
@@ -758,11 +786,45 @@
             "color": "#222222"
           },
           "influences": [
-            { "nodenum": 5, "musclegroup": "feature", "muscle": "m15", "weight": 1 },
-            { "nodenum": 4, "musclegroup": "feature", "muscle": "m15", "weight": 1 },
-            { "nodenum": 4, "musclegroup": "feature", "muscle": "h_mli11", "weight": 1 },
-            { "nodenum": 5, "musclegroup": "feature", "muscle": "h_mli11", "weight": 1 }
+            { "nodenum": 5, "muscle": "m15", "weight": 1 },
+            { "nodenum": 4, "muscle": "m15", "weight": 1 },
+            { "nodenum": 4, "muscle": "h_mli11", "weight": 1 },
+            { "nodenum": 5, "muscle": "h_mli11", "weight": 1 }
           ]
+        }
+      ],
+      "fills": [
+        {
+          "draw": [
+            { "command": "beginFill", "color": "#000000", "alpha": 1.0 },
+            { "command": "drawRect", "x": -200, "y": 270, "width": 400, "height": 200 },
+            { "command": "endFill" }
+          ]
+        },
+        {
+          "draw": [
+            { "command": "beginFill", "color": "#ffffff", "alpha": 1.0 },
+            { "command": "drawEllipse", "x": -150, "y": 300, "width": 300, "height": 100 },
+            { "command": "endFill" }
+          ],
+          "influence": {
+            "muscle": "h_teethupper",
+            "weight": 1.0
+          }
+        },
+        {
+          "draw": [
+            { "command": "beginFill", "color": "#ffffff", "alpha": 1.0 },
+            { "command": "moveTo", "x": 160, "y": 480 },
+            { "command": "lineTo", "x": 160, "y": 370 },
+            { "command": "curveTo", "controlX": 0, "controlY": 433, "anchorX": -160, "anchorY": 370 },
+            { "command": "lineTo", "x": -160, "y": 480 },
+            { "command": "endFill" }
+          ],
+          "influence": {
+            "muscle": "h_teethlower",
+            "weight": 1.0
+          }
         }
       ]
     }

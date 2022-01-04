@@ -34,13 +34,20 @@ export default class FeatureSegment {
   drawInContext(
     context: CanvasRenderingContext2D,
     stroke: boolean,
-    _fill: boolean,
+    fill: boolean,
     mirror: boolean,
     start: boolean,
     end: boolean,
   ): void {
     if (stroke && this.strokeStyle) {
       this.strokeStyle.drawInContext(context, this.spline, start, end, mirror)
+    }
+
+    if (fill) {
+      this.spline.drawFillInContext(context, start, end, mirror)
+      if (end) {
+        context.closePath()
+      }
     }
   }
 

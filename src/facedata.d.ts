@@ -45,6 +45,7 @@ export interface FacedataFeature {
   stroked: boolean
   mirrored: boolean
   segments: FacedataFeatureSegment[]
+  fills?: FacedataFeatureFill[]
 }
 
 export interface FacedataFeatureSegment {
@@ -59,7 +60,6 @@ export interface FacedataFeatureSegment {
 export interface FacedataFeatureSegmentInfluence {
   nodenum: number
   muscle: string
-  musclegroup: string
   weight: number
 }
 
@@ -108,4 +108,37 @@ export interface FacedataMapping {
   x1?: number
   y0?: number
   y1?: number
+}
+
+export interface FacedataFeatureFillCommand {
+  command:
+    | 'beginFill'
+    | 'curveTo'
+    | 'drawCircle'
+    | 'drawEllipse'
+    | 'drawRect'
+    | 'endFill'
+    | 'lineStyle'
+    | 'lineTo'
+    | 'moveTo'
+  alpha?: number
+  anchorX?: number
+  anchorY?: number
+  color?: string
+  controlX?: number
+  controlY?: number
+  height?: number
+  radius?: number
+  thickness?: number
+  width?: number
+  x?: number
+  y?: number
+}
+
+export interface FacedataFeatureFill {
+  draw: FacedataFeatureFillCommand[]
+  influence?: {
+    muscle: string
+    weight: number
+  }
 }

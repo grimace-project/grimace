@@ -80,7 +80,7 @@ export default class BrushStyle {
 
     context.beginPath()
 
-    context.fillStyle = this.strokeColor.toRgba()
+    context.fillStyle = this.strokeColor.toHex()
 
     context.moveTo(startSplineX, startSplineY)
     context.lineTo(startLowerX, startLowerY)

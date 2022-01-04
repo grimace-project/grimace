@@ -27,6 +27,7 @@ import QuadraticSpline from '../display/quadratic-spline'
 import GaussMapping from '../display/gauss-mapping'
 import PolynomialMapping from '../display/polynomial-mapping'
 import SineMapping from '../display/sine-mapping'
+import FeatureFill from '../feature/feature-fill'
 
 interface MuscleMap {
   [muscleId: string]: Muscle
@@ -89,14 +90,14 @@ export const createStrokeStyle = (def: FacedataStrokeStyle): IStrokeStyle | unde
   }
 }
 
-export const createFeatureSegment = (def: FacedataFeatureSegment, muscleGroupMap: MuscleGroupMap): FeatureSegment => {
+export const createFeatureSegment = (def: FacedataFeatureSegment, muscleMap: MuscleMap): FeatureSegment => {
   const spline = createSpline(def.spline)
   const strokeStyle = createStrokeStyle(def.strokestyle)
   const segment = new FeatureSegment(def.id, def.label, spline, strokeStyle)
 
   if (def.influences) {
     def.influences.forEach((influence) => {
-      const muscle = muscleGroupMap[influence.musclegroup].muscles[influence.muscle]
+      const muscle = muscleMap[influence.muscle]
       segment.addInfluenceToNode(influence.nodenum, muscle, influence.weight)
     })
   }
@@ -104,12 +105,29 @@ export const createFeatureSegment = (def: FacedataFeatureSegment, muscleGroupMap
   return segment
 }
 
-export const createFeature = (def: FacedataFeature, muscleGroupMap: MuscleGroupMap): Feature => {
+export const createFeature = (def: FacedataFeature, muscleMap: MuscleMap): Feature => {
   const segments = def.segments.map((defSegment) => {
-    return createFeatureSegment(defSegment, muscleGroupMap)
+    return createFeatureSegment(defSegment, muscleMap)
   })
 
-  return new Feature(def.label, def.filled, def.stroked, def.mirrored, segments)
+  let fills: FeatureFill[]
+  if (def.fills) {
+    fills = def.fills.map((defFill) => {
+      let influence: {
+        muscle: Muscle
+        weight: number
+      }
+      if (defFill.influence) {
+        influence = {
+          muscle: muscleMap[defFill.influence.muscle],
+          weight: defFill.influence.weight,
+        }
+      }
+      return new FeatureFill(defFill.draw, influence)
+    })
+  }
+
+  return new Feature(def.label, def.filled, def.stroked, def.mirrored, segments, fills)
 }
 
 export const createMapping = (def: FacedataMapping): Mapping => {
@@ -152,7 +170,7 @@ export const processFacedata = (facedata: Facedata): TBD => {
   })
 
   const features = facedata.features.map((defFeature) => {
-    return createFeature(defFeature, muscleGroups)
+    return createFeature(defFeature, muscleMap)
   })
 
   const emotions: { [emotionId: string]: Emotion } = {}
