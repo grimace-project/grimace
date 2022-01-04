@@ -1,4 +1,5 @@
 import Facedata, {
+  FacedataAlphaMapping,
   FacedataEmotion,
   FacedataFeature,
   FacedataFeatureSegment,
@@ -14,7 +15,7 @@ import Color from '../util/color'
 import CubicSpline from '../display/cubic-spline'
 import Emotion, { EmotionInfluence } from '../emotion/emotion'
 import Feature from '../feature/feature'
-import FeatureSegment from '../feature/feature-segment'
+import FeatureSegment, { AlphaMapping } from '../feature/feature-segment'
 import ISpline from '../display/ispline'
 import IStrokeStyle from '../display/istrokestyle'
 import JoinerSpline from '../display/joiner-spline'
@@ -90,10 +91,22 @@ export const createStrokeStyle = (def: FacedataStrokeStyle): IStrokeStyle | unde
   }
 }
 
+export const createAlphaMapping = (def: FacedataAlphaMapping, muscleMap: MuscleMap): AlphaMapping => {
+  if (!def) {
+    return
+  }
+
+  return {
+    sourcemuscle: muscleMap[def.sourcemuscle],
+    mapping: createMapping(def.mapping),
+  }
+}
+
 export const createFeatureSegment = (def: FacedataFeatureSegment, muscleMap: MuscleMap): FeatureSegment => {
   const spline = createSpline(def.spline)
   const strokeStyle = createStrokeStyle(def.strokestyle)
-  const segment = new FeatureSegment(def.id, def.label, spline, strokeStyle)
+  const alphaMapping = createAlphaMapping(def.alphamapping, muscleMap)
+  const segment = new FeatureSegment(def.id, def.label, spline, strokeStyle, alphaMapping)
 
   if (def.influences) {
     def.influences.forEach((influence) => {

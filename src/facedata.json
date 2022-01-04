@@ -2599,6 +2599,16 @@
           },
           "influences": [
             {
+              "nodenum": 0,
+              "muscle": "w_forehead1_m1",
+              "weight": 0.6
+            },
+            {
+              "nodenum": 1,
+              "muscle": "w_forehead1_m1",
+              "weight": 0.6
+            },
+            {
               "nodenum": 2,
               "muscle": "w_forehead1_m1",
               "weight": 0.6
@@ -2607,6 +2617,16 @@
               "nodenum": 3,
               "muscle": "w_forehead1_m1",
               "weight": 0.6
+            },
+            {
+              "nodenum": 0,
+              "muscle": "w_forehead1_m2",
+              "weight": 0.4
+            },
+            {
+              "nodenum": 1,
+              "muscle": "w_forehead1_m2",
+              "weight": 0.86
             },
             {
               "nodenum": 2,
@@ -2622,6 +2642,16 @@
               "nodenum": 3,
               "muscle": "w_forehead1_m3",
               "weight": 1
+            },
+            {
+              "nodenum": 0,
+              "muscle": "w_forehead1_m4",
+              "weight": 0.15
+            },
+            {
+              "nodenum": 1,
+              "muscle": "w_forehead1_m4",
+              "weight": 0.3
             },
             {
               "nodenum": 2,
@@ -2777,6 +2807,16 @@
           },
           "influences": [
             {
+              "nodenum": 0,
+              "muscle": "w_forehead1_m1",
+              "weight": 0.8
+            },
+            {
+              "nodenum": 1,
+              "muscle": "w_forehead1_m1",
+              "weight": 0.8
+            },
+            {
               "nodenum": 2,
               "muscle": "w_forehead1_m1",
               "weight": 0.8
@@ -2785,6 +2825,16 @@
               "nodenum": 3,
               "muscle": "w_forehead1_m1",
               "weight": 0.8
+            },
+            {
+              "nodenum": 0,
+              "muscle": "w_forehead1_m2",
+              "weight": 0.3
+            },
+            {
+              "nodenum": 1,
+              "muscle": "w_forehead1_m2",
+              "weight": 0.86
             },
             {
               "nodenum": 2,
@@ -2800,6 +2850,16 @@
               "nodenum": 3,
               "muscle": "w_forehead1_m3",
               "weight": 0.8
+            },
+            {
+              "nodenum": 0,
+              "muscle": "w_forehead1_m4",
+              "weight": 0.07
+            },
+            {
+              "nodenum": 1,
+              "muscle": "w_forehead1_m4",
+              "weight": 0.2
             },
             {
               "nodenum": 2,
@@ -2955,6 +3015,16 @@
           },
           "influences": [
             {
+              "nodenum": 0,
+              "muscle": "w_forehead1_m1",
+              "weight": 1
+            },
+            {
+              "nodenum": 1,
+              "muscle": "w_forehead1_m1",
+              "weight": 1
+            },
+            {
               "nodenum": 2,
               "muscle": "w_forehead1_m1",
               "weight": 1
@@ -2963,6 +3033,16 @@
               "nodenum": 3,
               "muscle": "w_forehead1_m1",
               "weight": 1
+            },
+            {
+              "nodenum": 0,
+              "muscle": "w_forehead1_m2",
+              "weight": 0.1
+            },
+            {
+              "nodenum": 1,
+              "muscle": "w_forehead1_m2",
+              "weight": 0.3
             },
             {
               "nodenum": 2,
@@ -2978,6 +3058,16 @@
               "nodenum": 3,
               "muscle": "w_forehead1_m3",
               "weight": 0.6
+            },
+            {
+              "nodenum": 0,
+              "muscle": "w_forehead1_m4",
+              "weight": 0.07
+            },
+            {
+              "nodenum": 1,
+              "muscle": "w_forehead1_m4",
+              "weight": 0.2
             },
             {
               "nodenum": 2,

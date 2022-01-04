@@ -12,6 +12,8 @@ export default class JoinerSpline extends CubicSpline {
 
     this.a = a
     this.b = b
+
+    this.evaluate()
   }
 
   duplicate(): JoinerSpline {
@@ -41,5 +43,10 @@ export default class JoinerSpline extends CubicSpline {
     } else {
       return [this.a, this.c0, this.c1, this.c2, this.c3, this.b]
     }
+  }
+
+  getSlopeAngle(t: number): number {
+    this.evaluate()
+    return super.getSlopeAngle(t)
   }
 }

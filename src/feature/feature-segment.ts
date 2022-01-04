@@ -1,11 +1,12 @@
 import ISpline from '../display/ispline'
 import IStrokeStyle from '../display/istrokestyle'
+import Mapping from '../display/mapping'
 import Muscle from '../muscle/muscle'
 import FeatureNode from './feature-node'
 
-interface AlphaMapping {
-  muscle: Muscle
-  mapping: (x: number) => number
+export interface AlphaMapping {
+  sourcemuscle: Muscle
+  mapping: Mapping
 }
 
 export default class FeatureSegment {
@@ -16,11 +17,12 @@ export default class FeatureSegment {
   alphaMapping?: AlphaMapping
   nodes: FeatureNode[]
 
-  constructor(id: string, label: string, spline: ISpline, strokeStyle?: IStrokeStyle) {
+  constructor(id: string, label: string, spline: ISpline, strokeStyle?: IStrokeStyle, alphaMapping?: AlphaMapping) {
     this.id = id
     this.label = label
     this.spline = spline
     this.strokeStyle = strokeStyle
+    this.alphaMapping = alphaMapping
 
     this.nodes = spline.getPointsAsArray().map((point) => {
       return new FeatureNode(point)
@@ -55,7 +57,7 @@ export default class FeatureSegment {
     }, false)
 
     if (this.alphaMapping) {
-      const alpha = this.alphaMapping.muscle.tension
+      const alpha = this.alphaMapping.sourcemuscle.tension
       if (this.strokeStyle && this.strokeStyle.strokeAlpha !== alpha) {
         this.strokeStyle.strokeAlpha = alpha
         hasChanged = true

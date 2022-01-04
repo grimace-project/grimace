@@ -48,12 +48,18 @@ export interface FacedataFeature {
   fills?: FacedataFeatureFill[]
 }
 
+export interface FacedataAlphaMapping {
+  sourcemuscle: string
+  mapping: FacedataMapping
+}
+
 export interface FacedataFeatureSegment {
   id: string
   spline: FacedataSpline
   label: string
   alpha?: number
   strokestyle?: FacedataStrokeStyle
+  alphamapping?: FacedataAlphaMapping
   influences?: FacedataFeatureSegmentInfluence[]
 }
 
