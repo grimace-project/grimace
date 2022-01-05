@@ -12,7 +12,7 @@ export interface SliderChangedEvent {
 export class SliderComponent {
   @Prop() name: string
   @Prop() label: string
-  @Prop() value: number
+  @Prop({ mutable: true }) value: number
 
   @Event() sliderValueChanged: EventEmitter<SliderChangedEvent>
 

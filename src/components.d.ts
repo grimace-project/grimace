@@ -74,6 +74,8 @@ declare namespace LocalJSX {
     }
     interface GrimaceContainer {
         "emotionSet"?: EmotionSet;
+        "onGrimace:setEmotionSet"?: (event: CustomEvent<EmotionSet>) => void;
+        "onGrimace:setRandomEmotionSet"?: (event: CustomEvent<any>) => void;
     }
     interface GrimaceSlider {
         "label"?: string;

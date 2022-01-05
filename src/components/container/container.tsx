@@ -1,4 +1,4 @@
-import { h, Component, Fragment, Listen, Prop } from '@stencil/core'
+import { h, Component, Event, EventEmitter, Fragment, Listen, Prop } from '@stencil/core'
 
 import { EmotionSet } from '../../core'
 import { SliderChangedEvent } from '../slider/slider'
@@ -9,27 +9,34 @@ import { SliderChangedEvent } from '../slider/slider'
   shadow: true,
 })
 export class GrimaceContainer {
+  @Event({ eventName: 'grimace:setEmotionSet' }) setEmotionSet: EventEmitter<EmotionSet>
+  @Event({ eventName: 'grimace:setRandomEmotionSet' }) setRandomEmotionSet: EventEmitter
+
   @Prop({ mutable: true }) emotionSet: EmotionSet
+
+  grimace: HTMLGrimaceCanvasElement
 
   @Listen('sliderValueChanged')
   sliderValueChangedHandler(event: CustomEvent<SliderChangedEvent>): void {
     this.updateEmotionSet(event.detail.name, event.detail.value)
   }
 
+
   updateEmotionSet(name: string, value: number): void {
     this.emotionSet = {
       [name]: value,
     }
+    this.setEmotionSet.emit(this.emotionSet)
   }
 
   randomize(): void {
-    console.log('randomize')
+    this.setRandomEmotionSet.emit()
   }
 
   render() {
     return (
       <>
-        <grimace-canvas emotions={this.emotionSet}></grimace-canvas>
+        <grimace-canvas></grimace-canvas>
         <div class="controls">
           <grimace-slider name="joy" label="Joy"></grimace-slider>
           <grimace-slider name="surprise" label="Surprise"></grimace-slider>

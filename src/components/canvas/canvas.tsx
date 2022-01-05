@@ -53,11 +53,12 @@ export class GrimaceCanvas {
     const { emotions, features, muscleGroups, overlays } = processFacedata(facedata)
 
     this.muscleController = new MuscleController(muscleGroups)
+    this.muscleController.listeners.push(() => this.renderFeatures())
 
     this.featureController = new FeatureController(features, overlays)
 
     this.emotionController = new EmotionController(emotions, this.muscleController)
-    this.featureController.drawInContext(this.context)
+    this.renderFeatures(true)
   }
 
   renderFeatures(force = false): any {
@@ -79,16 +80,28 @@ export class GrimaceCanvas {
     this.canvas.height = 0
     this.canvas.style.width = ''
     this.canvas.style.height = ''
-    console.log(this.el.clientWidth)
     this.canvas.width = this.el.clientWidth
     this.canvas.height = this.el.clientHeight
     scaleCanvas(this.canvas, this.context, this.canvas.width, this.canvas.height)
   }
 
+  @Listen('grimace:setEmotionSet', { target: 'window' })
+  onSetEmotionSet(event: CustomEvent<EmotionSet>): void {
+    this.onEmotionSetChanged(event.detail)
+  }
+
+  @Listen('grimace:setRandomEmotionSet', { target: 'window' })
+  onSetRandomEmotionSet(): void {
+    this.emotionController.setRandomEmotionSet()
+  }
+
   @Watch('emotions')
   onEmotionSetChanged(emotionSet: EmotionSet): void {
     this.emotionController.setEmotionSet(emotionSet)
-    this.renderFeatures()
+  }
+
+  setEmotion(name: string, value: number): void {
+    console.log('set emotion', name, value)
   }
 
   render() {
