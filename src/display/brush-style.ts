@@ -33,7 +33,7 @@ export default class BrushStyle {
   drawInContext(
     context: CanvasRenderingContext2D,
     spline: ISpline,
-    start: boolean,
+    _start: boolean,
     _end: boolean,
     mirror: boolean,
   ): void {

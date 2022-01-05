@@ -33,12 +33,19 @@ export default class EmotionController {
     this.muscleController.evaluate()
   }
 
-  setEmotionSet(emotionSet: EmotionSet): void {
+  setEmotionSet(emotionSet: EmotionSet, duration = 0.0): void {
+    this.muscleController.saveTensions()
+
+    Object.values(this.emotions).forEach((emotion) => {
+      emotion.value = 0.0
+    })
     Object.entries(emotionSet).forEach(([emotionId, value]) => {
       this.emotions[emotionId].value = value
     })
 
     this.evaluate()
+
+    this.muscleController.fade(duration)
   }
 
   setRandomEmotionSet(): void {
@@ -58,6 +65,6 @@ export default class EmotionController {
       emotionSet[emotionId2] = randomMinMax(0.2, 1.0)
     }
 
-    this.setEmotionSet(emotionSet)
+    this.setEmotionSet(emotionSet, 300)
   }
 }

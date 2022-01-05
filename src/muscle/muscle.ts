@@ -11,6 +11,8 @@ export default class Muscle {
   spline: ISpline
   tension: number
   initTension: number
+  goalTension: number
+  savedTension: number
   private rawTensions: MuscleTension[] = []
 
   constructor(label: string, spline: ISpline, initTension: number) {
@@ -38,6 +40,7 @@ export default class Muscle {
     }
 
     this.tension = tension
+    this.goalTension = tension
   }
 
   offset(): Point {
@@ -50,5 +53,13 @@ export default class Muscle {
   clear(): void {
     this.rawTensions = []
     this.tension = this.initTension
+  }
+
+  interpolate(t: number): void {
+    this.tension = (1 - t) * this.savedTension + t * this.goalTension
+  }
+
+  saveTension(): void {
+    this.savedTension = this.tension
   }
 }

@@ -23,7 +23,6 @@ import JoinerSpline from '../display/joiner-spline'
 import LinearSpline from '../display/linear-spline'
 import Mapping from '../display/mapping'
 import Muscle from '../muscle/muscle'
-import MuscleGroup from '../muscle/muscle-group'
 import Point from '../display/point'
 import QuadraticSpline from '../display/quadratic-spline'
 import GaussMapping from '../display/gauss-mapping'
@@ -37,7 +36,7 @@ interface MuscleMap {
 }
 
 interface MuscleGroupMap {
-  [muscleGroupId: string]: MuscleGroup
+  [muscleGroupId: string]: MuscleMap
 }
 
 interface EmotionMap {
@@ -70,7 +69,7 @@ export const createSpline = (def: FacedataSpline): ISpline => {
   }
 }
 
-export const createMuscleGroup = (id: string, def: FacedataMuscleGroup): MuscleGroup => {
+export const createMuscleGroup = (def: FacedataMuscleGroup): MuscleMap => {
   const muscles: { [muscleId: string]: Muscle } = {}
 
   Object.entries(def.muscles).forEach(([muscleId, defMuscle]) => {
@@ -78,7 +77,7 @@ export const createMuscleGroup = (id: string, def: FacedataMuscleGroup): MuscleG
     muscles[muscleId] = new Muscle(defMuscle.label, spline, defMuscle.inittension || 0)
   })
 
-  return new MuscleGroup(id, muscles)
+  return muscles
 }
 
 export const createStrokeStyle = (def: FacedataStrokeStyle): IStrokeStyle | undefined => {
@@ -184,8 +183,8 @@ export const processFacedata = (facedata: Facedata): TBD => {
   const muscleMap: { [muscleId: string]: Muscle } = {}
   const muscleGroups: MuscleGroupMap = {}
   Object.entries(facedata.musclegroups).forEach(([muscleGroupId, defMuscleGroup]) => {
-    const muscleGroup = createMuscleGroup(muscleGroupId, defMuscleGroup)
-    Object.assign(muscleMap, muscleGroup.muscles)
+    const muscleGroup = createMuscleGroup(defMuscleGroup)
+    Object.assign(muscleMap, muscleGroup)
     muscleGroups[muscleGroupId] = muscleGroup
   })
 
