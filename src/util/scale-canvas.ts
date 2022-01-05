@@ -56,6 +56,7 @@ export default function scaleCanvas(
   // scale the drawing context so everything will work at the higher ratio
   const scaleFactor = Math.min(width / 480, height / 660) * ratio
 
+  context.resetTransform()
   context.scale(scaleFactor, scaleFactor)
   context.translate(canvas.width / 2 / scaleFactor, (canvas.height * 0.37) / 2 / scaleFactor)
 }

@@ -1,5 +1,6 @@
 import MuscleController from '../muscle/muscle-controller'
 import Emotion from './emotion'
+import { EmotionSet } from '../core'
 
 export default class EmotionController {
   emotions: {
@@ -24,7 +25,7 @@ export default class EmotionController {
     this.muscleController.evaluate()
   }
 
-  setEmotionSet(emotionSet: { [emotionId: string]: number }): void {
+  setEmotionSet(emotionSet: EmotionSet): void {
     Object.entries(emotionSet).forEach(([emotionId, value]) => {
       this.emotions[emotionId].value = value
     })

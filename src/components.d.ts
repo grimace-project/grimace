@@ -5,11 +5,20 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
+import { EmotionSet } from "./core";
+import { SliderChangedEvent } from "./components/slider/slider";
 export namespace Components {
     interface GrimaceCanvas {
-        "color": string;
+        "emotions": EmotionSet;
         "isServer": boolean;
-        "width": number;
+    }
+    interface GrimaceContainer {
+        "emotionSet": EmotionSet;
+    }
+    interface GrimaceSlider {
+        "label": string;
+        "name": string;
+        "value": number;
     }
     interface MyComponent {
         /**
@@ -25,8 +34,6 @@ export namespace Components {
          */
         "middle": string;
     }
-    interface PaintContainer {
-    }
 }
 declare global {
     interface HTMLGrimaceCanvasElement extends Components.GrimaceCanvas, HTMLStencilElement {
@@ -35,29 +42,44 @@ declare global {
         prototype: HTMLGrimaceCanvasElement;
         new (): HTMLGrimaceCanvasElement;
     };
+    interface HTMLGrimaceContainerElement extends Components.GrimaceContainer, HTMLStencilElement {
+    }
+    var HTMLGrimaceContainerElement: {
+        prototype: HTMLGrimaceContainerElement;
+        new (): HTMLGrimaceContainerElement;
+    };
+    interface HTMLGrimaceSliderElement extends Components.GrimaceSlider, HTMLStencilElement {
+    }
+    var HTMLGrimaceSliderElement: {
+        prototype: HTMLGrimaceSliderElement;
+        new (): HTMLGrimaceSliderElement;
+    };
     interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {
     }
     var HTMLMyComponentElement: {
         prototype: HTMLMyComponentElement;
         new (): HTMLMyComponentElement;
     };
-    interface HTMLPaintContainerElement extends Components.PaintContainer, HTMLStencilElement {
-    }
-    var HTMLPaintContainerElement: {
-        prototype: HTMLPaintContainerElement;
-        new (): HTMLPaintContainerElement;
-    };
     interface HTMLElementTagNameMap {
         "grimace-canvas": HTMLGrimaceCanvasElement;
+        "grimace-container": HTMLGrimaceContainerElement;
+        "grimace-slider": HTMLGrimaceSliderElement;
         "my-component": HTMLMyComponentElement;
-        "paint-container": HTMLPaintContainerElement;
     }
 }
 declare namespace LocalJSX {
     interface GrimaceCanvas {
-        "color"?: string;
+        "emotions"?: EmotionSet;
         "isServer"?: boolean;
-        "width"?: number;
+    }
+    interface GrimaceContainer {
+        "emotionSet"?: EmotionSet;
+    }
+    interface GrimaceSlider {
+        "label"?: string;
+        "name"?: string;
+        "onSliderValueChanged"?: (event: CustomEvent<SliderChangedEvent>) => void;
+        "value"?: number;
     }
     interface MyComponent {
         /**
@@ -73,12 +95,11 @@ declare namespace LocalJSX {
          */
         "middle"?: string;
     }
-    interface PaintContainer {
-    }
     interface IntrinsicElements {
         "grimace-canvas": GrimaceCanvas;
+        "grimace-container": GrimaceContainer;
+        "grimace-slider": GrimaceSlider;
         "my-component": MyComponent;
-        "paint-container": PaintContainer;
     }
 }
 export { LocalJSX as JSX };
@@ -86,8 +107,9 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             "grimace-canvas": LocalJSX.GrimaceCanvas & JSXBase.HTMLAttributes<HTMLGrimaceCanvasElement>;
+            "grimace-container": LocalJSX.GrimaceContainer & JSXBase.HTMLAttributes<HTMLGrimaceContainerElement>;
+            "grimace-slider": LocalJSX.GrimaceSlider & JSXBase.HTMLAttributes<HTMLGrimaceSliderElement>;
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
-            "paint-container": LocalJSX.PaintContainer & JSXBase.HTMLAttributes<HTMLPaintContainerElement>;
         }
     }
 }

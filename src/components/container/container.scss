@@ -1,42 +1,19 @@
-paint-container {
-  footer {
-    position: fixed;
-    bottom: 0;
-    background: #212121;
-    width: 100%;
-    display: flex;
-    height: 3em;
-    align-items: center;
-    justify-content: space-around;
-    color: white;
+:host {
+  display: flex;
+  height: 100vh;
+}
 
-    button {
-      background: transparent;
-      color: white;
-      text-transform: uppercase;
-      border: none;
-      outline: none;
-    }
-  }
+grimace-canvas {
+  margin-left: 1em;
+  flex-grow: 1;
+}
 
-  header {
-    position: fixed;
-    top: 0;
-    background: #212121;
-    width: 100%;
-    height: 2.8em;
-    color: white;
-    font-weight: bold;
-    font-size: 1.3em;
-    display: flex;
-    align-items: center;
-    padding-left: 15px;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
-  }
-
-  #colorInput {
-    border: none;
-    background: transparent;
-    height: 2.4em;
-  }
+.controls {
+  flex-shrink: 0;
+  flex-grow: 0;
+  margin-left: 1em;
+  margin-right: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }

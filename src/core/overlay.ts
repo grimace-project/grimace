@@ -19,10 +19,11 @@ export default class Overlay {
   }
 
   drawInContext(context: CanvasRenderingContext2D): void {
+    const width = this.image.width * this.scale
+    const height = this.image.height * this.scale
+    context.drawImage(this.image, this.x, this.y, width, height)
     this.image.onload = () => {
-      const width = this.image.width * this.scale
-      const height = this.image.height * this.scale
-      context.drawImage(this.image, this.x, this.y, width, height)
+      this.drawInContext(context)
     }
   }
 }

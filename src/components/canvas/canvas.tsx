@@ -1,5 +1,6 @@
-import { h, Fragment, Component, State, Prop, Element } from '@stencil/core'
+import { h, Component, Listen, Prop, Element, Watch } from '@stencil/core'
 
+import { EmotionSet } from '../../core'
 import { loadFacedataFromJson } from '../../facedata-loader'
 import { processFacedata } from '../../core/factory'
 import scaleCanvas from '../../util/scale-canvas'
@@ -10,28 +11,7 @@ import facedataFeatures from '../../facedata/features.json'
 import facedataWrinkles from '../../facedata/wrinkles.json'
 import facedataEmotions from '../../facedata/emotions.json'
 import facedataOverlays from '../../facedata/overlay.json'
-
-// import { createStore } from '@stencil/store'
-
-// const { state, onChange } = createStore({
-//   clicks: 0,
-//   seconds: 0,
-//   squaredClicks: 0,
-// })
-
-// onChange('clicks', (value) => {
-//   state.squaredClicks = value ** 2
-// })
-
-// export default state
-
-// features consist of segments
-// segments are defined by splines
-// splines are defined by points
-// some points have muscleweights?
-// emotions influence muscle tensions via mappings
-// multiple emotion influences are normalised via priority value
-// muscles are defined by splines
+import FeatureController from '../../feature/feature-controller'
 
 @Component({
   tag: 'grimace-canvas',
@@ -41,14 +21,14 @@ import facedataOverlays from '../../facedata/overlay.json'
 export class GrimaceCanvas {
   @Element() el: HTMLElement
 
-  @State() drawing: boolean
-
-  @Prop() color: string
-  @Prop() width: number
+  @Prop() emotions: EmotionSet
   @Prop() isServer: boolean
 
   canvas: HTMLCanvasElement
   context: CanvasRenderingContext2D
+  muscleController: MuscleController
+  emotionController: EmotionController
+  featureController: FeatureController
 
   componentDidLoad() {
     if (this.isServer) {
@@ -57,17 +37,11 @@ export class GrimaceCanvas {
 
     this.canvas = this.el.shadowRoot.querySelector('canvas')
     this.context = this.canvas.getContext('2d')
-
-    // setup canvas
-    this.canvas.height = window.innerHeight
-    this.canvas.width = window.innerWidth
-
     this.context.lineCap = 'round'
     this.context.lineJoin = 'round'
 
-    scaleCanvas(this.canvas, this.context, this.canvas.width, this.canvas.height)
+    this.resizeCanvas()
 
-    this.renderCanvas()
     const facedata = loadFacedataFromJson(
       facedataHead,
       facedataFeatures,
@@ -78,40 +52,46 @@ export class GrimaceCanvas {
 
     const { emotions, features, muscleGroups, overlays } = processFacedata(facedata)
 
-    const muscleController = new MuscleController(muscleGroups)
+    this.muscleController = new MuscleController(muscleGroups)
 
-    const emotionController = new EmotionController(emotions, muscleController)
+    this.featureController = new FeatureController(features, overlays)
 
-    emotionController.setEmotionSet({
-      anger: 1,
-    })
-
-    Object.values(features).forEach((feature) => {
-      feature.evaluate()
-      feature.drawInContext(this.context)
-    })
-
-    overlays.forEach((overlay) => {
-      overlay.drawInContext(this.context)
-    })
+    this.emotionController = new EmotionController(emotions, this.muscleController)
+    this.featureController.drawInContext(this.context)
   }
 
-  renderCanvas(): any {
+  renderFeatures(force = false): any {
     // requestAnimationFrame(() => this.renderCanvas())
+    const hasChanged = this.featureController.evaluate()
+    if (hasChanged || force) {
+      this.featureController.drawInContext(this.context)
+    }
   }
 
-  clear(): void {
-    this.context.clearRect(0, 0, this.canvas.width, this.canvas.height)
+  @Listen('resize', { target: 'window' })
+  onWindowResize(): void {
+    this.resizeCanvas()
+    this.renderFeatures(true)
+  }
+
+  resizeCanvas(): void {
+    this.canvas.width = 0
+    this.canvas.height = 0
+    this.canvas.style.width = ''
+    this.canvas.style.height = ''
+    console.log(this.el.clientWidth)
+    this.canvas.width = this.el.clientWidth
+    this.canvas.height = this.el.clientHeight
+    scaleCanvas(this.canvas, this.context, this.canvas.width, this.canvas.height)
+  }
+
+  @Watch('emotions')
+  onEmotionSetChanged(emotionSet: EmotionSet): void {
+    this.emotionController.setEmotionSet(emotionSet)
+    this.renderFeatures()
   }
 
   render() {
-    return (
-      <>
-        <canvas></canvas>
-        <div id="clearDiv">
-          <button onClick={() => this.clear()}>Clear</button>
-        </div>
-      </>
-    )
+    return <canvas></canvas>
   }
 }
