@@ -36,6 +36,7 @@ export default class Feature {
     }
 
     context.save()
+    context.beginPath()
     const lastIndex = this.segments.length - 1
 
     this.segments.forEach((segment, index) => {
