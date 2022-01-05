@@ -770,6 +770,21 @@
               "nodenum": 1,
               "muscle": "w_chin_m1",
               "weight": 1
+            },
+            {
+              "nodenum": 5,
+              "muscle": "w_chin_m2",
+              "weight": 0.2
+            },
+            {
+              "nodenum": 5,
+              "muscle": "w_chin_m1",
+              "weight": 0.35
+            },
+            {
+              "nodenum": 4,
+              "muscle": "w_chin_m1",
+              "weight": 0.7
             }
           ],
           "alphamapping": {

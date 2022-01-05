@@ -652,6 +652,11 @@
           },
           "influences": [
             {
+              "nodenum": 0,
+              "muscle": "h_mey12",
+              "weight": 1
+            },
+            {
               "nodenum": 2,
               "muscle": "m5",
               "weight": 1

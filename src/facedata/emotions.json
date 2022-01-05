@@ -404,6 +404,7 @@
             "type": "polynomial",
             "x0": 0,
             "exponents": [
+              0,
               1.66,
               -3.49,
               2.4
@@ -1915,6 +1916,7 @@
             "type": "polynomial",
             "x0": 0,
             "exponents": [
+              0,
               1.67,
               -3.13,
               1.6
@@ -1938,6 +1940,7 @@
             "type": "polynomial",
             "x0": 0,
             "exponents": [
+              0,
               0.12,
               2.05,
               -1.97
@@ -1991,6 +1994,7 @@
             "type": "polynomial",
             "x0": 0,
             "exponents": [
+              0,
               2.06,
               -4.16,
               2.24
@@ -2002,6 +2006,7 @@
             "type": "polynomial",
             "x0": 0,
             "exponents": [
+              0,
               1.04,
               -2.55,
               1.87
