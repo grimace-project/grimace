@@ -20,20 +20,6 @@ export namespace Components {
         "name": string;
         "value": number;
     }
-    interface MyComponent {
-        /**
-          * The first name
-         */
-        "first": string;
-        /**
-          * The last name
-         */
-        "last": string;
-        /**
-          * The middle name
-         */
-        "middle": string;
-    }
 }
 export interface GrimaceContainerCustomEvent<T> extends CustomEvent<T> {
     detail: T;
@@ -62,17 +48,10 @@ declare global {
         prototype: HTMLGrimaceSliderElement;
         new (): HTMLGrimaceSliderElement;
     };
-    interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {
-    }
-    var HTMLMyComponentElement: {
-        prototype: HTMLMyComponentElement;
-        new (): HTMLMyComponentElement;
-    };
     interface HTMLElementTagNameMap {
         "grimace-canvas": HTMLGrimaceCanvasElement;
         "grimace-container": HTMLGrimaceContainerElement;
         "grimace-slider": HTMLGrimaceSliderElement;
-        "my-component": HTMLMyComponentElement;
     }
 }
 declare namespace LocalJSX {
@@ -91,25 +70,10 @@ declare namespace LocalJSX {
         "onSliderValueChanged"?: (event: GrimaceSliderCustomEvent<SliderChangedEvent>) => void;
         "value"?: number;
     }
-    interface MyComponent {
-        /**
-          * The first name
-         */
-        "first"?: string;
-        /**
-          * The last name
-         */
-        "last"?: string;
-        /**
-          * The middle name
-         */
-        "middle"?: string;
-    }
     interface IntrinsicElements {
         "grimace-canvas": GrimaceCanvas;
         "grimace-container": GrimaceContainer;
         "grimace-slider": GrimaceSlider;
-        "my-component": MyComponent;
     }
 }
 export { LocalJSX as JSX };
@@ -119,7 +83,6 @@ declare module "@stencil/core" {
             "grimace-canvas": LocalJSX.GrimaceCanvas & JSXBase.HTMLAttributes<HTMLGrimaceCanvasElement>;
             "grimace-container": LocalJSX.GrimaceContainer & JSXBase.HTMLAttributes<HTMLGrimaceContainerElement>;
             "grimace-slider": LocalJSX.GrimaceSlider & JSXBase.HTMLAttributes<HTMLGrimaceSliderElement>;
-            "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
         }
     }
 }
