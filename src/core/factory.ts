@@ -55,6 +55,9 @@ export const createSpline = (def: FacedataSpline): ISpline => {
   } else if (type === 'joiner') {
     return new JoinerSpline(points[0], points[1], points[2], points[3])
   }
+
+  // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
+  throw new Error(`Unknown spline type: ${type}`)
 }
 
 export const createMuscleGroup = (def: FacedataMuscleGroup): MuscleMap => {
@@ -68,7 +71,7 @@ export const createMuscleGroup = (def: FacedataMuscleGroup): MuscleMap => {
   return muscles
 }
 
-export const createStrokeStyle = (def: FacedataStrokeStyle): IStrokeStyle | undefined => {
+export const createStrokeStyle = (def?: FacedataStrokeStyle): IStrokeStyle | undefined => {
   if (!def) {
     return
   }
@@ -79,9 +82,14 @@ export const createStrokeStyle = (def: FacedataStrokeStyle): IStrokeStyle | unde
   } else if (def.type === 'basic') {
     return new BasicStyle(def.width, color, 1.0)
   }
+
+  throw new Error(`Unknown stroke style type`)
 }
 
-export const createAlphaMapping = (def: FacedataAlphaMapping, muscleMap: MuscleMap): AlphaMapping => {
+export const createAlphaMapping = (
+  def: FacedataAlphaMapping | undefined,
+  muscleMap: MuscleMap,
+): AlphaMapping | undefined => {
   if (!def) {
     return
   }
@@ -113,34 +121,36 @@ export const createFeature = (def: FacedataFeature, muscleMap: MuscleMap): Featu
     return createFeatureSegment(defSegment, muscleMap)
   })
 
-  let fills: FeatureFill[]
+  let fills: FeatureFill[] = []
   if (def.fills) {
-    fills = def.fills.map((defFill) => {
-      let influence: {
-        muscle: Muscle
-        weight: number
-      }
-      if (defFill.influence) {
-        influence = {
-          muscle: muscleMap[defFill.influence.muscle],
-          weight: defFill.influence.weight,
+    fills = def.fills
+      .map((defFill) => {
+        if (defFill.influence) {
+          const influence: {
+            muscle: Muscle
+            weight: number
+          } = {
+            muscle: muscleMap[defFill.influence.muscle],
+            weight: defFill.influence.weight,
+          }
+          return new FeatureFill(defFill.draw, influence)
         }
-      }
-      return new FeatureFill(defFill.draw, influence)
-    })
+      })
+      .filter((x) => Boolean(x)) as FeatureFill[]
   }
 
   return new Feature(def.label, def.filled, def.stroked, def.mirrored, segments, fills)
 }
 
 export const createMapping = (def: FacedataMapping): Mapping => {
-  if (def.type === 'gauss') {
+  if (def.type === 'gauss' && def.mean && def.variance && def.value) {
     return new GaussMapping(def.mean, def.variance, def.value)
-  } else if (def.type === 'polynomial') {
+  } else if (def.type === 'polynomial' && def.x0 && def.exponents) {
     return new PolynomialMapping(def.x0, def.exponents)
-  } else if (def.type === 'sine') {
+  } else if (def.type === 'sine' && def.x0 && def.x1 && def.y0 && def.y1) {
     return new SineMapping(def.x0, def.x1, def.y0, def.y1)
   }
+  throw new Error(`Unknown mapping type`)
 }
 
 export const createEmotion = (label: string, def: FacedataEmotion, muscleMap: MuscleMap): Emotion => {
@@ -158,7 +168,7 @@ export const createEmotion = (label: string, def: FacedataEmotion, muscleMap: Mu
         priority: defInfluence.priority || 1.0,
       }
     })
-    .filter((x) => Boolean(x))
+    .filter((x) => Boolean(x)) as EmotionInfluence[]
 
   return new Emotion(label, influences)
 }
@@ -185,7 +195,7 @@ export const processFacedata = (facedata: Facedata): Face => {
     emotions[emotionId] = createEmotion(emotionId, defEmotion, muscleMap)
   })
 
-  const overlays = facedata.overlays.map(createOverlay)
+  const overlays = facedata.overlays ? facedata.overlays.map(createOverlay) : []
 
   return {
     muscleGroups,
