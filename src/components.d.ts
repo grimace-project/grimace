@@ -35,6 +35,14 @@ export namespace Components {
         "middle": string;
     }
 }
+export interface GrimaceContainerCustomEvent<T> extends CustomEvent<T> {
+    detail: T;
+    target: HTMLGrimaceContainerElement;
+}
+export interface GrimaceSliderCustomEvent<T> extends CustomEvent<T> {
+    detail: T;
+    target: HTMLGrimaceSliderElement;
+}
 declare global {
     interface HTMLGrimaceCanvasElement extends Components.GrimaceCanvas, HTMLStencilElement {
     }
@@ -74,13 +82,13 @@ declare namespace LocalJSX {
     }
     interface GrimaceContainer {
         "emotionSet"?: EmotionSet;
-        "onGrimace:setEmotionSet"?: (event: CustomEvent<EmotionSet>) => void;
-        "onGrimace:setRandomEmotionSet"?: (event: CustomEvent<any>) => void;
+        "onGrimace:setEmotionSet"?: (event: GrimaceContainerCustomEvent<EmotionSet>) => void;
+        "onGrimace:setRandomEmotionSet"?: (event: GrimaceContainerCustomEvent<any>) => void;
     }
     interface GrimaceSlider {
         "label"?: string;
         "name"?: string;
-        "onSliderValueChanged"?: (event: CustomEvent<SliderChangedEvent>) => void;
+        "onSliderValueChanged"?: (event: GrimaceSliderCustomEvent<SliderChangedEvent>) => void;
         "value"?: number;
     }
     interface MyComponent {
