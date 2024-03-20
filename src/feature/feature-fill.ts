@@ -1,5 +1,4 @@
 import Point from '../display/point'
-import { FacedataFeatureFillCommand } from '../facedata'
 import Muscle from '../muscle/muscle'
 import Color from '../util/color'
 import FeatureNode from './feature-node'

@@ -1,4 +1,4 @@
-import { loadFacedataFromJson } from './facedata-loader'
+import { loadFacedataFromJson } from './loader'
 
 const json: unknown = require('./facedata.json')
 

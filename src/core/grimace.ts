@@ -1,40 +1,39 @@
-import { h, Component, Listen, Prop, Element, Watch } from '@stencil/core'
+import MuscleController from '../muscle/muscle-controller'
+import EmotionController from '../emotion/emotion-controller'
+import FeatureController from '../feature/feature-controller'
+import scaleCanvas from '../util/scale-canvas'
+import loadFacedata from '../facedata/index'
 
-import loadFacedata from '../../facedata/index'
-import scaleCanvas from '../../util/scale-canvas'
-import MuscleController from '../../muscle/muscle-controller'
-import EmotionController from '../../emotion/emotion-controller'
-import FeatureController from '../../feature/feature-controller'
+export class Grimace {
+  el: HTMLElement
+  emotions: EmotionSet
 
-@Component({
-  tag: 'grimace-canvas',
-  styleUrl: 'canvas.scss',
-  shadow: true,
-})
-export class GrimaceCanvas {
-  @Element() el: HTMLElement
-
-  @Prop() emotions: EmotionSet
-  @Prop() isServer: boolean
-
+  container: HTMLElement
   canvas: HTMLCanvasElement
   context: CanvasRenderingContext2D
   muscleController: MuscleController
   emotionController: EmotionController
   featureController: FeatureController
 
-  componentDidLoad() {
-    if (this.isServer) {
-      return
-    }
+  constructor(container: HTMLElement) {
+    this.container = container
+    this.initCanvas()
+    this.initGrimace()
+    this.addListeners()
+  }
+
+  initCanvas(): void {
+    this.canvas = document.createElement('canvas')
+    this.container.appendChild(this.canvas)
 
     this.canvas = this.el.shadowRoot.querySelector('canvas')
     this.context = this.canvas.getContext('2d')
     this.context.lineCap = 'round'
     this.context.lineJoin = 'round'
-
     this.resizeCanvas()
+  }
 
+  initGrimace(): void {
     const { emotions, features, muscleGroups, overlays } = loadFacedata()
 
     this.muscleController = new MuscleController(muscleGroups)
@@ -54,7 +53,10 @@ export class GrimaceCanvas {
     }
   }
 
-  @Listen('resize', { target: 'window' })
+  addListeners(): void {
+    window.addEventListener('resize', () => this.onWindowResize())
+  }
+
   onWindowResize(): void {
     this.resizeCanvas()
     this.renderFeatures(true)
@@ -70,26 +72,22 @@ export class GrimaceCanvas {
     scaleCanvas(this.canvas, this.context, this.canvas.width, this.canvas.height)
   }
 
-  @Listen('grimace:setEmotionSet', { target: 'window' })
-  onSetEmotionSet(event: CustomEvent<EmotionSet>): void {
-    this.onEmotionSetChanged(event.detail)
-  }
+  // @Listen('grimace:setEmotionSet', { target: 'window' })
+  // onSetEmotionSet(event: CustomEvent<EmotionSet>): void {
+  //   this.onEmotionSetChanged(event.detail)
+  // }
 
-  @Listen('grimace:setRandomEmotionSet', { target: 'window' })
-  onSetRandomEmotionSet(): void {
-    this.emotionController.setRandomEmotionSet()
-  }
+  // @Listen('grimace:setRandomEmotionSet', { target: 'window' })
+  // onSetRandomEmotionSet(): void {
+  //   this.emotionController.setRandomEmotionSet()
+  // }
 
-  @Watch('emotions')
-  onEmotionSetChanged(emotionSet: EmotionSet): void {
-    this.emotionController.setEmotionSet(emotionSet)
-  }
+  // @Watch('emotions')
+  // onEmotionSetChanged(emotionSet: EmotionSet): void {
+  //   this.emotionController.setEmotionSet(emotionSet)
+  // }
 
   setEmotion(name: string, value: number): void {
     console.log('set emotion', name, value)
-  }
-
-  render() {
-    return <canvas></canvas>
   }
 }

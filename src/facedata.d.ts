@@ -1,4 +1,4 @@
-export default interface Facedata {
+interface Facedata {
   musclegroups: {
     [muscleGroupId: string]: FacedataMuscleGroup
   }
@@ -12,17 +12,17 @@ export default interface Facedata {
   overlays?: FacedataOverlay[]
 }
 
-export interface FacedataPoint {
+interface FacedataPoint {
   x: number
   y: number
 }
 
-export interface FacedataSpline {
+interface FacedataSpline {
   type: 'line' | 'quadraticbezier' | 'cubicbezier' | 'joiner'
   points: FacedataPoint[]
 }
 
-export interface FacedataMuscle {
+interface FacedataMuscle {
   label: string
   spline: FacedataSpline
   inittension?: number
@@ -31,7 +31,7 @@ export interface FacedataMuscle {
   }
 }
 
-export interface FacedataMuscleGroup {
+interface FacedataMuscleGroup {
   color: string
   width: number
   alpha: number
@@ -41,7 +41,7 @@ export interface FacedataMuscleGroup {
   }
 }
 
-export interface FacedataFeature {
+interface FacedataFeature {
   label: string
   filled: boolean
   stroked: boolean
@@ -50,12 +50,12 @@ export interface FacedataFeature {
   fills?: FacedataFeatureFill[]
 }
 
-export interface FacedataAlphaMapping {
+interface FacedataAlphaMapping {
   sourcemuscle: string
   mapping: FacedataMapping
 }
 
-export interface FacedataFeatureSegment {
+interface FacedataFeatureSegment {
   id: string
   spline: FacedataSpline
   label: string
@@ -65,7 +65,7 @@ export interface FacedataFeatureSegment {
   influences?: FacedataFeatureSegmentInfluence[]
 }
 
-export interface FacedataFeatureSegmentInfluence {
+interface FacedataFeatureSegmentInfluence {
   nodenum: number
   muscle: string
   weight: number
@@ -73,13 +73,13 @@ export interface FacedataFeatureSegmentInfluence {
 
 type FacedataStrokeStyle = FacedataBasicStrokeStyle | FacedataBrushStrokeStyle
 
-export interface FacedataBasicStrokeStyle {
+interface FacedataBasicStrokeStyle {
   type: 'basic'
   width: number
   color: string
 }
 
-export interface FacedataBrushStrokeStyle {
+interface FacedataBrushStrokeStyle {
   type: 'brush'
   startwidth: number
   maxwidth: number
@@ -88,18 +88,18 @@ export interface FacedataBrushStrokeStyle {
   color: string
 }
 
-export interface FacedataEmotion {
+interface FacedataEmotion {
   influences: {
     [muscleId: string]: FacedataEmotionInfluence
   }
 }
 
-export interface FacedataEmotionInfluence {
+interface FacedataEmotionInfluence {
   priority?: number
   mapping: FacedataMapping
 }
 
-export interface FacedataMapping {
+interface FacedataMapping {
   type: 'gauss' | 'polynomial' | 'sine'
 
   // GaussMapping properties
@@ -118,7 +118,7 @@ export interface FacedataMapping {
   y1?: number
 }
 
-export interface FacedataFeatureFillCommand {
+interface FacedataFeatureFillCommand {
   command:
     | 'beginFill'
     | 'curveTo'
@@ -143,7 +143,7 @@ export interface FacedataFeatureFillCommand {
   y?: number
 }
 
-export interface FacedataFeatureFill {
+interface FacedataFeatureFill {
   draw: FacedataFeatureFillCommand[]
   influence?: {
     muscle: string
@@ -151,7 +151,7 @@ export interface FacedataFeatureFill {
   }
 }
 
-export interface FacedataOverlay {
+interface FacedataOverlay {
   id: string
   x: number
   y: number

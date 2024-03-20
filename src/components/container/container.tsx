@@ -1,6 +1,5 @@
 import { h, Component, Event, EventEmitter, Fragment, Listen, Prop } from '@stencil/core'
 
-import { EmotionSet } from '../../core'
 import { SliderChangedEvent } from '../slider/slider'
 
 @Component({
@@ -20,7 +19,6 @@ export class GrimaceContainer {
   sliderValueChangedHandler(event: CustomEvent<SliderChangedEvent>): void {
     this.updateEmotionSet(event.detail.name, event.detail.value)
   }
-
 
   updateEmotionSet(name: string, value: number): void {
     this.emotionSet = {

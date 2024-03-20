@@ -1,6 +1,5 @@
 import MuscleController from '../muscle/muscle-controller'
 import Emotion from './emotion'
-import { EmotionSet } from '../core'
 
 function randomElement<T>(items: Array<T>): T {
   return items[Math.floor(Math.random() * items.length)]

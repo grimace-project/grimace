@@ -1,15 +1,3 @@
-import Facedata, {
-  FacedataAlphaMapping,
-  FacedataEmotion,
-  FacedataFeature,
-  FacedataFeatureSegment,
-  FacedataMapping,
-  FacedataMuscleGroup,
-  FacedataOverlay,
-  FacedataPoint,
-  FacedataSpline,
-  FacedataStrokeStyle,
-} from '../facedata'
 import BasicStyle from '../display/basic-style'
 import BrushStyle from '../display/brush-style'
 import Color from '../util/color'
@@ -43,7 +31,7 @@ interface EmotionMap {
   [emotionId: string]: Emotion
 }
 
-export interface TBD {
+export interface Face {
   muscleGroups: MuscleGroupMap
   features: Feature[]
   emotions: EmotionMap
@@ -179,7 +167,7 @@ export const createOverlay = (def: FacedataOverlay): Overlay => {
   return new Overlay(def.id, def.x, def.y, def.scale, def.alpha, def.data)
 }
 
-export const processFacedata = (facedata: Facedata): TBD => {
+export const processFacedata = (facedata: Facedata): Face => {
   const muscleMap: { [muscleId: string]: Muscle } = {}
   const muscleGroups: MuscleGroupMap = {}
   Object.entries(facedata.musclegroups).forEach(([muscleGroupId, defMuscleGroup]) => {

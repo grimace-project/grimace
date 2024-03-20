@@ -1,6 +1,5 @@
 import merge from 'ts-deepmerge'
 
-import Facedata from './facedata'
 // import validate from './facedata.d.validator'
 
 export const loadFacedataFromJson = (...parts: unknown[]): Facedata => {

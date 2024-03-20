@@ -5,7 +5,6 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
-import { EmotionSet } from "./core";
 import { SliderChangedEvent } from "./components/slider/slider";
 export namespace Components {
     interface GrimaceCanvas {

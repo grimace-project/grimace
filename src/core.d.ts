@@ -1,4 +1,4 @@
-export interface EmotionSet {
+interface EmotionSet {
   anger?: number
   digust?: number
   fear?: number
