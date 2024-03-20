@@ -5,4 +5,5 @@ interface EmotionSet {
   joy?: number
   sadness?: number
   surprise?: number
+  [key: string]: number
 }

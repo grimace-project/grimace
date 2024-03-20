@@ -30,7 +30,9 @@ export default class FeatureFill {
     const name = command.command
     switch (name) {
       case 'lineStyle':
-        context.lineWidth = command.thickness
+        if (command.thickness !== undefined) {
+          context.lineWidth = command.thickness
+        }
         context.strokeStyle = new Color(command.color).toHex()
         break
       case 'beginFill':
@@ -41,30 +43,62 @@ export default class FeatureFill {
         context.fill()
         break
       case 'drawCircle':
-        context.ellipse(command.x, command.y, command.radius, command.radius, 0, 0, 2 * Math.PI)
+        if (command.radius !== undefined && command.x !== undefined && command.y !== undefined) {
+          context.ellipse(command.x, command.y, command.radius, command.radius, 0, 0, 2 * Math.PI)
+        }
         break
       case 'drawEllipse':
-        context.ellipse(
-          command.x + command.width / 2.0,
-          command.y + command.height / 2.0,
-          command.width / 2.0,
-          command.height / 2.0,
-          0,
-          0,
-          2 * Math.PI,
-        )
+        if (
+          command.x !== undefined &&
+          command.y !== undefined &&
+          command.width !== undefined &&
+          command.height !== undefined
+        ) {
+          context.ellipse(
+            command.x + command.width / 2.0,
+            command.y + command.height / 2.0,
+            command.width / 2.0,
+            command.height / 2.0,
+            0,
+            0,
+            2 * Math.PI,
+          )
+        }
         break
       case 'drawRect':
-        context.rect(command.x, command.y, command.width, command.height)
+        if (
+          command.x !== undefined &&
+          command.y !== undefined &&
+          command.width !== undefined &&
+          command.height !== undefined
+        ) {
+          context.rect(command.x, command.y, command.width, command.height)
+        }
         break
       case 'moveTo':
-        context.moveTo(command.x, command.y)
+        if (command.x !== undefined || command.y !== undefined) {
+          context.moveTo(command.x as number, command.y as number)
+        }
         break
       case 'lineTo':
-        context.lineTo(command.x, command.y)
+        if (command.x !== undefined || command.y !== undefined) {
+          context.lineTo(command.x as number, command.y as number)
+        }
         break
       case 'curveTo':
-        context.quadraticCurveTo(command.controlX, command.controlY, command.anchorX, command.anchorY)
+        if (
+          command.controlX !== undefined ||
+          command.controlY !== undefined ||
+          command.anchorX !== undefined ||
+          command.anchorY !== undefined
+        ) {
+          context.quadraticCurveTo(
+            command.controlX as number,
+            command.controlY as number,
+            command.anchorX as number,
+            command.anchorY as number,
+          )
+        }
         break
     }
   }

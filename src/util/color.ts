@@ -20,12 +20,18 @@ export default class Color {
         this.b = parseInt(r.substr(4, 2), 16)
       } else if (r.indexOf('rgb') === 0) {
         const res = RGB_COLOR_REGEX.exec(r)
+        if (!res) {
+          throw new Error('Invalid color string')
+        }
         this.r = parseInt(res[1], 10)
         this.g = parseInt(res[2], 10)
         this.b = parseInt(res[3], 10)
         this.a = res[5] ? parseFloat(res[5]) : 1
       }
     } else {
+      if (r === undefined || g === undefined || b === undefined) {
+        throw new Error('Invalid color values')
+      }
       this.r = r
       this.g = g
       this.b = b

@@ -7,7 +7,7 @@ export default class Feature {
   stroked: boolean
   mirrored: boolean
   segments: FeatureSegment[]
-  fills: FeatureFill[]
+  fills?: FeatureFill[]
 
   constructor(
     label: string,

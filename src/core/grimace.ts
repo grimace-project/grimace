@@ -16,6 +16,7 @@ export class Grimace {
 
   constructor(container: HTMLElement) {
     this.container = container
+
     this.initCanvas()
     this.initGrimace()
     this.addListeners()
@@ -25,9 +26,13 @@ export class Grimace {
     this.canvas = document.createElement('canvas')
     this.container.appendChild(this.canvas)
 
-    this.context = this.canvas.getContext('2d')
-    this.context.lineCap = 'round'
-    this.context.lineJoin = 'round'
+    const context = this.canvas.getContext('2d')
+    if (!context) {
+      throw new Error('Could not get canvas context')
+    }
+    context.lineCap = 'round'
+    context.lineJoin = 'round'
+    this.context = context
     this.resizeCanvas()
   }
 
