@@ -5,83 +5,20 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
-import { SliderChangedEvent } from "./components/slider/slider";
 export namespace Components {
-    interface GrimaceCanvas {
-        "emotions": EmotionSet;
-        "isServer": boolean;
-    }
-    interface GrimaceContainer {
-        "emotionSet": EmotionSet;
-    }
-    interface GrimaceSlider {
-        "label": string;
-        "name": string;
-        "value": number;
-    }
-}
-export interface GrimaceContainerCustomEvent<T> extends CustomEvent<T> {
-    detail: T;
-    target: HTMLGrimaceContainerElement;
-}
-export interface GrimaceSliderCustomEvent<T> extends CustomEvent<T> {
-    detail: T;
-    target: HTMLGrimaceSliderElement;
 }
 declare global {
-    interface HTMLGrimaceCanvasElement extends Components.GrimaceCanvas, HTMLStencilElement {
-    }
-    var HTMLGrimaceCanvasElement: {
-        prototype: HTMLGrimaceCanvasElement;
-        new (): HTMLGrimaceCanvasElement;
-    };
-    interface HTMLGrimaceContainerElement extends Components.GrimaceContainer, HTMLStencilElement {
-    }
-    var HTMLGrimaceContainerElement: {
-        prototype: HTMLGrimaceContainerElement;
-        new (): HTMLGrimaceContainerElement;
-    };
-    interface HTMLGrimaceSliderElement extends Components.GrimaceSlider, HTMLStencilElement {
-    }
-    var HTMLGrimaceSliderElement: {
-        prototype: HTMLGrimaceSliderElement;
-        new (): HTMLGrimaceSliderElement;
-    };
     interface HTMLElementTagNameMap {
-        "grimace-canvas": HTMLGrimaceCanvasElement;
-        "grimace-container": HTMLGrimaceContainerElement;
-        "grimace-slider": HTMLGrimaceSliderElement;
     }
 }
 declare namespace LocalJSX {
-    interface GrimaceCanvas {
-        "emotions"?: EmotionSet;
-        "isServer"?: boolean;
-    }
-    interface GrimaceContainer {
-        "emotionSet"?: EmotionSet;
-        "onGrimace:setEmotionSet"?: (event: GrimaceContainerCustomEvent<EmotionSet>) => void;
-        "onGrimace:setRandomEmotionSet"?: (event: GrimaceContainerCustomEvent<any>) => void;
-    }
-    interface GrimaceSlider {
-        "label"?: string;
-        "name"?: string;
-        "onSliderValueChanged"?: (event: GrimaceSliderCustomEvent<SliderChangedEvent>) => void;
-        "value"?: number;
-    }
     interface IntrinsicElements {
-        "grimace-canvas": GrimaceCanvas;
-        "grimace-container": GrimaceContainer;
-        "grimace-slider": GrimaceSlider;
     }
 }
 export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
-            "grimace-canvas": LocalJSX.GrimaceCanvas & JSXBase.HTMLAttributes<HTMLGrimaceCanvasElement>;
-            "grimace-container": LocalJSX.GrimaceContainer & JSXBase.HTMLAttributes<HTMLGrimaceContainerElement>;
-            "grimace-slider": LocalJSX.GrimaceSlider & JSXBase.HTMLAttributes<HTMLGrimaceSliderElement>;
         }
     }
 }

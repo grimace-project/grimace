@@ -1,1 +1,1 @@
-export { Components, JSX } from './components'
+export { Grimace } from './core/grimace'

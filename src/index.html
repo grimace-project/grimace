@@ -3,10 +3,13 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
-    <title>Stencil Component Starter</title>
+    <title>Grimace playground</title>
 
-    <script type="module" src="/build/grimace.esm.js"></script>
-    <script nomodule src="/build/grimace.js"></script>
+    <script type="module">
+      import { Grimace } from "/build/index.esm.js";
+      const container = document.getElementById('grimace-container');
+      window.grimace = new Grimace(container)
+    </script>
     <style>
       * {
         margin: 0;
@@ -15,6 +18,6 @@
     </style>
   </head>
   <body>
-    <grimace-container></grimace-container>
+    <div id="grimace-container" style="width: 100vw; height: 100vh"></div>
   </body>
 </html>
