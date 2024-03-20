@@ -5,7 +5,6 @@ import scaleCanvas from '../util/scale-canvas'
 import loadFacedata from '../facedata/index'
 
 export class Grimace {
-  el: HTMLElement
   emotions: EmotionSet
 
   container: HTMLElement
