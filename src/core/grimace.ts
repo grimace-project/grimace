@@ -72,22 +72,11 @@ export class Grimace {
     scaleCanvas(this.canvas, this.context, this.canvas.width, this.canvas.height)
   }
 
-  // @Listen('grimace:setEmotionSet', { target: 'window' })
-  // onSetEmotionSet(event: CustomEvent<EmotionSet>): void {
-  //   this.onEmotionSetChanged(event.detail)
-  // }
+  setEmotionSet(emotionSet: EmotionSet): void {
+    this.emotionController.setEmotionSet(emotionSet)
+  }
 
-  // @Listen('grimace:setRandomEmotionSet', { target: 'window' })
-  // onSetRandomEmotionSet(): void {
-  //   this.emotionController.setRandomEmotionSet()
-  // }
-
-  // @Watch('emotions')
-  // onEmotionSetChanged(emotionSet: EmotionSet): void {
-  //   this.emotionController.setEmotionSet(emotionSet)
-  // }
-
-  setEmotion(name: string, value: number): void {
-    console.log('set emotion', name, value)
+  setRandomEmotionSet(): void {
+    this.emotionController.setRandomEmotionSet()
   }
 }
