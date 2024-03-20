@@ -26,7 +26,6 @@ export class Grimace {
     this.canvas = document.createElement('canvas')
     this.container.appendChild(this.canvas)
 
-    this.canvas = this.el.shadowRoot.querySelector('canvas')
     this.context = this.canvas.getContext('2d')
     this.context.lineCap = 'round'
     this.context.lineJoin = 'round'
@@ -46,7 +45,6 @@ export class Grimace {
   }
 
   renderFeatures(force = false): any {
-    // requestAnimationFrame(() => this.renderCanvas())
     const hasChanged = this.featureController.evaluate()
     if (hasChanged || force) {
       this.featureController.drawInContext(this.context)
@@ -67,8 +65,8 @@ export class Grimace {
     this.canvas.height = 0
     this.canvas.style.width = ''
     this.canvas.style.height = ''
-    this.canvas.width = this.el.clientWidth
-    this.canvas.height = this.el.clientHeight
+    this.canvas.width = this.container.clientWidth
+    this.canvas.height = this.container.clientHeight
     scaleCanvas(this.canvas, this.context, this.canvas.width, this.canvas.height)
   }
 
