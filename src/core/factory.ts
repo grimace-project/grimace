@@ -125,16 +125,17 @@ export const createFeature = (def: FacedataFeature, muscleMap: MuscleMap): Featu
   if (def.fills) {
     fills = def.fills
       .map((defFill) => {
+        let influence: {
+          muscle: Muscle
+          weight: number
+        } = undefined
         if (defFill.influence) {
-          const influence: {
-            muscle: Muscle
-            weight: number
-          } = {
+          influence = {
             muscle: muscleMap[defFill.influence.muscle],
             weight: defFill.influence.weight,
           }
-          return new FeatureFill(defFill.draw, influence)
         }
+        return new FeatureFill(defFill.draw, influence)
       })
       .filter((x) => Boolean(x)) as FeatureFill[]
   }
