@@ -1,3 +1,18 @@
+// Image shim for headless test runner compatibility
+const imageFromSrc = (src: string): HTMLImageElement => {
+  if (typeof Image !== 'undefined') {
+    const image = new Image()
+    image.src = src
+    return image
+  }
+
+  return {
+    src,
+    width: 0,
+    height: 0,
+  } as HTMLImageElement
+}
+
 export default class Overlay {
   id: string
   x: number
@@ -14,8 +29,7 @@ export default class Overlay {
     this.scale = scale
     this.alpha = alpha
     this.data = data
-    this.image = new Image()
-    this.image.src = data
+    this.image = imageFromSrc(data)
   }
 
   drawInContext(context: CanvasRenderingContext2D): void {

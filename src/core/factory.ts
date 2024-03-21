@@ -143,14 +143,20 @@ export const createFeature = (def: FacedataFeature, muscleMap: MuscleMap): Featu
 }
 
 export const createMapping = (def: FacedataMapping): Mapping => {
-  if (def.type === 'gauss' && def.mean && def.variance && def.value) {
+  if (def.type === 'gauss' && def.mean !== undefined && def.variance !== undefined && def.value !== undefined) {
     return new GaussMapping(def.mean, def.variance, def.value)
-  } else if (def.type === 'polynomial' && def.x0 && def.exponents) {
+  } else if (def.type === 'polynomial' && def.x0 !== undefined && def.exponents !== undefined) {
     return new PolynomialMapping(def.x0, def.exponents)
-  } else if (def.type === 'sine' && def.x0 && def.x1 && def.y0 && def.y1) {
+  } else if (
+    def.type === 'sine' &&
+    def.x0 !== undefined &&
+    def.x1 !== undefined &&
+    def.y0 !== undefined &&
+    def.y1 !== undefined
+  ) {
     return new SineMapping(def.x0, def.x1, def.y0, def.y1)
   }
-  throw new Error(`Unknown mapping type`)
+  throw new Error(`Unknown mapping type for ${JSON.stringify(def)}`)
 }
 
 export const createEmotion = (label: string, def: FacedataEmotion, muscleMap: MuscleMap): Emotion => {
