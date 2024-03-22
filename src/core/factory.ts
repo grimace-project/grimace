@@ -18,20 +18,17 @@ import PolynomialMapping from '../display/polynomial-mapping'
 import SineMapping from '../display/sine-mapping'
 import FeatureFill from '../feature/feature-fill'
 import Overlay from './overlay'
+import type { EmotionMap } from '../emotion/emotion-controller'
 
-interface MuscleMap {
+type MuscleMap = {
   [muscleId: string]: Muscle
 }
 
-interface MuscleGroupMap {
+type MuscleGroupMap = {
   [muscleGroupId: string]: MuscleMap
 }
 
-interface EmotionMap {
-  [emotionId: string]: Emotion
-}
-
-export interface Face {
+export type Face = {
   muscleGroups: MuscleGroupMap
   features: Feature[]
   emotions: EmotionMap
@@ -125,17 +122,14 @@ export const createFeature = (def: FacedataFeature, muscleMap: MuscleMap): Featu
   if (def.fills) {
     fills = def.fills
       .map((defFill) => {
-        let influence: {
-          muscle: Muscle
-          weight: number
-        } = undefined
         if (defFill.influence) {
-          influence = {
+          const influence = {
             muscle: muscleMap[defFill.influence.muscle],
             weight: defFill.influence.weight,
           }
+          return new FeatureFill(defFill.draw, influence)
         }
-        return new FeatureFill(defFill.draw, influence)
+        return new FeatureFill(defFill.draw)
       })
       .filter((x) => Boolean(x)) as FeatureFill[]
   }
@@ -197,7 +191,7 @@ export const processFacedata = (facedata: Facedata): Face => {
     return createFeature(defFeature, muscleMap)
   })
 
-  const emotions: { [emotionId: string]: Emotion } = {}
+  const emotions: EmotionMap = {}
   Object.entries(facedata.emotions).forEach(([emotionId, defEmotion]) => {
     emotions[emotionId] = createEmotion(emotionId, defEmotion, muscleMap)
   })

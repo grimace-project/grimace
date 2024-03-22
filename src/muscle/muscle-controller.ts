@@ -2,8 +2,6 @@ import Muscle from './muscle'
 import PolynomialMapping from '../display/polynomial-mapping'
 
 const fadeMapping = new PolynomialMapping(1.0, [1.0, 0, -1.0])
-// @ts-ignore
-window.fadeMapping = fadeMapping
 
 interface MuscleGroup {
   [muscleId: string]: Muscle

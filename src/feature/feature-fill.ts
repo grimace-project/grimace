@@ -7,7 +7,7 @@ export default class FeatureFill {
   commands: FacedataFeatureFillCommand[]
   pivot: FeatureNode
 
-  constructor(commands: FacedataFeatureFillCommand[], influence: { muscle: Muscle; weight: number }) {
+  constructor(commands: FacedataFeatureFillCommand[], influence?: { muscle: Muscle; weight: number }) {
     this.pivot = new FeatureNode(new Point(0.0, 0.0))
     this.commands = commands
 

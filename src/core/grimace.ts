@@ -1,6 +1,7 @@
 import MuscleController from '../muscle/muscle-controller'
 import EmotionController from '../emotion/emotion-controller'
 import FeatureController from '../feature/feature-controller'
+import type { EmotionSet, Listener } from '../emotion/emotion-controller'
 import scaleCanvas from '../util/scale-canvas'
 import loadFacedata from '../facedata/index'
 
@@ -16,10 +17,9 @@ export class Grimace {
 
   constructor(container: HTMLElement) {
     this.container = container
-
     this.initCanvas()
     this.initGrimace()
-    this.addListeners()
+    this.addResizeListener()
   }
 
   initCanvas(): void {
@@ -55,7 +55,7 @@ export class Grimace {
     }
   }
 
-  addListeners(): void {
+  addResizeListener(): void {
     window.addEventListener('resize', () => this.onWindowResize())
   }
 
@@ -80,5 +80,13 @@ export class Grimace {
 
   setRandomEmotionSet(): void {
     this.emotionController.setRandomEmotionSet()
+  }
+
+  setEmotion(emotion: string, value: number): void {
+    this.emotionController.setEmotion(emotion, value)
+  }
+
+  addListener(listener: Listener): void {
+    this.emotionController.addListener(listener)
   }
 }
