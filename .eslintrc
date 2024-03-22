@@ -53,6 +53,7 @@
         "no-trailing-spaces": "error",
         "no-console": "off",
         "no-debugger": "off",
+        "no-extra-semi": "off",
         "react/no-unescaped-entities": "off",
         "react/prop-types": "off",
         "react/react-in-jsx-scope": "off",
