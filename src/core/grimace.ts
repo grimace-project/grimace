@@ -82,8 +82,8 @@ export class Grimace {
     this.emotionController.setRandomEmotionSet()
   }
 
-  setEmotion(emotion: string, value: number): void {
-    this.emotionController.setEmotion(emotion, value)
+  setEmotion(emotion: string, value: number, duration = 0.0): void {
+    this.emotionController.setEmotion(emotion, value, duration)
   }
 
   addListener(listener: Listener): void {
