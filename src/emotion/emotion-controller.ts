@@ -65,7 +65,7 @@ export default class EmotionController {
     this.muscleController.fade(duration)
   }
 
-  setRandomEmotionSet(): void {
+  setRandomEmotionSet(duration = 300): void {
     const emotionIds = Object.keys(this.emotions)
 
     const emotionSet: EmotionSet = {}
@@ -82,7 +82,7 @@ export default class EmotionController {
       emotionSet[emotionId2] = randomMinMax(0.2, 1.0)
     }
 
-    this.setEmotionSet(emotionSet, 300)
+    this.setEmotionSet(emotionSet, duration)
   }
 
   setEmotion(emotionId: string, value: number, duration = 0.0): void {

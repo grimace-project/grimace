@@ -74,12 +74,12 @@ export class Grimace {
     scaleCanvas(this.canvas, this.context, this.canvas.width, this.canvas.height)
   }
 
-  setEmotionSet(emotionSet: EmotionSet): void {
-    this.emotionController.setEmotionSet(emotionSet)
+  setEmotionSet(emotionSet: EmotionSet, duration = 0.0): void {
+    this.emotionController.setEmotionSet(emotionSet, duration)
   }
 
-  setRandomEmotionSet(): void {
-    this.emotionController.setRandomEmotionSet()
+  setRandomEmotionSet(duration = 300): void {
+    this.emotionController.setRandomEmotionSet(duration)
   }
 
   setEmotion(emotion: string, value: number, duration = 0.0): void {
