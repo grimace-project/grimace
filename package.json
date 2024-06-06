@@ -2,6 +2,7 @@
   "name": "grimace",
   "version": "0.1.5",
   "description": "grimace shows what emotions look like",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/grimace-project/web"
@@ -9,11 +10,11 @@
   "types": "./dist/index.d.ts",
   "main": "./dist/index.js",
   "files": [
-    "dist/**/*"
+    "dist"
   ],
   "scripts": {
     "clean": "rm -rf ./dist",
-    "build": "npm run clean && tsc",
+    "build": "npm run clean && node esbuild.js && tsc",
     "prepack": "npm run build",
     "pretest": "echo 'fixme: disabled npm run generate-facedata-validator'",
     "test": "vitest --run",
@@ -21,6 +22,8 @@
     "generate-facedata-validator": "typescript-json-validator src/facedata.d.ts Facedata && scripts/patch-validator.sh"
   },
   "dependencies": {
+    "esbuild": "^0.21.4",
+    "esbuild-node-externals": "^1.13.1",
     "ts-deepmerge": "^1.1.0"
   },
   "devDependencies": {
@@ -38,6 +41,5 @@
     "typescript": "^4.5.4",
     "typescript-json-validator": "^2.4.2",
     "vitest": "^1.4.0"
-  },
-  "license": "MIT"
+  }
 }

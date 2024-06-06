@@ -1,27 +1,19 @@
 {
+  "include": ["src"],
   "compilerOptions": {
-    "strict": true,
     "strictPropertyInitialization": false,
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
-    "skipLibCheck": true,
-    "checkJs": true,
-    "allowJs": true,
+    "module": "esnext",
+    "target": "esnext",
+    "lib": ["dom", "dom.iterable", "esnext"],
     "declaration": true,
-    "declarationMap": true,
-    "allowSyntheticDefaultImports": true,
-    "lib": ["ES6", "DOM"],
-    "target": "ES6",
-    "module": "CommonJS",
-    "moduleResolution": "Node",
-    "outDir": "./dist",
-    "declarationDir": "./dist"
-  },
-  "include": [
-    "src"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+    "strict": true,
+    "moduleResolution": "node",
+    "jsx": "react",
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "emitDeclarationOnly": true,
+    "outDir": "dist",
+    "rootDir": "src"
+  }
 }
